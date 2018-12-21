@@ -2,18 +2,20 @@
 import Yargs from "yargs";
 import WareGen from "./index";
 
-const args = Yargs.usage("Usage: $0 [options]")
-  .example(
-    "$0 -f addwares.xml",
-    "generate wares as declared by the addwares.xml"
-  )
-  .alias("f", "file")
-  .nargs("f", 1)
-  .describe("f", "Path to XML file that holds your config")
-  .demandOption(["f"])
+const args = Yargs.command("$0 <configXML> [options]", "build things", yargs =>
+  yargs.positional("configXML", {
+    describe: "path to your configXML",
+    type: "string",
+    default: "example.xml"
+  })
+)
+  .example("$0 example.xml", "generate wares as declared by example.xml")
+  .alias("f", "force")
+  .describe("f", "Force overwrites")
   .help("h")
-  .alias("h", "help").argv;
+  .alias("h", "help")
+  .help().argv;
 
-if (args.file) {
-  WareGen(args.file);
+if (args.configXML) {
+  WareGen(args.configXML, args.force);
 }

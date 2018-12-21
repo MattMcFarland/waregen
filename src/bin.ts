@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import Yargs from "yargs";
-import WareGen from "./index";
+import WareGen from "./lib/index";
 
-const args = Yargs.command("$0 <configXML> [options]", "build things", yargs =>
+const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   yargs.positional("configXML", {
     describe: "path to your configXML",
     type: "string",
@@ -17,5 +17,5 @@ const args = Yargs.command("$0 <configXML> [options]", "build things", yargs =>
   .help().argv;
 
 if (args.configXML) {
-  WareGen(args.configXML, args.force);
+  WareGen(args.configXML, Boolean(args.force));
 }

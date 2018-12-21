@@ -20,10 +20,17 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@types/node@^10.12.18":
+"@types/node@*", "@types/node@^10.12.18":
   version "10.12.18"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.18.tgz#1d3ca764718915584fcd9f6344621b7672665c67"
   integrity sha512-fh+pAqt4xRzPfqA6eh3Z2y6fyZavRIumvjhaCL753+TVkGKGhpPeyrJG2JftD0T9q4GF00KjefsQ+PQNDdWQaQ==
+
+"@types/signale@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@types/signale/-/signale-1.2.0.tgz#575719e586a1352cf1de04478b5fc0920e221000"
+  integrity sha512-67bRC/sXh/d6hS+apQ23v3btDC72P8lsIlNZULprtKpCRxrmA9Jd3spHR54HP0U2D63HjCWlhp17L/nuyh2AXw==
+  dependencies:
+    "@types/node" "*"
 
 "@types/yargs@^12.0.2":
   version "12.0.2"
@@ -851,6 +858,13 @@ fs-extra@7.0.1:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
+fs-jetpack@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/fs-jetpack/-/fs-jetpack-2.2.0.tgz#4385b42b728a3400f00f4afe6ecabc72543cc72d"
+  integrity sha512-d/fqY4pRhtKPEDyMz3sfx4ZBeWY6fV9b0E07fvI/k2oHwOYfFzCGe6yYuIHea7568dqIb1oEzzsGpZFQwGq+7Q==
+  dependencies:
+    minimatch "^3.0.2"
+
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -1494,7 +1508,7 @@ mimic-fn@^1.0.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
   integrity sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==
 
-minimatch@^3.0.4:
+minimatch@^3.0.2, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==

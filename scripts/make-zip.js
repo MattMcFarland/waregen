@@ -44,4 +44,5 @@ archive.pipe(output);
 archive.append(fs.createReadStream(source), { name: "waregen.exe" });
 archive.append(fs.createReadStream(".\\README.md"), { name: "README.md" });
 archive.append(fs.createReadStream(".\\LICENSE"), { name: "LICENSE.txt" });
+archive.append(fs.createReadStream(".\\example.xml"), { name: "example.xml" });
 archive.finalize();

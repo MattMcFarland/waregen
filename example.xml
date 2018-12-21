@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <addwares>
   <configuration>
-    <prefix value="xcg2"/>
+    <prefix value="example"/>
     <gamepath value="%PROGRAMFILES(X86)%\Steam\steamapps\common\X4 Foundations"/>
     <modpath value="extensions\XCG2"/>
     <unpackedPath value="unpacked-150"/>

@@ -37,33 +37,25 @@ export default async (configXmlPath: string, force: boolean) => {
   generation.forEach(addWare => {
     const newWareId = addWare.$.id;
     const cloneProductionModuleFrom = addWare.$.cloneProductionModuleFrom;
-
-    log.info(`Process ${newWareId} from ${cloneProductionModuleFrom}`);
+    const wareName = resolver.getWareName(newWareId);
+    log.info(
+      `Process ${newWareId} as ${wareName}, production macro to copy ${cloneProductionModuleFrom}`
+    );
 
     const newWare = createWare(
       addWaresXml.XMLObject.addwares.configuration[0].defaults[0],
       addWare,
-      newWareId,
-      resolver
+      wareName
     );
   });
 };
 
-function createWare(
-  defaults: any,
-  addWare: any,
-  wareId: string,
-  resolver: Resolver
-) {
+function createWare(defaults: any, addWare: any, wareName: string) {
   const newWare = _.cloneDeep(addWare);
-  const wareName = resolver.getWareName(wareId);
-  fs.writeFileSync("default.json", JSON.stringify(defaults, null, 2));
-  fs.writeFileSync("addWare.json", JSON.stringify(addWare, null, 2));
 
   newWare.ware[0].$.id = wareName;
 
   const merged = _.merge({ ware: {} }, defaults, newWare);
 
-  console.log(XMLUtils.exportNode(merged));
   return merged;
 }

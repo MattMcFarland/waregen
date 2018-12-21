@@ -9,7 +9,6 @@ import * as XPath from "xpath";
 export class XMLUtils {
   static readAbsXMLFile = <T>(absolutePath: string): Promise<XMLWrapper<T>> => {
     return new Promise(async (resolve, reject) => {
-      System.log.info(`Read ${absolutePath}`);
       const rawFile = Jetpack.read(absolutePath);
 
       if (!rawFile) {

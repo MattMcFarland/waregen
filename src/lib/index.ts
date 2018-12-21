@@ -8,6 +8,8 @@ import { setupConfig } from "./config";
 import { XMLUtils } from "./XMLUtils";
 import { X4WareGenXML } from "../../XMLTypes/X4WareGenXML";
 import jetpack from "fs-jetpack";
+import { X4WareMacro } from "../../XMLTypes/X4WareMacro";
+import { X4WareProductionMacro } from "../../XMLTypes/X4WareProductionMacro";
 
 const MSG_FORCE = "Use option -force to overwrite";
 
@@ -33,12 +35,13 @@ export default async (configXmlPath: string, force: boolean) => {
   );
   const generation = addWaresXml.XMLObject.addwares.generation[0].addware;
 
-  generation.forEach(addWare => {
+  generation.forEach(async addWare => {
     const newWareId = addWare.$.id;
+    if (!newWareId) return;
     const cloneProductionModuleFrom = addWare.$.cloneProductionModuleFrom;
     const wareName = resolver.getWareName(newWareId);
-    log.info(
-      `Process ${newWareId} as ${wareName}, production macro to copy ${cloneProductionModuleFrom}`
+    log.process(
+      `${newWareId} as ${wareName}, production macro to copy ${cloneProductionModuleFrom}`
     );
 
     const newWare = createWare(
@@ -47,7 +50,13 @@ export default async (configXmlPath: string, force: boolean) => {
       wareName
     );
 
-    publishWareMacro(resolver, newWareId, force);
+    await publishWareMacro(resolver, newWareId, force);
+    await publishProductionMacro(
+      resolver,
+      newWareId,
+      cloneProductionModuleFrom,
+      force
+    );
   });
 };
 
@@ -59,7 +68,55 @@ function createWare(defaults: any, addWare: any, wareName: string) {
   return merged;
 }
 
-function publishWareMacro(resolver: Resolver, wareId: string, force: boolean) {
+async function publishProductionMacro(
+  resolver: Resolver,
+  wareId: string,
+  cloneProductionModuleFrom: string,
+  force: boolean
+) {
+  const wareName = <string>(<unknown>resolver.getWareName(wareId));
+
+  const capitalizedWareName =
+    `${wareId[0]}`.toUpperCase() + `${wareId}`.substring(1);
+  const prodMacroName = resolver.getProductionMacroName(wareId);
+  const sourceProdMacroPath = resolver.resolveProductionModuleFromPath(
+    Sources.FromUnpacked,
+    wareId,
+    cloneProductionModuleFrom
+  );
+  const destinationProdMacroPath = resolver.resolveProductionModuleFromPath(
+    Sources.FromMod,
+    wareId,
+    cloneProductionModuleFrom
+  );
+
+  if (jetpack.exists(destinationProdMacroPath) && !force) {
+    log.skip(destinationProdMacroPath, "(File already exists)", MSG_FORCE);
+    return;
+  }
+
+  log.write(destinationProdMacroPath, "(Production Macro)");
+
+  createPathAndFile(destinationProdMacroPath, sourceProdMacroPath);
+
+  const wareMacroXml = await XMLUtils.readAbsXMLFile<X4WareProductionMacro>(
+    destinationProdMacroPath
+  );
+  const macroElmenet = wareMacroXml.XMLObject.macros.macro[0];
+
+  macroElmenet.$.name = prodMacroName;
+  macroElmenet.properties[0].identification[0].$.name = `${capitalizedWareName} Production`;
+  macroElmenet.properties[0].identification[0].$.shortname = `${capitalizedWareName}`;
+  macroElmenet.properties[0].production[0].$.wares = wareName;
+  macroElmenet.properties[0].production[0].queue[0].$.ware = wareName;
+  wareMacroXml.save(destinationProdMacroPath);
+}
+
+async function publishWareMacro(
+  resolver: Resolver,
+  wareId: string,
+  force: boolean
+) {
   const wareMacroName = resolver.getWareMacroName(wareId);
   const sourceWareMacroPath = resolver.resolveWareMacroPath(
     Sources.FromUnpacked,
@@ -69,31 +126,32 @@ function publishWareMacro(resolver: Resolver, wareId: string, force: boolean) {
     Sources.FromMod,
     wareId
   );
+
   if (jetpack.exists(destinationWareMacroPath) && !force) {
-    log.warn(
-      "Skipping",
-      destinationWareMacroPath,
-      "(File already exists)",
-      MSG_FORCE
-    );
+    log.skip(destinationWareMacroPath, "(File already exists)", MSG_FORCE);
     return;
   }
-  log.info("Publish", destinationWareMacroPath, "(Ware Macro)");
 
-  createPathAndFile(destinationWareMacroPath);
+  log.write(destinationWareMacroPath, "(Ware Macro)");
+
+  createPathAndFile(destinationWareMacroPath, sourceWareMacroPath);
+
+  const wareMacroXml = await XMLUtils.readAbsXMLFile<X4WareMacro>(
+    destinationWareMacroPath
+  );
+  wareMacroXml.XMLObject.macros.macro[0].$.name = wareMacroName;
+
+  wareMacroXml.save(destinationWareMacroPath);
 }
 
-function createPathAndFile(pathName: string) {
-  console.log(
+function createPathAndFile(pathName: string, sourcePath?: string) {
+  jetpack.dir(
     pathName
       .split(Path.sep)
-      .splice(-1)
+      .slice(0, -1)
       .join(Path.sep)
   );
-  // jetpack.dir(
-  //   pathName
-  //     .split(Path.sep)
-  //     .splice(-1)
-  //     .join(Path.sep)
-  // );
+  if (sourcePath) {
+    jetpack.copy(sourcePath, pathName, { overwrite: true });
+  }
 }

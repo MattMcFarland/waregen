@@ -1,10 +1,8 @@
 import Jetpack from "fs-jetpack";
 import * as System from "./System";
-import XMLDom from "xmldom";
 import { XMLWrapper } from "./XMLWrapper";
 import XML2JS from "xml2js";
 import { promisify } from "util";
-import * as XPath from "xpath";
 
 export class XMLUtils {
   static readAbsXMLFile = <T>(absolutePath: string): Promise<XMLWrapper<T>> => {
@@ -16,9 +14,8 @@ export class XMLUtils {
       }
 
       if (rawFile && typeof rawFile === "string") {
-        const xmlDocument = XMLUtils.parseXMLDocument(rawFile);
         const XmlObject = await XMLUtils.parseXMLObjectAsync(rawFile);
-        return resolve(new XMLWrapper(absolutePath, xmlDocument, XmlObject));
+        return resolve(new XMLWrapper(absolutePath, XmlObject));
       }
       return reject(`invalid XML`);
     });
@@ -30,10 +27,6 @@ export class XMLUtils {
   };
   static exportNode = (node: any) => {
     return new XML2JS.Builder().buildObject(node);
-  };
-  static parseXMLDocument = (xmlRawString: string): XMLDocument => {
-    const sanitizedXml = XMLUtils.safeString(xmlRawString);
-    return new XMLDom.DOMParser().parseFromString(sanitizedXml);
   };
 
   static safeString = (str: string) => {

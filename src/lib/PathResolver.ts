@@ -7,6 +7,7 @@ export enum Sources {
 type OneOfSources = Sources.FromMod | Sources.FromUnpacked;
 
 export class Resolver {
+  gamepath: string;
   modPrefix: string;
   modPath: string;
   unpackedPath: string;
@@ -37,12 +38,14 @@ export class Resolver {
   /**
    * @param path: resolves path from contetx of mod folder
    */
-  resolveFromMod = (path: string) => resolvePath(this.modPath, path);
+  resolveFromMod = (path: string) =>
+    resolvePath(this.gamepath + "/" + this.modPath, path);
 
   /**
    * @param path: resolves path from contetx of unpacked folder
    */
-  resolveFromUnpacked = (path: string) => resolvePath(this.unpackedPath, path);
+  resolveFromUnpacked = (path: string) =>
+    resolvePath(this.gamepath + "/" + this.unpackedPath, path);
 
   /**
    * @param source: Either mod or unpacked
@@ -132,7 +135,13 @@ export class Resolver {
     );
   };
 
-  constructor(modPrefix: string, modPath: string, unpackedPath: string) {
+  constructor(
+    gamepath: string,
+    modPrefix: string,
+    modPath: string,
+    unpackedPath: string
+  ) {
+    this.gamepath = gamepath;
     this.modPrefix = modPrefix;
     this.modPath = modPath;
     this.unpackedPath = unpackedPath;

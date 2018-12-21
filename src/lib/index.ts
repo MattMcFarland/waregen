@@ -1,14 +1,15 @@
 import Path from "path";
 import Jetpack from "fs-jetpack";
-import { Resolver } from "./PathResolver";
+import { Resolver, Sources } from "./PathResolver";
 import * as _ from "lodash";
 
 import { die, log } from "./System";
 import { setupConfig } from "./config";
 import { XMLUtils } from "./XMLUtils";
 import { X4WareGenXML } from "../../XMLTypes/X4WareGenXML";
-import { X4LibraryWares, WareEntity } from "../../XMLTypes/X4LibraryWares";
-import fs from "fs";
+import jetpack from "fs-jetpack";
+
+const MSG_FORCE = "Use option -force to overwrite";
 
 export default async (configXmlPath: string, force: boolean) => {
   if (force)
@@ -22,13 +23,11 @@ export default async (configXmlPath: string, force: boolean) => {
   log.start(`Using ${configXmlPath}`);
 
   const configSelect = await setupConfig(configXmlFullPath);
-
+  const gamepath = <any>configSelect("gamepath");
   const prefix = <any>configSelect("prefix");
   const unpackedPath = <any>configSelect("unpackedPath");
   const modpath = <any>configSelect("modpath");
-
-  const resolver = new Resolver(prefix, modpath, unpackedPath);
-
+  const resolver = new Resolver(gamepath, prefix, modpath, unpackedPath);
   const addWaresXml = await XMLUtils.readAbsXMLFile<X4WareGenXML>(
     configXmlPath
   );
@@ -47,15 +46,54 @@ export default async (configXmlPath: string, force: boolean) => {
       addWare,
       wareName
     );
+
+    publishWareMacro(resolver, newWareId, force);
   });
 };
 
 function createWare(defaults: any, addWare: any, wareName: string) {
   const newWare = _.cloneDeep(addWare);
-
   newWare.ware[0].$.id = wareName;
-
   const merged = _.merge({ ware: {} }, defaults, newWare);
 
   return merged;
+}
+
+function publishWareMacro(resolver: Resolver, wareId: string, force: boolean) {
+  const wareMacroName = resolver.getWareMacroName(wareId);
+  const sourceWareMacroPath = resolver.resolveWareMacroPath(
+    Sources.FromUnpacked,
+    wareId
+  );
+  const destinationWareMacroPath = resolver.resolveWareMacroPath(
+    Sources.FromMod,
+    wareId
+  );
+  if (jetpack.exists(destinationWareMacroPath) && !force) {
+    log.warn(
+      "Skipping",
+      destinationWareMacroPath,
+      "(File already exists)",
+      MSG_FORCE
+    );
+    return;
+  }
+  log.info("Publish", destinationWareMacroPath, "(Ware Macro)");
+
+  createPathAndFile(destinationWareMacroPath);
+}
+
+function createPathAndFile(pathName: string) {
+  console.log(
+    pathName
+      .split(Path.sep)
+      .splice(-1)
+      .join(Path.sep)
+  );
+  // jetpack.dir(
+  //   pathName
+  //     .split(Path.sep)
+  //     .splice(-1)
+  //     .join(Path.sep)
+  // );
 }

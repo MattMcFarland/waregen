@@ -31,7 +31,7 @@ export const setupConfig = async (
     return result.replace(
       /%(.*)%/gm,
       (match: string, p1: string, offset: number, str: string): string =>
-        str.replace(match, process.env[p1])
+        match.replace(match, process.env[p1])
     );
   };
 };

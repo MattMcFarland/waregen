@@ -10,14 +10,18 @@
   "scripts": {
     "dev": "node dist/bin"
   },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "signale": "^1.3.0",
+    "yargs": "^12.0.5"
+  },
   "devDependencies": {
     "@types/node": "^10.12.18",
     "@types/yargs": "^12.0.2",
     "husky": "^1.3.0",
     "prettier": "^1.15.3",
     "pretty-quick": "^1.8.0",
-    "typescript": "^3.2.2",
-    "yargs": "^12.0.5"
+    "typescript": "^3.2.2"
   },
   "husky": {
     "hooks": {

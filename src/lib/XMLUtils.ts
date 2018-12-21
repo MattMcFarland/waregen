@@ -3,6 +3,7 @@ import * as System from "./System";
 import { XMLWrapper } from "./XMLWrapper";
 import XML2JS from "xml2js";
 import { promisify } from "util";
+import Path from "path";
 
 export class XMLUtils {
   static readAbsXMLFile = <T>(absolutePath: string): Promise<XMLWrapper<T>> => {
@@ -20,7 +21,31 @@ export class XMLUtils {
       return reject(`invalid XML`);
     });
   };
+  static getOrCreate = <T>(
+    absolutePath: string,
+    obj: T
+  ): Promise<XMLWrapper<T>> => {
+    return new Promise(async (resolve, reject) => {
+      const rawFile = Jetpack.read(absolutePath);
+      if (!rawFile) {
+        System.log.write(absolutePath);
+        Jetpack.dir(
+          absolutePath
+            .split(Path.sep)
+            .slice(0, -1)
+            .join(Path.sep)
+        );
+        const builder = new XML2JS.Builder();
+        const parser = new XML2JS.Parser();
 
+        const xml = builder.buildObject(obj);
+        return await new XMLWrapper(absolutePath, parser.parseString(xml));
+      } else {
+        System.log.update(absolutePath);
+        return await XMLUtils.readAbsXMLFile<T>(absolutePath);
+      }
+    });
+  };
   static parseXMLObjectAsync = (xmlRawString: string): Promise<any> => {
     const sanitizedXml = XMLUtils.safeString(xmlRawString);
     const parseString = promisify(new XML2JS.Parser().parseString);

@@ -10,6 +10,13 @@ import { X4WareGenXML } from "../../XMLTypes/X4WareGenXML";
 import jetpack from "fs-jetpack";
 import { X4WareMacro } from "../../XMLTypes/X4WareMacro";
 import { X4WareProductionMacro } from "../../XMLTypes/X4WareProductionMacro";
+import * as zlib from "zlib";
+
+import fs from "fs";
+import { XMLWrapper } from "./XMLWrapper";
+import { X4LibraryModules } from "../../XMLTypes/X4LibraryModules";
+import { X4IndexMacros } from "../../XMLTypes/X4IndexMacros";
+import { X4LibraryIcons } from "../../XMLTypes/X4LibraryIcons";
 
 const MSG_FORCE = "Use option -force to overwrite";
 
@@ -57,8 +64,87 @@ export default async (configXmlPath: string, force: boolean) => {
       cloneProductionModuleFrom,
       force
     );
+    publishProductionIcon(
+      resolver,
+      newWareId,
+      cloneProductionModuleFrom,
+      force
+    );
+    updateManifest(resolver, newWareId, newWare, force);
   });
 };
+
+async function updateManifest(
+  resolver: Resolver,
+  wareId: string,
+  newWare: any,
+  force: boolean
+) {
+  const prodMacroName = resolver.getProductionMacroName(wareId);
+  const wareMacroName = resolver.getWareMacroName(wareId);
+  const relIndexMacrosXmlPath = "index/macros.xml";
+  const relIconsXmlPath = "libraries/icons.xml";
+  const relProdMacroPath = `assets/structures/production/macros/${prodMacroName}.xml`;
+  const relWareMacroPath = `assets/wares/macros/${wareMacroName}.xml`;
+  const relIconAssetPath = `assets/fx/gui/textures/stationmodules/${prodMacroName}.dds`;
+
+  const indexMacrosXmlPath = resolver.resolveFromMod(relIndexMacrosXmlPath);
+  const iconsXmlPath = resolver.resolveFromMod(relIconsXmlPath);
+  const relModWarePath = resolver.resolveRelFromMod(relWareMacroPath);
+  const relModProdPath = resolver.resolveRelFromMod(relProdMacroPath);
+  const relModIconPath = resolver.resolveRelFromMod(relIconAssetPath);
+
+  const indexMacrosXml = await XMLUtils.getOrCreate<X4IndexMacros>(
+    indexMacrosXmlPath,
+    {
+      index: {
+        entry: []
+      }
+    }
+  );
+  const iconsXml = await XMLUtils.getOrCreate<X4LibraryIcons>(iconsXmlPath, {
+    icons: {
+      icon: []
+    }
+  });
+
+  updateIndex(indexMacrosXml, wareMacroName, relModWarePath);
+  updateIndex(indexMacrosXml, prodMacroName, relModProdPath);
+  indexMacrosXml.save(indexMacrosXmlPath);
+
+  updateIcons(iconsXml, `module_${prodMacroName}`, relModIconPath);
+  iconsXml.save(iconsXmlPath);
+}
+
+function updateIndex(
+  xmlObj: XMLWrapper<X4IndexMacros>,
+  name: string,
+  value: string
+) {
+  xmlObj.XMLObject.index.entry.push({
+    $: {
+      name,
+      value
+    }
+  });
+  return xmlObj;
+}
+
+function updateIcons(
+  xmlObj: XMLWrapper<X4LibraryIcons>,
+  name: string,
+  texture: string
+) {
+  xmlObj.XMLObject.icons.icon.push({
+    $: {
+      name,
+      texture,
+      width: "256",
+      height: "256"
+    }
+  });
+  return xmlObj;
+}
 
 function createWare(defaults: any, addWare: any, wareName: string) {
   const newWare = _.cloneDeep(addWare);
@@ -142,6 +228,40 @@ async function publishWareMacro(
   wareMacroXml.XMLObject.macros.macro[0].$.name = wareMacroName;
 
   wareMacroXml.save(destinationWareMacroPath);
+}
+
+async function publishProductionIcon(
+  resolver: Resolver,
+  wareId: string,
+  cloneProductionModuleFrom: string,
+  force: boolean
+) {
+  const destinationPath = resolver.resolveProductionModuleIconPath(
+    Sources.FromMod,
+    wareId,
+    cloneProductionModuleFrom
+  );
+  const sourcePath = resolver.resolveProductionModuleIconPath(
+    Sources.FromUnpacked,
+    wareId,
+    cloneProductionModuleFrom
+  );
+
+  if (jetpack.exists(destinationPath) && !force) {
+    log.skip(destinationPath, "(File already exists)", MSG_FORCE);
+    return;
+  }
+
+  log.write(destinationPath, "(Icon Texture)");
+  createPathAndFile(destinationPath);
+
+  const writestream = fs.createWriteStream(
+    destinationPath.replace("gz", "dds")
+  );
+
+  fs.createReadStream(sourcePath)
+    .pipe(zlib.createGunzip())
+    .pipe(writestream);
 }
 
 function createPathAndFile(pathName: string, sourcePath?: string) {

@@ -48,6 +48,17 @@ export class Resolver {
     resolvePath(this.gamepath + "/" + this.unpackedPath, path);
 
   /**
+   * @param path: resolves relative path from contetx of mod folder
+   */
+  resolveRelFromMod = (path: string) => resolvePath(this.modPath, path);
+
+  /**
+   * @param path: resolves relative path from contetx of unpacked folder
+   */
+  resolveRelFromUnpacked = (path: string) =>
+    resolvePath(this.unpackedPath, path);
+
+  /**
    * @param source: Either mod or unpacked
    */
   maybeModOrUnpacked = (source: OneOfSources) =>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addwares>
+  <configuration>
+    <prefix value="xcg2"/>
+    <gamepath value="%PROGRAMFILES(X86)%\Steam\steamapps\common\X4 Foundations"/>
+    <modpath value="extensions\XCG2"/>
+    <unpackedPath value="unpacked-150"/>
+    <defaults>
+      <ware>
+        <price min="735" average="865" max="994" />
+        <production time="300" amount="60" method="default">
+          <primary>
+            <ware ware="energycells" amount="20" />
+            <ware ware="silicon" amount="40" />
+          </primary>
+          <effects>
+            <effect type="work" product="0.2" />
+          </effects>
+        </production>
+        <icon active="ware_default" video="ware_noicon_macro" />
+      </ware>
+    </defaults>
+  </configuration>
+  <generation>
+    <addware id="glass" cloneProductionModuleFrom="prod_gen_refinedmetals">
+      <ware name="Glass" group="refined" transport="container" volume="32" tags="container economy">
+        <price min="735" average="865" max="994" />
+        <production time="300" amount="60" method="default" name="Glass">
+          <primary>
+            <ware ware="energycells" amount="50" />
+            <ware ware="silicon" amount="80" />
+          </primary>
+          <effects>
+            <effect type="work" product="0.2" />
+          </effects>
+        </production>
+      </ware>
+    </addware>
+    <addware id="plastic" cloneProductionModuleFrom="prod_gen_refinedmetals">
+      <ware name="Plastic" group="refined" transport="container" volume="8" tags="container economy">
+        <price min="456" average="567" max="786" />
+        <production time="100" amount="60" method="default" name="Plastic">
+          <primary>
+            <ware ware="energycells" amount="300" />
+            <ware ware="silicon" amount="20" />
+          </primary>
+          <effects>
+            <effect type="work" product="0.2" />
+          </effects>
+        </production>
+      </ware>
+    </addware>
+  </generation>
+</addwares>

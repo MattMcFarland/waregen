@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modules>
+  <!-- Universal Production Modules -->
+
+  <module id="prod_gen_advancedelectronics" group="prod_gen_advancedelectronics">
+    <category ware="advancedelectronics" tags="[production, module]" race="[argon, paranid, teladi]" faction="[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+    <compatibilities>
+      <limits production="1"/>
+      <production ware="advancedelectronics" chance="65" />
+    </compatibilities>
+  </module>
+
+  <module id="prod_gen_antimattercells" group="prod_gen_antimattercells">
+    <category ware="antimattercells" tags="[production, module]" race="[argon, paranid, teladi]" faction="[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+    <compatibilities>
+      <limits production="2"/>
+      <production ware="antimattercells" chance="50" />
+      <production ware="energycells" chance="25" />
+      <production ware="graphene" chance="25" />
+      <production ware="superfluidcoolant" chance="25" />
+    </compatibilities>
+  </module>
+
+  <module id="prod_gen_antimatterconverters" group="prod_gen_antimatterconverters">
+    <category ware="antimatterconverters" tags="[production, module]" race="[argon, paranid, teladi]" faction="[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+    <compatibilities>
+      <limits production="1"/>
+      <production ware="antimatterconverters" chance="65" />
+    </compatibilities>
+  </module>
+
+  <module id="prod_gen_advancedcomposites" group="prod_gen_advancedcomposites">
+    <category ware="advancedcomposites" tags="[production, module]" race="[argon, paranid]" faction="[argon, paranid, antigone, holyorder, hatikvah, alliance]" />
+    <compatibilities>
+      <limits production="1"/>
+      <production ware="advancedcomposites" chance="65" />
+      <production ware="graphene" chance="25" />
+    </compatibilities>
+  </module>
+
+  <module id="prod_gen_claytronics" group="prod_gen_claytronics">
+    <category ware="claytronics" tags="[production, module]" race="[argon, paranid, teladi]" faction="[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]" />
+    <compatibilities>
+      <production ware="claytronics" chance="65" />
+    </compatibilities>
+  </module>
+
+  <module id="prod_gen_dronecomponents" group="prod_gen_dronecomponents">
+    <category ware="dronecomponents" tags="[production, module]" race="[argon, paranid, teladi]" faction="[argon, paranid, teladi, holyorder, hatikvah, alliance, scaleplate]" />
+    <compatibilities>
+      <limits production="1"/>
+      <production ware="dronecomponents" chance="65" />
+    </compatibilities>
+  </module>
+
+  <module id="prod_gen_energycells" group="prod_gen_energycells">
+    <category ware="energycells" tags="[production, module]" race="[argon, paranid, teladi]" faction="[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance]" />
+    <compatibilities>
+      <production ware="energycells" chance="65" />
+      <production ware="antimattercells" chance="25" />
+      <production ware="graphene" chance="25" />
+      <production ware="superfluidcoolant" chance="25" />
+    </compatibilities>
+  </module>
+
+  <!-- Paranid Equipment Dock Modules -->
+  <module id="equip_par" group="equip_gen">
+    <category tags="[equip, module]" race="paranid" faction="[paranid, holyorder, alliance]" />
+  </module>
+
+  <!-- Teladi Equipment Dock Modules -->
+  <module id="equip_tel" group="equip_gen">
+    <category tags="[equip, module]" race="teladi" faction="[teladi, ministry, scaleplate]" />
+  </module>
+
+  <!-- Argon Connection Modules -->
+  <module id="conn_arg" group="conn_arg">
+    <category tags="[connection, module]" race="argon" faction="[argon, antigone, hatikvah, xenon]" />
+  </module>
+
+  <!-- Paranid Connection Modules -->
+  <module id="conn_par" group="conn_par">
+    <category tags="[connection, module]" race="paranid" faction="[paranid, holyorder, alliance]" />
+  </module>
+
+  <!-- Teladi Connection Modules -->
+  <module id="conn_tel" group="conn_tel">
+    <category tags="[connection, module]" race="teladi" faction="[teladi, ministry, scaleplate]" />
+  </module>
+
+  <!-- Online Portal Modules -->
+  <module id="venturer_gen" group="venturer_gen">
+    <category tags="[venturer, module]" race="[argon, paranid, teladi]" faction="[player]" />
+  </module>
+</modules>

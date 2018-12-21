@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<groups>
+  <!-- Universal Production Module Groups -->
+  <group name="prod_gen_advancedelectronics">
+    <select macro="prod_gen_advancedelectronics_macro" />
+  </group>
+
+  <group name="prod_gen_antimattercells">
+    <select macro="prod_gen_antimattercells_macro" />
+  </group>
+
+  <group name="prod_gen_antimatterconverters">
+    <select macro="prod_gen_antimatterconverters_macro" />
+  </group>
+
+  <group name="prod_gen_advancedcomposites">
+    <select macro="prod_gen_advancedcomposites_macro" />
+  </group>
+
+  <group name="prod_gen_claytronics">
+    <select macro="prod_gen_claytronics_macro" />
+  </group>
+
+  <group name="prod_gen_countermeasures">
+    <select macro="prod_gen_countermeasures_macro" />
+  </group>
+
+  <group name="prod_gen_dronecomponents">
+    <select macro="prod_gen_dronecomponents_macro" />
+  </group>
+
+  <group name="prod_gen_energycells">
+    <select macro="prod_gen_energycells_macro" />
+  </group>
+
+  <group name="prod_gen_engineparts">
+    <select macro="prod_gen_engineparts_macro" />
+  </group>
+
+  <group name="prod_gen_fieldcoils">
+    <select macro="prod_gen_fieldcoils_macro" />
+  </group>
+
+  <group name="prod_gen_hullparts">
+    <select macro="prod_gen_hullparts_macro" />
+  </group>
+
+  <group name="prod_gen_graphene">
+    <select macro="prod_gen_graphene_macro" />
+  </group>
+
+  <group name="prod_gen_microchips">
+    <select macro="prod_gen_microchips_macro" />
+  </group>
+
+  <group name="prod_gen_missilecomponents">
+    <select macro="prod_gen_missilecomponents_macro" />
+  </group>
+
+  <group name="prod_gen_superfluidcoolant">
+    <select macro="prod_gen_superfluidcoolant_macro" />
+  </group>
+
+  <group name="prod_gen_plasmaconductors">
+    <select macro="prod_gen_plasmaconductors_macro" />
+  </group>
+
+  <!-- Generic Build Module Groups-->
+  <group name="build_gen">
+    <select macro="buildmodule_gen_ships_m_dockarea_01_macro" />
+    <select macro="buildmodule_gen_ships_l_macro" />
+    <select macro="buildmodule_gen_ships_xl_macro" />
+  </group>
+
+  <!-- Xenon Build Module Groups-->
+  <group name="build_xen">
+    <select macro="buildmodule_xen_ships_s_macro" />
+    <select macro="buildmodule_xen_ships_m_macro" />
+    <select macro="buildmodule_xen_ships_xl_macro" />
+  </group>
+
+  <!-- Generic Equipment Dock Module Groups -->
+  <group name="equip_gen">
+    <select macro="buildmodule_gen_equip_m_dockarea_01_macro" />
+    <select macro="buildmodule_gen_equip_l_macro" />
+    <select macro="buildmodule_gen_equip_xl_macro" />
+  </group>
+
+  <!-- Argon Connection Module Groups-->
+  <group name="conn_arg">
+    <select macro="struct_arg_base_01_macro" />
+    <select macro="struct_arg_base_02_macro" />
+    <select macro="struct_arg_base_03_macro" />
+    <select macro="struct_arg_cross_01_macro" />
+    <select macro="struct_arg_vertical_01_macro" />
+    <select macro="struct_arg_vertical_02_macro" />
+  </group>
+
+  <!-- Paranid Connection Module Groups -->
+  <group name="conn_par">
+    <select macro="struct_par_cross_01_macro" />
+    <select macro="struct_par_cross_02_macro" />
+    <select macro="struct_par_cross_03_macro" />
+    <select macro="struct_par_base_01_macro" />
+    <select macro="struct_par_base_02_macro" />
+    <select macro="struct_par_base_03_macro" />
+    <select macro="struct_par_vertical_01_macro" />
+    <select macro="struct_par_vertical_02_macro" />
+  </group>
+
+  <!-- Teladi Connection Module Groups-->
+  <group name="conn_tel">
+    <select macro="struct_tel_base_01_macro" />
+    <select macro="struct_tel_base_02_macro" />
+    <select macro="struct_tel_base_03_macro" />
+    <select macro="struct_tel_cross_01_macro" />
+    <select macro="struct_tel_vertical_01_macro" />
+    <select macro="struct_tel_vertical_02_macro" />
+  </group>
+
+  <!-- Venturer Module Groups -->
+  <group name="venturer_gen">
+    <select macro="dockarea_gen_m_venturer_01_macro" />
+    <select macro="dockarea_gen_xl_venturer_01_macro" />
+    <select macro="ventureplatform_gen_cross_01_macro" />
+    <select macro="struct_gen_venturerbase_01_macro" />
+    <select macro="struct_gen_venturerbase_02_macro" />
+    <select macro="struct_gen_venturerbase_03_macro" />
+    <select macro="struct_gen_venturercross_01_macro" />
+    <select macro="struct_gen_venturervertical_01_macro" />
+    <select macro="struct_gen_venturervertical_02_macro" />
+  </group>
+
+</groups>

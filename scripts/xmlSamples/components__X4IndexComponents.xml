@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ?xml-stylesheet href="index.xsl" type="text/xsl" ? -->
+<index>
+  <!--manually copied-->
+  <entry name="testminingnode" value="libraries\component"/>
+  <entry name="landmarks_gen_exploration_01" value="assets\structures\landmarks\landmarks_gen_exploration_01">
+  </entry>
+  <entry name="startmenu_final" value="assets\cutscenecore\\startmenu_final">
+  </entry>
+  <entry name="ship_arg_s_miner_solid_01" value="assets\units\size_s\ship_arg_s_miner_solid_01">
+  </entry>
+  <entry name="ship_tel_s_miner_solid_01" value="assets\units\size_s\ship_tel_s_miner_solid_01">
+  </entry>
+  <entry name="ship_par_s_miner_solid_01" value="assets\units\size_s\ship_par_s_miner_solid_01">
+  </entry>
+  <entry name="buildmodule_gen_equip_m_dockarea_01" value="assets\structures\buildmodule\\buildmodule_gen_equip_m_dockarea_01">
+  </entry>
+  <entry name="test_room_gen_managersoffice_01" value="assets\test\test_room_gen_managersoffice_01">
+  </entry>
+</index>

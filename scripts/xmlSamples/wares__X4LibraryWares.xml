@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Last exported: 19.12.2018 18:56:56-->
+<wares>
+  <production>
+    <method id="argon">
+      <default race="argon" />
+    </method>
+    <method id="paranid">
+      <default race="paranid" />
+    </method>
+    <method id="teladi">
+      <default race="teladi" />
+    </method>
+    <method id="xenon">
+      <default race="xenon" />
+    </method>
+  </production>
+  <defaults id="default" name="default" transport="container" volume="1" tags="container">
+    <price min="1" average="1" max="1" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <effects>
+        <effect type="efficiency" product="1" />
+      </effects>
+    </production>
+    <container ref="sm_gen_pickup_container_01_macro" />
+    <icon active="ware_default" video="ware_noicon_macro" />
+  </defaults>
+  <ware id="advancedcomposites" name="{20201,401}" description="{20201,402}" factoryname="{20201,404}" group="hightech" transport="container" volume="32" tags="container economy">
+    <price min="735" average="865" max="994" />
+    <production time="300" amount="60" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="50" />
+        <ware ware="graphene" amount="80" />
+        <ware ware="refinedmetals" amount="80" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.2" />
+      </effects>
+    </production>
+    <production time="300" amount="60" method="teladi" name="{20206,401}">
+      <primary>
+        <ware ware="energycells" amount="50" />
+        <ware ware="graphene" amount="80" />
+        <ware ware="teladianium" amount="58" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.2" />
+      </effects>
+    </production>
+    <icon active="ware_advancedcomposites" video="ware_advancedcomposites_macro" />
+  </ware>
+  <ware id="advancedelectronics" name="{20201,101}" description="{20201,102}" factoryname="{20201,104}" group="shiptech" transport="container" volume="30" tags="container economy stationbuilding">
+    <price min="1986" average="2207" max="2428" />
+    <production time="720" amount="60" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="60" />
+        <ware ware="microchips" amount="44" />
+        <ware ware="quantumtubes" amount="20" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.22" />
+      </effects>
+    </production>
+    <icon active="ware_advancedelectronics" video="ware_advancedelectronics_macro" />
+  </ware>
+  <ware id="antimattercells" name="{20201,201}" description="{20201,202}" factoryname="{20201,204}" group="refined" transport="container" volume="18" tags="container economy">
+    <price min="181" average="202" max="222" />
+    <production time="120" amount="110" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="100" />
+        <ware ware="hydrogen" amount="320" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.21" />
+      </effects>
+    </production>
+    <icon active="ware_antimattercells" video="ware_antimattercells_macro" />
+  </ware>
+  <ware id="antimatterconverters" name="{20201,301}" description="{20201,302}" factoryname="{20201,304}" group="shiptech" transport="container" volume="10" tags="container economy">
+    <price min="626" average="737" max="847" />
+    <production time="300" amount="150" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedcomposites" amount="20" />
+        <ware ware="energycells" amount="80" />
+        <ware ware="microchips" amount="30" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.23" />
+      </effects>
+    </production>
+    <icon active="ware_antimatterconverters" video="ware_antimatterconverters_macro" />
+  </ware>
+  <ware id="bomb_player_limpet_emp_01_mk1" name="{20201,12301}" description="{20201,12302}" transport="inventory" volume="1" tags="bomb crafting inventory personalupgrade">
+    <price min="110000" average="120000" max="130000" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="inv_magneticmaterial" amount="1" />
+        <ware ware="inv_remotedetonator" amount="1" />
+        <ware ware="inv_securecontainer" amount="1" />
+      </primary>
+    </production>
+    <component ref="bomb_player_limpet_emp_01_mk1_macro" amount="1" />
+  </ware>
+  <ware id="bomb_player_limpet_mine_01_mk1" name="{20201,12201}" description="{20201,12202}" transport="inventory" volume="1" tags="bomb crafting inventory personalupgrade">
+    <price min="85000" average="90000" max="100000" />
+    <production time="10" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="inv_remotedetonator" amount="1" />
+        <ware ware="inv_securecontainer" amount="1" />
+        <ware ware="inv_unstablecrystal" amount="1" />
+      </primary>
+    </production>
+    <component ref="bomb_player_limpet_mine_01_mk1_macro" amount="1" />
+  </ware>
+  <ware id="claytronics" name="{20201,501}" description="{20201,502}" factoryname="{20201,504}" group="shiptech" transport="container" volume="24" tags="container economy stationbuilding">
+    <price min="4254" average="4478" max="4702" />
+    <production time="900" amount="120" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimattercells" amount="100" />
+        <ware ware="energycells" amount="140" />
+        <ware ware="microchips" amount="160" />
+        <ware ware="quantumtubes" amount="100" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.2" />
+      </effects>
+    </production>
+    <icon active="ware_claytronics" video="ware_claytronics_macro" />
+  </ware>
+  <ware id="clothingmod_0001" name="{20115,10011}" description="{20115,10012}" transport="inventory" volume="1" tags="clothingmod inventory">
+    <price min="1" average="1" max="1" />
+  </ware>
+  <ware id="clothingmod_0002" name="{20115,10021}" description="{20115,10022}" transport="inventory" volume="1" tags="clothingmod inventory">
+    <price min="1" average="1" max="1" />
+  </ware>
+  <ware id="countermeasure_flares_01" name="{20201,1001}" description="{20201,1002}" group="countermeasures" transport="equipment" volume="1" tags="countermeasure equipment">
+    <price min="2179" average="2421" max="2663" />
+    <production time="1" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="advancedcomposites" amount="1" />
+        <ware ware="energycells" amount="9" />
+      </primary>
+    </production>
+    <production time="10" amount="1" method="xenon" name="{20206,601}">
+      <primary>
+        <ware ware="energycells" amount="15" />
+        <ware ware="ore" amount="4" />
+        <ware ware="silicon" amount="3" />
+      </primary>
+    </production>
+    <component ref="countermeasure_flares_01_macro" amount="1" />
+    <use threshold="0" />
+  </ware>
+  <ware id="crew" name="{20208,10401}" description="{20208,10403}" transport="passenger" volume="1">
+    <price min="5000" average="7500" max="10000" />
+  </ware>
+  <ware id="dronecomponents" name="{20201,601}" description="{20201,602}" factoryname="{20201,604}" group="shiptech" transport="container" volume="30" tags="container economy">
+    <price min="2261" average="2512" max="2764" />
+    <production time="1200" amount="120" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="energycells" amount="60" />
+        <ware ware="engineparts" amount="20" />
+        <ware ware="hullparts" amount="20" />
+        <ware ware="microchips" amount="20" />
+        <ware ware="scanningarrays" amount="40" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.25" />
+      </effects>
+    </production>
+    <icon active="ware_dronecomponents" video="ware_dronecomponents_macro" />
+  </ware>
+  <ware id="energycells" name="{20201,701}" description="{20201,702}" factoryname="{20201,704}" group="energy" transport="container" volume="1" tags="container economy stationbuilding">
+    <price min="11" average="16" max="21" />
+    <production time="60" amount="200" method="default" name="{20206,101}">
+      <effects>
+        <effect type="work" product="0.25" />
+      </effects>
+    </production>
+    <icon active="ware_energycells" video="ware_energycells_macro" />
+  </ware>
+  <ware id="engineparts" name="{20201,801}" description="{20201,802}" factoryname="{20201,804}" group="hightech" transport="container" volume="30" tags="container economy">
+    <price min="480" average="600" max="719" />
+    <production time="900" amount="120" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimattercells" amount="80" />
+        <ware ware="energycells" amount="60" />
+        <ware ware="refinedmetals" amount="96" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.27" />
+      </effects>
+    </production>
+    <production time="900" amount="120" method="teladi" name="{20206,401}">
+      <primary>
+        <ware ware="antimattercells" amount="80" />
+        <ware ware="energycells" amount="60" />
+        <ware ware="teladianium" amount="70" />
+      </primary>
+      <effects>
+        <effect type="work" product="0.27" />
+      </effects>
+    </production>
+    <icon active="ware_engineparts" video="ware_engineparts_macro" />
+  </ware>
+  <ware id="engine_arg_l_allround_01_mk1" name="{20107,3004}" description="{20107,3002}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+    <price min="321518" average="357242" max="392966" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="147" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="engineparts" amount="67" />
+      </primary>
+    </production>
+    <component ref="engine_arg_l_allround_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="engine_arg_l_travel_01_mk1" name="{20107,3044}" description="{20107,3042}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+    <price min="589519" average="655021" max="720523" />
+    <production time="20" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="278" />
+        <ware ware="energycells" amount="25" />
+        <ware ware="engineparts" amount="113" />
+      </primary>
+    </production>
+    <component ref="engine_arg_l_travel_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="engine_arg_m_allround_01_mk1" name="{20107,2004}" description="{20107,2002}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+    <price min="11767" average="13074" max="14382" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="3" />
+        <ware ware="energycells" amount="15" />
+        <ware ware="engineparts" amount="5" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_allround_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="engine_arg_m_allround_01_mk2" name="{20107,2044}" description="{20107,2042}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+    <price min="58166" average="64629" max="71092" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="18" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="engineparts" amount="22" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_allround_01_mk2_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="engine_arg_m_allround_01_mk3" name="{20107,2084}" description="{20107,2082}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+    <price min="287722" average="319691" max="351660" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="90" />
+        <ware ware="energycells" amount="60" />
+        <ware ware="engineparts" amount="110" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_allround_01_mk3_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="engine_arg_m_combat_01_mk1" name="{20107,2204}" description="{20107,2202}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+    <price min="14357" average="15952" max="17547" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="3" />
+        <ware ware="energycells" amount="15" />
+        <ware ware="engineparts" amount="7" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_combat_01_mk1_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="engine_arg_m_combat_01_mk2" name="{20107,2244}" description="{20107,2242}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+    <price min="69711" average="77457" max="85202" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="22" />
+        <ware ware="energycells" amount="30" />
+        <ware ware="engineparts" amount="26" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_combat_01_mk2_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.4" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="engine_arg_m_combat_01_mk3" name="{20107,2284}" description="{20107,2282}" group="engines" transport="equipment" volume="1" tags="engine equipment noplayerblueprint">
+    <price min="345444" average="383827" max="422209" />
+    <production time="15" amount="1" method="default" name="{20206,101}">
+      <primary>
+        <ware ware="antimatterconverters" amount="110" />
+        <ware ware="energycells" amount="60" />
+        <ware ware="engineparts" amount="130" />
+      </primary>
+    </production>
+    <component ref="engine_arg_m_combat_01_mk3_macro" amount="1" />
+    <restriction licence="generaluseequipment" />
+    <use threshold="0.7" />
+    <owner faction="argon" />
+  </ware>
+  <ware id="workunit_idle" name="{20201,9801}" transport="workunit" volume="1" tags="workunit">
+    <price min="84" average="84" max="84" />
+    <production time="3600" amount="400" method="default" name="{20206,201}">
+      <primary>
+        <ware ware="foodrations" amount="300" />
+        <ware ware="medicalsupplies" amount="180" />
+      </primary>
+    </production>
+    <production time="3600" amount="400" method="paranid" name="{20206,301}">
+      <primary>
+        <ware ware="medicalsupplies" amount="180" />
+        <ware ware="sojahusk" amount="191" />
+      </primary>
+    </production>
+    <production time="3600" amount="400" method="teladi" name="{20206,401}">
+      <primary>
+        <ware ware="medicalsupplies" amount="180" />
+        <ware ware="nostropoil" amount="152" />
+      </primary>
+    </production>
+    <icon active="ware_workunit_idle" />
+  </ware>
+  <ware id="x4ep1_jttware" name="{20201,101}" description="{20201,102}" factoryname="{20109,5201}" group="shiptech" transport="container" volume="15" illegal="antigone argon holyorder ministry paranid teladi">
+    <price min="1" average="1" max="1" />
+    <icon active="ware_advancedelectronics" video="wrs_advancedelectronics_macro" />
+  </ware>
+</wares>

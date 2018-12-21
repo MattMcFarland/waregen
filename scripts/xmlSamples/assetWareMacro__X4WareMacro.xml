@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: alex (192.168.3.113) at 14.09.2017_13-28-01-->
+<macros>
+  <macro name="ware_advancedcomposites_macro" class="object">
+    <component ref="ware_advancedcomposites" />
+    <properties>
+      <identification unique="0" />
+    </properties>
+  </macro>
+</macros>

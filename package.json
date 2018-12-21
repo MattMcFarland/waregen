@@ -2,16 +2,26 @@
   "name": "waregen",
   "version": "0.0.1",
   "main": "index.js",
-  "bin": "dist/bin",
+  "bin": {
+    "waregen": "dist/bin"
+  },
   "author": "Matt McFarland <contact@mattmcfarland.com>",
   "license": "MIT",
   "scripts": {
-
+    "dev": "node dist/bin"
   },
   "devDependencies": {
     "@types/node": "^10.12.18",
     "@types/yargs": "^12.0.2",
+    "husky": "^1.3.0",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0",
     "typescript": "^3.2.2",
     "yargs": "^12.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }

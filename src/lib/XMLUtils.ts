@@ -20,11 +20,13 @@ export class XMLUtils {
       return reject(`invalid XML`);
     });
   };
+
   static parseXMLObjectAsync = (xmlRawString: string): Promise<any> => {
     const sanitizedXml = XMLUtils.safeString(xmlRawString);
     const parseString = promisify(new XML2JS.Parser().parseString);
     return parseString(sanitizedXml);
   };
+
   static exportNode = (node: any) => {
     return new XML2JS.Builder().buildObject(node);
   };

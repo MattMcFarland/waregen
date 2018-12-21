@@ -20,11 +20,12 @@ export const setupConfig = async (
     selector: WareGenConfigItem
   ) => PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedPathEntity
 > => {
-  const configData = await XMLUtils.readAbsXMLFile<X4WareGenXML>(configPath);
-  return (selector: WareGenConfigItem): any => {
-    const obj: X4WareGenXML = configData.XMLObject;
-    const result = <WareGenConfigItem>(
-      lodash.get(obj, `addwares.configuration[0].${selector}[0].$.value`)
+  const configData = await XMLUtils.readAbsXMLFile<string>(configPath);
+  return (selector: WareGenConfigItem) => {
+    const obj: any = configData.XMLObject;
+    const result = lodash.get(
+      obj,
+      `addwares.configuration[0].${selector}[0].$.value`
     );
 
     return result.replace(

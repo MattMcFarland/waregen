@@ -4,6 +4,8 @@ import XMLDom from "xmldom";
 import { XMLWrapper } from "./XMLWrapper";
 import XML2JS from "xml2js";
 import { promisify } from "util";
+import * as XPath from "xpath";
+
 export class XMLUtils {
   static readAbsXMLFile = <T>(absolutePath: string): Promise<XMLWrapper<T>> => {
     return new Promise(async (resolve, reject) => {
@@ -22,13 +24,14 @@ export class XMLUtils {
       return reject(`invalid XML`);
     });
   };
-
   static parseXMLObjectAsync = (xmlRawString: string): Promise<any> => {
     const sanitizedXml = XMLUtils.safeString(xmlRawString);
     const parseString = promisify(new XML2JS.Parser().parseString);
     return parseString(sanitizedXml);
   };
-
+  static exportNode = (node: any) => {
+    return new XML2JS.Builder().buildObject(node);
+  };
   static parseXMLDocument = (xmlRawString: string): XMLDocument => {
     const sanitizedXml = XMLUtils.safeString(xmlRawString);
     return new XMLDom.DOMParser().parseFromString(sanitizedXml);

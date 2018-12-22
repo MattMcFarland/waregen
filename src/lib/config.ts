@@ -1,4 +1,4 @@
-import { XMLUtils } from "./XMLUtils";
+import * as XMLUtils from "./XMLUtils";
 import { log } from "./System";
 import lodash from "lodash";
 import { SelectedValue } from "xpath";

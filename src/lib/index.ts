@@ -5,7 +5,7 @@ import * as _ from "lodash";
 
 import { die, log } from "./System";
 import { setupConfig } from "./config";
-import { XMLUtils } from "./XMLUtils";
+import * as XMLUtils from "./XMLUtils";
 import { X4WareGenXML } from "../../XMLTypes/X4WareGenXML";
 import jetpack from "fs-jetpack";
 import { X4WareMacro } from "../../XMLTypes/X4WareMacro";

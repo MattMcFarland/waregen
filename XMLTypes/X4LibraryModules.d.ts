@@ -2,40 +2,49 @@ export interface X4LibraryModules {
   modules: Modules;
 }
 export interface Modules {
+  Children: Children;
+}
+export interface Children {
   module?: (ModuleEntity)[] | null;
 }
 export interface ModuleEntity {
-  $: $;
-  category?: (CategoryEntity)[] | null;
-  compatibilities?: (CompatibilitiesEntity)[] | null;
+  Attributes: Attributes;
+  Children: Children1;
 }
-export interface $ {
+export interface Attributes {
   id: string;
   group: string;
 }
-export interface CategoryEntity {
-  $: $1;
+export interface Children1 {
+  category?: (CategoryEntity)[] | null;
+  compatibilities?: (CompatibilitiesEntity)[] | null;
 }
-export interface $1 {
+export interface CategoryEntity {
+  Attributes: Attributes1;
+}
+export interface Attributes1 {
   ware?: string | null;
   tags: string;
   race: string;
   faction: string;
 }
 export interface CompatibilitiesEntity {
+  Children: Children2;
+}
+export interface Children2 {
   limits?: (LimitsEntity)[] | null;
   production?: (ProductionEntity)[] | null;
 }
 export interface LimitsEntity {
-  $: $2;
+  Attributes: Attributes2;
 }
-export interface $2 {
-  production: string;
+export interface Attributes2 {
+  production: number;
 }
 export interface ProductionEntity {
-  $: $3;
+  Attributes: Attributes3;
 }
-export interface $3 {
+export interface Attributes3 {
   ware: string;
-  chance: string;
+  chance: number;
 }

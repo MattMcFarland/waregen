@@ -2,114 +2,143 @@ export interface X4WareGenXML {
   addwares: Addwares;
 }
 export interface Addwares {
+  Children: Children;
+}
+export interface Children {
   configuration?: (ConfigurationEntity)[] | null;
   generation?: (GenerationEntity)[] | null;
 }
 export interface ConfigurationEntity {
+  Children: Children1;
+}
+export interface Children1 {
   prefix?:
-    | (PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedPathEntity)[]
+    | (PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedpathEntity)[]
     | null;
   gamepath?:
-    | (PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedPathEntity)[]
+    | (PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedpathEntity)[]
     | null;
   modpath?:
-    | (PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedPathEntity)[]
+    | (PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedpathEntity)[]
     | null;
-  unpackedPath?:
-    | (PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedPathEntity)[]
+  unpackedpath?:
+    | (PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedpathEntity)[]
     | null;
   defaults?: (DefaultsEntity)[] | null;
 }
-export interface PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedPathEntity {
-  $: $;
+export interface PrefixEntityOrGamepathEntityOrModpathEntityOrUnpackedpathEntity {
+  Attributes: Attributes;
 }
-export interface $ {
+export interface Attributes {
   value: string;
 }
 export interface DefaultsEntity {
+  Children: Children2;
+}
+export interface Children2 {
   ware?: (WareEntity)[] | null;
 }
 export interface WareEntity {
+  Children: Children3;
+}
+export interface Children3 {
   price?: (PriceEntity)[] | null;
   production?: (ProductionEntity)[] | null;
   icon?: (IconEntity)[] | null;
 }
 export interface PriceEntity {
-  $: $1;
+  Attributes: Attributes1;
 }
-export interface $1 {
-  min: string;
-  average: string;
-  max: string;
+export interface Attributes1 {
+  min: number;
+  average: number;
+  max: number;
 }
 export interface ProductionEntity {
-  $: $2;
+  Attributes: Attributes2;
+  Children: Children4;
+}
+export interface Attributes2 {
+  time: number;
+  amount: number;
+  method: string;
+}
+export interface Children4 {
   primary?: (PrimaryEntity)[] | null;
   effects?: (EffectsEntity)[] | null;
 }
-export interface $2 {
-  time: string;
-  amount: string;
-  method: string;
-}
 export interface PrimaryEntity {
+  Children: Children5;
+}
+export interface Children5 {
   ware?: (WareEntity1)[] | null;
 }
 export interface WareEntity1 {
-  $: $3;
+  Attributes: Attributes3;
 }
-export interface $3 {
+export interface Attributes3 {
   ware: string;
-  amount: string;
+  amount: number;
 }
 export interface EffectsEntity {
+  Children: Children6;
+}
+export interface Children6 {
   effect?: (EffectEntity)[] | null;
 }
 export interface EffectEntity {
-  $: $4;
+  Attributes: Attributes4;
 }
-export interface $4 {
+export interface Attributes4 {
   type: string;
-  product: string;
+  product: number;
 }
 export interface IconEntity {
-  $: $5;
+  Attributes: Attributes5;
 }
-export interface $5 {
+export interface Attributes5 {
   active: string;
   video: string;
 }
 export interface GenerationEntity {
+  Children: Children7;
+}
+export interface Children7 {
   addware?: (AddwareEntity)[] | null;
 }
 export interface AddwareEntity {
-  $: $6;
-  ware?: (WareEntity2)[] | null;
+  Attributes: Attributes6;
+  Children: Children8;
 }
-export interface $6 {
+export interface Attributes6 {
   id: string;
   cloneProductionModuleFrom: string;
 }
-export interface WareEntity2 {
-  $: $7;
-  price?: (PriceEntity)[] | null;
-  production?: (ProductionEntity1)[] | null;
+export interface Children8 {
+  ware?: (WareEntity2)[] | null;
 }
-export interface $7 {
+export interface WareEntity2 {
+  Attributes: Attributes7;
+  Children: Children9;
+}
+export interface Attributes7 {
   name: string;
   group: string;
   transport: string;
-  volume: string;
+  volume: number;
   tags: string;
 }
-export interface ProductionEntity1 {
-  $: $8;
-  primary?: (PrimaryEntity)[] | null;
-  effects?: (EffectsEntity)[] | null;
+export interface Children9 {
+  price?: (PriceEntity)[] | null;
+  production?: (ProductionEntity1)[] | null;
 }
-export interface $8 {
-  time: string;
-  amount: string;
+export interface ProductionEntity1 {
+  Attributes: Attributes8;
+  Children: Children4;
+}
+export interface Attributes8 {
+  time: number;
+  amount: number;
   method: string;
   name: string;
 }

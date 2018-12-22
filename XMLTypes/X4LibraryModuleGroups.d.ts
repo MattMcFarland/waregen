@@ -2,18 +2,24 @@ export interface X4LibraryModuleGroups {
   groups: Groups;
 }
 export interface Groups {
+  Children: Children;
+}
+export interface Children {
   group?: (GroupEntity)[] | null;
 }
 export interface GroupEntity {
-  $: $;
-  select?: (SelectEntity)[] | null;
+  Attributes: Attributes;
+  Children: Children1;
 }
-export interface $ {
+export interface Attributes {
   name: string;
 }
-export interface SelectEntity {
-  $: $1;
+export interface Children1 {
+  select?: (SelectEntity)[] | null;
 }
-export interface $1 {
+export interface SelectEntity {
+  Attributes: Attributes1;
+}
+export interface Attributes1 {
   macro: string;
 }

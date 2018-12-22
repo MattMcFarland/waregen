@@ -2,29 +2,38 @@ export interface X4WareMacro {
   macros: Macros;
 }
 export interface Macros {
+  Children: Children;
+}
+export interface Children {
   macro?: (MacroEntity)[] | null;
 }
 export interface MacroEntity {
-  $: $;
-  component?: (ComponentEntity)[] | null;
-  properties?: (PropertiesEntity)[] | null;
+  Attributes: Attributes;
+  Children: Children1;
 }
-export interface $ {
+export interface Attributes {
   name: string;
   class: string;
 }
-export interface ComponentEntity {
-  $: $1;
+export interface Children1 {
+  component?: (ComponentEntity)[] | null;
+  properties?: (PropertiesEntity)[] | null;
 }
-export interface $1 {
+export interface ComponentEntity {
+  Attributes: Attributes1;
+}
+export interface Attributes1 {
   ref: string;
 }
 export interface PropertiesEntity {
+  Children: Children2;
+}
+export interface Children2 {
   identification?: (IdentificationEntity)[] | null;
 }
 export interface IdentificationEntity {
-  $: $2;
+  Attributes: Attributes2;
 }
-export interface $2 {
-  unique: string;
+export interface Attributes2 {
+  unique: number;
 }

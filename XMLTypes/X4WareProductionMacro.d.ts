@@ -2,24 +2,33 @@ export interface X4WareProductionMacro {
   macros: Macros;
 }
 export interface Macros {
+  Children: Children;
+}
+export interface Children {
   macro?: (MacroEntity)[] | null;
 }
 export interface MacroEntity {
-  $: $;
-  component?: (ComponentEntityOrSetEntity)[] | null;
-  properties?: (PropertiesEntity)[] | null;
+  Attributes: Attributes;
+  Children: Children1;
 }
-export interface $ {
+export interface Attributes {
   name: string;
   class: string;
 }
-export interface ComponentEntityOrSetEntity {
-  $: $1;
+export interface Children1 {
+  component?: (ComponentEntityOrSetEntity)[] | null;
+  properties?: (PropertiesEntity)[] | null;
 }
-export interface $1 {
+export interface ComponentEntityOrSetEntity {
+  Attributes: Attributes1;
+}
+export interface Attributes1 {
   ref: string;
 }
 export interface PropertiesEntity {
+  Children: Children2;
+}
+export interface Children2 {
   identification?: (IdentificationEntity)[] | null;
   build?: (BuildEntity)[] | null;
   explosiondamage?: (ExplosiondamageEntity)[] | null;
@@ -29,49 +38,58 @@ export interface PropertiesEntity {
   workforce?: (HullEntityOrWorkforceEntity)[] | null;
 }
 export interface IdentificationEntity {
-  $: $2;
+  Attributes: Attributes2;
 }
-export interface $2 {
+export interface Attributes2 {
   name: string;
   shortname: string;
   makerrace: string;
   description: string;
 }
 export interface BuildEntity {
+  Children: Children3;
+}
+export interface Children3 {
   sets?: (SetsEntity)[] | null;
 }
 export interface SetsEntity {
+  Children: Children4;
+}
+export interface Children4 {
   set?: (ComponentEntityOrSetEntity)[] | null;
 }
 export interface ExplosiondamageEntity {
-  $: $3;
+  Attributes: Attributes3;
 }
-export interface $3 {
-  value: string;
+export interface Attributes3 {
+  value: number;
 }
 export interface HullEntityOrWorkforceEntity {
-  $: $4;
+  Attributes: Attributes4;
 }
-export interface $4 {
-  max: string;
+export interface Attributes4 {
+  max: number;
 }
 export interface SecrecyEntity {
-  $: $5;
+  Attributes: Attributes5;
 }
-export interface $5 {
-  level: string;
+export interface Attributes5 {
+  level: number;
 }
 export interface ProductionEntity {
-  $: $6;
-  queue?: (QueueEntity)[] | null;
+  Attributes: Attributes6;
+  Children: Children5;
 }
-export interface $6 {
+export interface Attributes6 {
   wares: string;
 }
-export interface QueueEntity {
-  $: $7;
+export interface Children5 {
+  queue?: (QueueEntity)[] | null;
 }
-export interface $7 {
+export interface QueueEntity {
+  Attributes: Attributes7;
+}
+export interface Attributes7 {
   ware: string;
   method: string;
 }

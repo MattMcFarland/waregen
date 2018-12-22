@@ -3,9 +3,14 @@
     "target": "esnext",
     "module": "commonjs",
     "outDir": "./dist",
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
     "strict": true,
     "esModuleInterop": true,
-    "strictNullChecks": false
+    "strictNullChecks": true
   },
-  "compileOnSave": true
+  "compileOnSave": true,
+  "exclude": ["src/**/*.spec.ts"],
+  "include": ["src/**/*.ts"]
 }

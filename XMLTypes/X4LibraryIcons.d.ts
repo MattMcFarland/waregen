@@ -2,9 +2,6 @@ export interface X4LibraryIcons {
   icons: Icons;
 }
 export interface Icons {
-  Children: Children;
-}
-export interface Children {
   icon?: (IconEntity)[] | null;
 }
 export interface IconEntity {

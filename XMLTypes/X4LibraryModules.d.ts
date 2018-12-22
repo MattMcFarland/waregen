@@ -2,22 +2,16 @@ export interface X4LibraryModules {
   modules: Modules;
 }
 export interface Modules {
-  Children: Children;
-}
-export interface Children {
   module?: (ModuleEntity)[] | null;
 }
 export interface ModuleEntity {
   Attributes: Attributes;
-  Children: Children1;
+  category?: (CategoryEntity)[] | null;
+  compatibilities?: (CompatibilitiesEntity)[] | null;
 }
 export interface Attributes {
   id: string;
   group: string;
-}
-export interface Children1 {
-  category?: (CategoryEntity)[] | null;
-  compatibilities?: (CompatibilitiesEntity)[] | null;
 }
 export interface CategoryEntity {
   Attributes: Attributes1;
@@ -29,9 +23,6 @@ export interface Attributes1 {
   faction: string;
 }
 export interface CompatibilitiesEntity {
-  Children: Children2;
-}
-export interface Children2 {
   limits?: (LimitsEntity)[] | null;
   production?: (ProductionEntity)[] | null;
 }

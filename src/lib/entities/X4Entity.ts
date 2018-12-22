@@ -1,4 +1,4 @@
-import { Builder, OptionsV2 as BuilderOptions } from "xml2js";
+import { Builder, BuilderOptions } from "../utils/xml/XMLParser";
 
 export class X4Entity {
   protected xmlDef: any = {};

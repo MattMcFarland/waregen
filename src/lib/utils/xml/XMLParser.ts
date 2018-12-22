@@ -1,6 +1,7 @@
-import { Parser as XParser, OptionsV2 as ParserOptions } from "xml2js";
+import { Builder as XBuilder, Parser as XParser, OptionsV2 } from "xml2js";
 import { parseBooleans, parseNumbers } from "xml2js/lib/processors";
-export { parseString, Builder } from "xml2js";
+export interface ParserOptions extends OptionsV2 {}
+export interface BuilderOptions extends OptionsV2 {}
 
 export const xml2jsParserOptions: ParserOptions = {
   attrkey: "Attributes" /* Prefix that is used to access the attributes. */,
@@ -17,9 +18,9 @@ export const xml2jsParserOptions: ParserOptions = {
   mergeAttrs: false /* Merge attributes and child elements as properties of the parent, instead of keying attributes off a child attribute object. This option is ignored if ignoreAttrs is false. */,
   validator: undefined /* You can specify a callable that validates the resulting structure somehow, however you want. See unit tests for an example. */,
   xmlns: false /* Give each element a field usually called '$ns' (the first character is the same as attrkey) that contains its local name and namespace URI. */,
-  explicitChildren: true /* Put child elements to separate property. Doesn't work with mergeAttrs = true. If element has no children then "children" won't be created. */,
+  explicitChildren: false /* Put child elements to separate property. Doesn't work with mergeAttrs = true. If element has no children then "children" won't be created. */,
   childkey:
-    "Children" /* Prefix that is used to access child elements if explicitChildren is set to true. */,
+    "" /* Prefix that is used to access child elements if explicitChildren is set to true. */,
   preserveChildrenOrder: false /* Modifies the behavior of explicitChildren so that the value of the "children" property becomes an ordered array. When this is true, every node will also get a #name field whose value will correspond to the XML nodeName, so that you may iterate the "children" array and still be able to determine node names. The named (and potentially unordered) properties are also retained in this configuration at the same level as the ordered "children" array. */,
   charsAsChildren: false /* Determines whether chars should be considered children if explicitChildren is on. */,
   includeWhiteChars: false /* Determines whether whitespace-only text nodes should be included. */,
@@ -51,5 +52,20 @@ export class Parser {
           return resolve(res);
         });
       });
+  }
+}
+
+export class Builder {
+  private builder: XBuilder;
+  private _settings: ParserOptions;
+  get settings(): ParserOptions {
+    return this._settings;
+  }
+  buildObject: (obj: any) => string;
+  constructor(options?: ParserOptions) {
+    this._settings = Object.assign(xml2jsParserOptions, options);
+    this.builder = new XBuilder(this._settings);
+    console.log(this._settings);
+    this.buildObject = (obj: any) => this.builder.buildObject(obj);
   }
 }

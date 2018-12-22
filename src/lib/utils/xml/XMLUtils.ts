@@ -1,5 +1,5 @@
 import Jetpack from "fs-jetpack";
-import * as System from "./System";
+import * as System from "../System";
 import { XMLWrapper } from "./XMLWrapper";
 import XML2JS from "xml2js";
 import { promisify } from "util";

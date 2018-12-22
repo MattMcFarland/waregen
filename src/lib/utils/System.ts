@@ -1,5 +1,4 @@
 import { Signale } from "signale";
-import chalk from "chalk";
 export const log = new Signale({
   disabled: false,
   interactive: false,
@@ -34,11 +33,13 @@ export const log = new Signale({
   }
 });
 
-export const die = (msg: string) => {
+export const die = (msg: string): void => {
   log.fatal(msg);
   process.exit(1);
 };
-
+export const exhaustiveFail = (msg: string): never => {
+  throw new Error(msg);
+};
 process.on("unhandledRejection", err => {
   die(err);
   process.exit(1);

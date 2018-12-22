@@ -1,18 +1,21 @@
-const jetpack = require("fs-jetpack");
-const parseString = require("xml2js").parseString;
+import jetpack from "fs-jetpack";
+import { Parser } from "../src/lib/utils/xml/XMLParser";
+
 const shelljs = require("shelljs");
 
 const xmlFiles = jetpack.find("scripts/xmlSamples", { matching: "*.xml" });
+const parser = new Parser();
 
-xmlFiles.forEach(xmlFile => {
+xmlFiles.forEach(async (xmlFile: string) => {
   const data = jetpack.read(xmlFile);
-  parseString(data, (err, result) => {
+  if (data) {
+    const xmlObject = await parser.parseString(data);
     const jsonName = xmlFile.split(".")[0] + ".json";
     const RootName = xmlFile.split("__")[1].split(".")[0];
-    jetpack.write(jsonName, JSON.stringify(result));
+    jetpack.write(jsonName, JSON.stringify(xmlObject));
     shelljs.exec(
       `yarn make_types -i XMLTypes/${RootName}.d.ts ${jsonName} ${RootName}`
     );
     shelljs.exec(`rm ${jsonName}`);
-  });
+  }
 });

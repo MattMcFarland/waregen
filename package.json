@@ -13,6 +13,7 @@
     "build:exe": "pkg . --output build/waregen.exe",
     "build:zip": "node scripts/make-zip.js",
     "build": "node scripts/build.js",
+    "build:watch": "tsc -p . -watch",
     "types": "ts-node scripts/create-types.ts"
   },
   "dependencies": {

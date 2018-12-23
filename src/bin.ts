@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import Yargs from "yargs";
-import WareGen from "./lib/index";
+import { generate } from "./lib";
 
 const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   yargs.positional("configXML", {
@@ -17,5 +17,5 @@ const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   .help().argv;
 
 if (args.configXML) {
-  WareGen(args.configXML, Boolean(args.force));
+  generate(args.configXML, Boolean(args.force));
 }

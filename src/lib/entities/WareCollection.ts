@@ -1,6 +1,6 @@
 import { X4Entity, X4EntityType } from "./X4Entity";
 import { Ware, WareEntity } from "./Ware";
-import { Wares } from "../../../XMLTypes/X4LibraryWares";
+import { Wares } from "@@/XMLTypes/X4LibraryWares";
 export interface WaresIndex {
   [key: string]: Ware;
 }

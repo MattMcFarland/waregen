@@ -6,4 +6,1090 @@
   <icon name="missile_dumbfire_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_ms_dumbfire_mk2.tga" height="32" width="64"></icon>
   <icon name="missile_dumbfire_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_ms_dumbfire_mk3.tga" height="32" width="64"></icon>
 
+  <icon name="missile_guided_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_ms_guided_mk1.tga" height="32" width="64"></icon>
+  <icon name="missile_guided_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_ms_guided_mk2.tga" height="32" width="64"></icon>
+  <icon name="missile_guided_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_ms_guided_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="missile_torpedo_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_ms_torpedo_mk1.tga" height="32" width="64"></icon>
+  <icon name="missile_torpedo_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_ms_torpedo_mk2.tga" height="32" width="64"></icon>
+  <icon name="missile_torpedo_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_ms_torpedo_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_beam_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_beam_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_beam_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_beam_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_beam_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_beam_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_charge_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_charge_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_charge_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_charge_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_charge_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_charge_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_gatling_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_gatling_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_gatling_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_gatling_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_gatling_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_gatling_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_ion_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_ion_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_ion_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_ion_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_ion_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_ion_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_laser_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_laser_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_laser_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_laser_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_laser_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_laser_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_mining_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_mining_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_mining_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_mining_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_mining_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_mining_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_plasma_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_plasma_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_plasma_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_plasma_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_plasma_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_plasma_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_railgun_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_railgun_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_railgun_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_railgun_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_railgun_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_railgun_mk3.tga" height="32" width="64"></icon>
+
+  <icon name="weapon_shotgun_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_shotgun_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_shotgun_mk2" texture="assets\fx\gui\textures\PlayerHud\hud_wp_shotgun_mk2.tga" height="32" width="64"></icon>
+  <icon name="weapon_shotgun_mk3" texture="assets\fx\gui\textures\PlayerHud\hud_wp_shotgun_mk3.tga" height="32" width="64"></icon>
+
+  <!-- space suit tools / weapons -->
+  <icon name="weapon_handlaser_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_handlaser_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_repairlaser_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_repairlaser_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_bomb_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_bomb_mk1.tga" height="32" width="64"></icon>
+  <icon name="weapon_empbomb_mk1" texture="assets\fx\gui\textures\PlayerHud\hud_wp_empbomb_mk1.tga" height="32" width="64"></icon>
+
+  <icon name="weaponmode_attackenemies" texture="assets\fx\gui\textures\PlayerHud\hud_mode_attackenemies.tga" height="32" width="32"></icon>
+  <icon name="weaponmode_autoassist" texture="assets\fx\gui\textures\PlayerHud\hud_mode_autoassist.tga" height="32" width="32"></icon>
+  <icon name="weaponmode_defend" texture="assets\fx\gui\textures\PlayerHud\hud_mode_defend.tga" height="32" width="32"></icon>
+  <icon name="weaponmode_holdfire" texture="assets\fx\gui\textures\PlayerHud\hud_mode_holdfire.tga" height="32" width="32"></icon>
+  <icon name="weaponmode_mining" texture="assets\fx\gui\textures\PlayerHud\hud_mode_mining.tga" height="32" width="32"></icon>
+  <icon name="weaponmode_missiledefence" texture="assets\fx\gui\textures\PlayerHud\hud_mode_missiledefense.tga" height="32" width="32"></icon>
+  <!-- The following icon is referenced by name in launcher.cpp -->
+  <icon name="weaponmode_empty_missile" texture="assets\fx\gui\textures\PlayerHud\hud_mode_empty_missile.tga" height="32" width="32"></icon>
+
+  <!-- weapons fallback icon -->
+  <icon name="default_bullet_icon" texture="assets\fx\gui\textures\PlayerHud\hud_wp_beam_mk1.tga" height="32" width="64"></icon>
+
+  <!-- race icons -->
+  <icon name="race_argon" texture="assets\fx\gui\textures\races\race_argon.tga" height="512" width="512"></icon>
+  <icon name="race_boron" texture="assets\fx\gui\textures\races\race_boron.tga" height="512" width="512"></icon>
+  <icon name="race_khaak" texture="assets\fx\gui\textures\races\race_khaak.tga" height="512" width="512"></icon>
+  <icon name="race_paranid" texture="assets\fx\gui\textures\races\race_paranid.tga" height="512" width="512"></icon>
+  <icon name="race_split" texture="assets\fx\gui\textures\races\race_split.tga" height="512" width="512"></icon>
+  <icon name="race_teladi" texture="assets\fx\gui\textures\races\race_teladi.tga" height="512" width="512"></icon>
+  <icon name="race_terran" texture="assets\fx\gui\textures\races\race_terran.tga" height="512" width="512"></icon>
+  <icon name="race_xenon" texture="assets\fx\gui\textures\races\race_xenon.tga" height="512" width="512"></icon>
+
+  <!-- faction icons -->
+  <icon name="faction_alliance" texture="assets\fx\gui\textures\factions\faction_alliance.tga" height="256" width="256"></icon>
+  <icon name="faction_antigone" texture="assets\fx\gui\textures\factions\faction_antigone.tga" height="256" width="256"></icon>
+  <icon name="faction_argon" texture="assets\fx\gui\textures\factions\faction_argon.tga" height="256" width="256"></icon>
+
+  <icon name="faction_civilian" texture="assets\fx\gui\textures\factions\faction_civilian.tga" height="256" width="256"></icon>
+  <icon name="faction_criminal" texture="assets\fx\gui\textures\factions\faction_criminal.tga" height="256" width="256"></icon>
+  <icon name="faction_hatikvah" texture="assets\fx\gui\textures\factions\faction_hatikvah.tga" height="256" width="256"></icon>
+  <icon name="faction_holyorder" texture="assets\fx\gui\textures\factions\faction_holyorder.tga" height="256" width="256"></icon>
+  <icon name="faction_khaak" texture="assets\fx\gui\textures\factions\faction_khaak.tga" height="256" width="256"></icon>
+  <icon name="faction_ministry" texture="assets\fx\gui\textures\factions\faction_ministry.tga" height="256" width="256"></icon>
+  <icon name="faction_ownerless" texture="assets\fx\gui\textures\factions\faction_ownerless.tga" height="256" width="256"></icon>
+  <icon name="faction_paranid" texture="assets\fx\gui\textures\factions\faction_paranid.tga" height="256" width="256"></icon>
+  <icon name="faction_player" texture="assets\fx\gui\textures\factions\faction_player.tga" height="256" width="256"></icon>
+  <icon name="faction_scaleplate" texture="assets\fx\gui\textures\factions\faction_scaleplate.tga" height="256" width="256"></icon>
+  <icon name="faction_smuggler" texture="assets\fx\gui\textures\factions\faction_criminal.tga" height="256" width="256"></icon>
+
+  <icon name="faction_teladi" texture="assets\fx\gui\textures\factions\faction_teladi.tga" height="256" width="256"></icon>
+
+  <icon name="faction_visitor" texture="assets\fx\gui\textures\factions\faction_visitor.tga" height="256" width="256"></icon>
+  <icon name="faction_xenon" texture="assets\fx\gui\textures\factions\faction_xenon.tga" height="256" width="256"></icon>
+
+  <!-- player icons -->
+  <icon name="playerlogo_*" texture="assets\fx\gui\textures\player_logos\playerlogo_*.tga" height="256" width="256"/>
+  <icon name="customlogo_*" texture="logos\*.*" personal="true" height="256" width="256"/>
+
+  <!-- OLD XRfaction icons 
+  <icon name="faction_albionenergy" texture="assets\fx\gui\textures\factions\faction_ae.tga" height="128" width="128"></icon>
+  <icon name="faction_aquarius" texture="assets\fx\gui\textures\factions\faction_aquarius.tga" height="128" width="128"></icon>
+
+  <icon name="faction_beryll" texture="assets\fx\gui\textures\factions\faction_beryll.tga" height="128" width="128"></icon>
+  <icon name="faction_canteran" texture="assets\fx\gui\textures\factions\faction_canteran.tga" height="128" width="128"></icon>
+  <icon name="faction_chow" texture="assets\fx\gui\textures\factions\faction_chow.tga" height="128" width="128"></icon>
+  <icon name="faction_enemy" texture="assets\fx\gui\textures\factions\faction_enemy.tga" height="128" width="128"></icon>
+  <icon name="faction_familyryak" texture="assets\fx\gui\textures\factions\faction_ryak.tga" height="128" width="128"></icon>
+  <icon name="faction_fijiargnu" texture="assets\fx\gui\textures\factions\faction_fijiargnu.tga" height="128" width="128"></icon>
+  <icon name="faction_frantonpharma" texture="assets\fx\gui\textures\factions\faction_fp.tga" height="128" width="128"></icon>
+  <icon name="faction_friend" texture="assets\fx\gui\textures\factions\faction_friend.tga" height="128" width="128"></icon>
+  <icon name="faction_heartofalbion" texture="assets\fx\gui\textures\factions\faction_heartofalbion.tga" height="128" width="128"></icon>
+  <icon name="faction_jonferson" texture="assets\fx\gui\textures\factions\faction_jsdd.tga" height="128" width="128"></icon>
+  <icon name="faction_leddaindustrial" texture="assets\fx\gui\textures\factions\faction_ledda.tga" height="128" width="128"></icon>
+  <icon name="faction_neutral" texture="assets\fx\gui\textures\factions\faction_neutral.tga" height="128" width="128"></icon>
+  <icon name="faction_nolimits" texture="assets\fx\gui\textures\factions\faction_no_limits.tga" height="128" width="128"></icon>
+  <icon name="faction_ownerless" texture="assets\fx\gui\textures\factions\faction_ownerless.tga" height="128" width="128"></icon>
+
+  <icon name="faction_plutarch" texture="assets\fx\gui\textures\factions\faction_pmc.tga" height="128" width="128"></icon>
+  <icon name="faction_reivers" texture="assets\fx\gui\textures\factions\faction_reivers.tga" height="128" width="128"></icon>
+  <icon name="faction_standard" texture="assets\fx\gui\textures\factions\faction_standard.tga" height="128" width="128"></icon>
+  <icon name="faction_wholesomefoods" texture="assets\fx\gui\textures\factions\faction_wf.tga" height="128" width="128"></icon>
+  <icon name="faction_xenon" texture="assets\fx\gui\textures\factions\faction_xenonmatrix.tga" height="128" width="128"></icon>
+  <icon name="faction_teladi" texture="assets\fx\gui\textures\factions\faction_teladi_union.tga" height="128" width="128"></icon>
+  <icon name="faction_teladidrugrunner" texture="assets\fx\gui\textures\factions\faction_the_cartel.tga" height="128" width="128"></icon>
+  <icon name="faction_teladigunrunner" texture="assets\fx\gui\textures\factions\faction_uguras_armaments.tga" height="128" width="128"></icon>
+
+  <icon name="faction_sonraenergy" texture="assets\fx\gui\textures\factions\faction_sonra_energy.tga" height="128" width="128"></icon>
+  <icon name="faction_sovereignsyndicate" texture="assets\fx\gui\textures\factions\faction_sovereign_syndicate.tga" height="128" width="128"></icon>
+  <icon name="faction_hereticvanguards" texture="assets\fx\gui\textures\factions\faction_heretic_vanguards.tga" height="128" width="128"></icon-->
+
+
+  <!--licence icons-->
+  <icon name="licence_hazardmats" texture="assets\fx\gui\textures\licence\licence_hazardmats.tga" height="128" width="128"></icon>
+  <icon name="licence_intelligence" texture="assets\fx\gui\textures\licence\licence_intelligence.tga" height="128" width="128"></icon>
+  <icon name="licence_intoxicants" texture="assets\fx\gui\textures\licence\licence_intoxicants.tga" height="128" width="128"></icon>
+  <icon name="licence_military" texture="assets\fx\gui\textures\licence\licence_military.tga" height="128" width="128"></icon>
+  <icon name="licence_pharma" texture="assets\fx\gui\textures\licence\licence_pharma.tga" height="128" width="128"></icon>
+  <icon name="licence_police" texture="assets\fx\gui\textures\licence\licence_police.tga" height="128" width="128"></icon>
+  <icon name="licence_protect" texture="assets\fx\gui\textures\licence\licence_protect.tga" height="128" width="128"></icon>
+
+  <!-- mission offer icons (base) -->
+  <icon name="missionoffer_plot_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_plot_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_plot_active" texture="assets\fx\gui\textures\mission_offers\moffer_plot_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_plot_select" texture="assets\fx\gui\textures\mission_offers\moffer_plot_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_trade_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_trade_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_trade_active" texture="assets\fx\gui\textures\mission_offers\moffer_trade_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_trade_select" texture="assets\fx\gui\textures\mission_offers\moffer_trade_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_fight_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_fight_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_fight_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_build_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_build_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_build_active" texture="assets\fx\gui\textures\mission_offers\moffer_build_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_build_select" texture="assets\fx\gui\textures\mission_offers\moffer_build_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_think_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_think_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_think_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_station_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_station_active" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_station_select" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_chain_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_chain_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_chain_active" texture="assets\fx\gui\textures\mission_offers\moffer_chain_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_chain_select" texture="assets\fx\gui\textures\mission_offers\moffer_chain_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_other_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_other_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_other_active" texture="assets\fx\gui\textures\mission_offers\moffer_other_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_other_select" texture="assets\fx\gui\textures\mission_offers\moffer_other_sel.tga" height="128" width="128"></icon>
+  <!-- mission offer icons (generic) -->
+  <icon name="missionoffer_board_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_board_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_board_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_collect_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_collect_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_collect_active" texture="assets\fx\gui\textures\mission_offers\moffer_collect_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_collect_select" texture="assets\fx\gui\textures\mission_offers\moffer_collect_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_deliver_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_trade_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_deliver_active" texture="assets\fx\gui\textures\mission_offers\moffer_trade_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_deliver_select" texture="assets\fx\gui\textures\mission_offers\moffer_trade_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_destroy_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_destroy_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_destroy_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_drop_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_drop_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_drop_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_escort_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_escort_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_escort_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_explore_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_explore_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_explore_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_extend_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_extend_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_extend_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_find_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_find_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_find_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_follow_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_follow_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_follow_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_hack_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_hack_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_hack_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_kill_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_kill_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_kill_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_patrol_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_patrol_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_patrol_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_pickup_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_pickup_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_pickup_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_protect_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_protect_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_protect_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_procure_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_trade_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_procure_active" texture="assets\fx\gui\textures\mission_offers\moffer_trade_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_procure_select" texture="assets\fx\gui\textures\mission_offers\moffer_trade_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_race_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_race_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_race_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_raid_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_trade_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_raid_active" texture="assets\fx\gui\textures\mission_offers\moffer_trade_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_raid_select" texture="assets\fx\gui\textures\mission_offers\moffer_trade_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_repair_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_build_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_repair_active" texture="assets\fx\gui\textures\mission_offers\moffer_build_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_repair_select" texture="assets\fx\gui\textures\mission_offers\moffer_build_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_rescue_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_rescue_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_rescue_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_research_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_trade_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_research_active" texture="assets\fx\gui\textures\mission_offers\moffer_trade_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_research_select" texture="assets\fx\gui\textures\mission_offers\moffer_trade_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_restock_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_trade_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_restock_active" texture="assets\fx\gui\textures\mission_offers\moffer_trade_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_restock_select" texture="assets\fx\gui\textures\mission_offers\moffer_trade_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_scan_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_scan_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_scan_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_smuggle_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_trade_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_smuggle_active" texture="assets\fx\gui\textures\mission_offers\moffer_trade_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_smuggle_select" texture="assets\fx\gui\textures\mission_offers\moffer_trade_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_talkto_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_talkto_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_talkto_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_transport_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_trade_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_transport_active" texture="assets\fx\gui\textures\mission_offers\moffer_trade_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_transport_select" texture="assets\fx\gui\textures\mission_offers\moffer_trade_sel.tga" height="128" width="128"></icon>
+  <!-- mission offer icons (license missions) -->
+  <icon name="missionoffer_intelligence_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_intelligence_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_intelligence_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_military_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_military_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_military_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_police_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_fight_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_police_active" texture="assets\fx\gui\textures\mission_offers\moffer_fight_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_police_select" texture="assets\fx\gui\textures\mission_offers\moffer_fight_sel.tga" height="128" width="128"></icon>
+  <!-- mission offer icons (guidance) -->
+  <icon name="missionoffer_guidance_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_think_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_guidance_active" texture="assets\fx\gui\textures\mission_offers\moffer_think_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_guidance_select" texture="assets\fx\gui\textures\mission_offers\moffer_think_sel.tga" height="128" width="128"></icon>
+  <!-- mission offer icons (upkeep) -->
+  <icon name="missionoffer_upkeep_extend_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_extend_active" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_extend_select" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_hirenpc_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_hirenpc_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_hirenpc_active" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_hirenpc_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_hirenpc_select" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_hirenpc_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_credits_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_credits_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_credits_active" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_credits_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_credits_select" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_credits_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_subordinates_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_subordinates_active" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_subordinates_select" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_units_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_units_active" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_units_select" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_sel.tga" height="128" width="128"></icon>
+  <!-- mission offer icons (tutorial) -->
+  <icon name="missionoffer_tutorial_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_tutorial_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_tutorial_active" texture="assets\fx\gui\textures\mission_offers\moffer_tutorial_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_tutorial_select" texture="assets\fx\gui\textures\mission_offers\moffer_tutorial_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_completed_tutorial_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_tutorialdone_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_completed_tutorial_active" texture="assets\fx\gui\textures\mission_offers\moffer_tutorialdone_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_completed_tutorial_select" texture="assets\fx\gui\textures\mission_offers\moffer_tutorialdone_sel.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_hints_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_hints_active" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_hints_select" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_extend_sel.tga" height="128" width="128"></icon>
+
+  <!-- TODO (@Lorraine, @Owen, @Alex): Is this still used? Maybe as a mainmissiontype? -->
+  <icon name="missionoffer_upkeep_inactive" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_inact.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_active" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_act.tga" height="128" width="128"></icon>
+  <icon name="missionoffer_upkeep_select" texture="assets\fx\gui\textures\mission_offers\moffer_upkeep_sel.tga" height="128" width="128"></icon>
+
+  <!-- Missions Type icons -->
+  <icon name="missiontype_board" texture="assets\fx\gui\textures\mission_types\mtype_board.tga" height="32" width="32"></icon>
+  <icon name="missiontype_build" texture="assets\fx\gui\textures\mission_types\mtype_build.tga" height="32" width="32"></icon>
+  <icon name="missiontype_collect" texture="assets\fx\gui\textures\mission_types\mtype_collect.tga" height="32" width="32"></icon>
+  <icon name="missiontype_completed_tutorial" texture="assets\fx\gui\textures\mission_types\mtype_completed_tutorial.tga" height="32" width="32"></icon>
+  <icon name="missiontype_deliver" texture="assets\fx\gui\textures\mission_types\mtype_transport.tga" height="32" width="32"></icon>
+  <icon name="missiontype_destroy" texture="assets\fx\gui\textures\mission_types\mtype_fight.tga" height="32" width="32"></icon>
+  <icon name="missiontype_drop" texture="assets\fx\gui\textures\mission_types\mtype_drop.tga" height="32" width="32"></icon>
+  <icon name="missiontype_escort" texture="assets\fx\gui\textures\mission_types\mtype_escort.tga" height="32" width="32"></icon>
+  <icon name="missiontype_explore" texture="assets\fx\gui\textures\mission_types\mtype_explore.tga" height="32" width="32"></icon>
+  <icon name="missiontype_extend" texture="assets\fx\gui\textures\mission_types\mtype_extend.tga" height="32" width="32"></icon>
+  <icon name="missiontype_fight" texture="assets\fx\gui\textures\mission_types\mtype_fight.tga" height="32" width="32"></icon>
+  <icon name="missiontype_find" texture="assets\fx\gui\textures\mission_types\mtype_find.tga" height="32" width="32"></icon>
+  <icon name="missiontype_follow" texture="assets\fx\gui\textures\mission_types\mtype_follow.tga" height="32" width="32"></icon>
+  <icon name="missiontype_guidance" texture="assets\fx\gui\textures\mission_types\mtype_follow.tga" height="32" width="32"></icon>
+  <icon name="missiontype_hack" texture="assets\fx\gui\textures\mission_types\mtype_hack.tga" height="32" width="32"></icon>
+  <icon name="missiontype_hints" texture="assets\fx\gui\textures\mission_types\mtype_hints.tga" height="32" width="32"></icon>
+  <icon name="missiontype_intelligence" texture="assets\fx\gui\textures\mission_types\mtype_think.tga" height="32" width="32"></icon>
+  <icon name="missiontype_kill" texture="assets\fx\gui\textures\mission_types\mtype_fight.tga" height="32" width="32"></icon>
+  <icon name="missiontype_military" texture="assets\fx\gui\textures\mission_types\mtype_military.tga" height="32" width="32"></icon>
+  <icon name="missiontype_other" texture="assets\fx\gui\textures\mission_types\mtype_other.tga" height="32" width="32"></icon>
+  <icon name="missiontype_patrol" texture="assets\fx\gui\textures\mission_types\mtype_patrol.tga" height="32" width="32"></icon>
+  <icon name="missiontype_pickup" texture="assets\fx\gui\textures\mission_types\mtype_pickup.tga" height="32" width="32"></icon>
+  <icon name="missiontype_plot" texture="assets\fx\gui\textures\mission_types\mtype_plot.tga" height="32" width="32"></icon>
+  <icon name="missiontype_police" texture="assets\fx\gui\textures\mission_types\mtype_patrol.tga" height="32" width="32"></icon>
+  <icon name="missiontype_procure" texture="assets\fx\gui\textures\mission_types\mtype_trade.tga" height="32" width="32"></icon>
+  <icon name="missiontype_protect" texture="assets\fx\gui\textures\mission_types\mtype_protect.tga" height="32" width="32"></icon>
+  <icon name="missiontype_race" texture="assets\fx\gui\textures\mission_types\mtype_race.tga" height="32" width="32"></icon>
+  <icon name="missiontype_raid" texture="assets\fx\gui\textures\mission_types\mtype_board.tga" height="32" width="32"></icon>
+  <icon name="missiontype_repair" texture="assets\fx\gui\textures\mission_types\mtype_repair.tga" height="32" width="32"></icon>
+  <icon name="missiontype_rescue" texture="assets\fx\gui\textures\mission_types\mtype_rescue.tga" height="32" width="32"></icon>
+  <icon name="missiontype_research" texture="assets\fx\gui\textures\mission_types\mtype_research.tga" height="32" width="32"></icon>
+  <icon name="missiontype_restock" texture="assets\fx\gui\textures\mission_types\mtype_restock.tga" height="32" width="32"></icon>
+  <icon name="missiontype_scan" texture="assets\fx\gui\textures\mission_types\mtype_scan.tga" height="32" width="32"></icon>
+  <icon name="missiontype_smuggle" texture="assets\fx\gui\textures\mission_types\mtype_smuggle.tga" height="32" width="32"></icon>
+  <icon name="missiontype_station" texture="assets\fx\gui\textures\mission_types\mtype_station.tga" height="32" width="32"></icon>
+  <icon name="missiontype_talkto" texture="assets\fx\gui\textures\mission_types\mtype_talkto.tga" height="32" width="32"></icon>
+  <icon name="missiontype_think" texture="assets\fx\gui\textures\mission_types\mtype_think.tga" height="32" width="32"></icon>
+  <icon name="missiontype_trade" texture="assets\fx\gui\textures\mission_types\mtype_trade.tga" height="32" width="32"></icon>
+  <icon name="missiontype_transport" texture="assets\fx\gui\textures\mission_types\mtype_transport.tga" height="32" width="32"></icon>
+  <icon name="missiontype_tutorial" texture="assets\fx\gui\textures\mission_types\mtype_tutorial.tga" height="32" width="32"></icon>
+  <icon name="missiontype_upkeep_credits" texture="assets\fx\gui\textures\mission_types\mtype_upkeep_credits.tga" height="32" width="32"></icon>
+  <icon name="missiontype_upkeep_extend" texture="assets\fx\gui\textures\mission_types\mtype_upkeep_extend.tga" height="32" width="32"></icon>
+  <icon name="missiontype_upkeep_hirenpc" texture="assets\fx\gui\textures\mission_types\mtype_upkeep_hirenpc.tga" height="32" width="32"></icon>
+  <icon name="missiontype_upkeep_subordinates" texture="assets\fx\gui\textures\mission_types\mtype_upkeep_units.tga" height="32" width="32"></icon>
+  <icon name="missiontype_upkeep_units" texture="assets\fx\gui\textures\mission_types\mtype_upkeep_units.tga" height="32" width="32"></icon>
+
+  <!-- NPC entity type icons -->
+  <!-- Icons from XR -->
+  <!-- hireable -->
+  <icon name="manager" active="manager_active" inactive="manager_inactive" selected="manager_select"></icon>
+  <icon name="manager_active" texture="assets\fx\gui\textures\npc\npc_h_manager_act.tga" height="128" width="128"></icon>
+  <icon name="manager_inactive" texture="assets\fx\gui\textures\npc\npc_h_manager_inact.tga" height="128" width="128"></icon>
+  <icon name="manager_select" texture="assets\fx\gui\textures\npc\npc_h_manager_sel.tga" height="128" width="128"></icon>
+  <icon name="engineer" active="engineer_active" inactive="engineer_inactive" selected="engineer_select"></icon>
+  <icon name="engineer_active" texture="assets\fx\gui\textures\npc\npc_h_engineer_act.tga" height="128" width="128"></icon>
+  <icon name="engineer_inactive" texture="assets\fx\gui\textures\npc\npc_h_engineer_inact.tga" height="128" width="128"></icon>
+  <icon name="engineer_select" texture="assets\fx\gui\textures\npc\npc_h_engineer_sel.tga" height="128" width="128"></icon>
+  <icon name="defenceofficer" active="defenseofficer_active" inactive="defenseofficer_inactive" selected="defenseofficer_select"></icon>
+  <icon name="defenseofficer_active" texture="assets\fx\gui\textures\npc\npc_h_defenceofficer_act.tga" height="128" width="128"></icon>
+  <icon name="defenseofficer_inactive" texture="assets\fx\gui\textures\npc\npc_h_defenceofficer_inact.tga" height="128" width="128"></icon>
+  <icon name="defenseofficer_select" texture="assets\fx\gui\textures\npc\npc_h_defenceofficer_sel.tga" height="128" width="128"></icon>
+  <icon name="specialist" active="specialist_active" inactive="specialist_inactive" selected="specialist_select"></icon>
+  <icon name="specialist_active" texture="assets\fx\gui\textures\npc\npc_h_specialist_act.tga" height="128" width="128"></icon>
+  <icon name="specialist_inactive" texture="assets\fx\gui\textures\npc\npc_h_specialist_inact.tga" height="128" width="128"></icon>
+  <icon name="specialist_select" texture="assets\fx\gui\textures\npc\npc_h_specialist_sel.tga" height="128" width="128"></icon>
+  <icon name="captain" active="captain_active" inactive="captain_inactive" selected="captain_select"></icon>
+  <icon name="captain_active" texture="assets\fx\gui\textures\npc\npc_h_captain_act.tga" height="128" width="128"></icon>
+  <icon name="captain_inactive" texture="assets\fx\gui\textures\npc\npc_h_captain_inact.tga" height="128" width="128"></icon>
+  <icon name="captain_select" texture="assets\fx\gui\textures\npc\npc_h_captain_sel.tga" height="128" width="128"></icon>
+  <!-- Entitytype architect removed -->
+  <icon name="architect" active="architect_active" inactive="architect_inactive" selected="architect_select"></icon>
+  <icon name="architect_active" texture="assets\fx\gui\textures\npc\npc_h_architect_act.tga" height="128" width="128"></icon>
+  <icon name="architect_inactive" texture="assets\fx\gui\textures\npc\npc_h_architect_inact.tga" height="128" width="128"></icon>
+  <icon name="architect_select" texture="assets\fx\gui\textures\npc\npc_h_architect_sel.tga" height="128" width="128"></icon>
+  <icon name="pilot" active="pilot_active" inactive="pilot_inactive" selected="pilot_select"></icon>
+  <icon name="pilot_active" texture="assets\fx\gui\textures\npc\npc_h_pilot_act.tga" height="128" width="128"></icon>
+  <icon name="pilot_inactive" texture="assets\fx\gui\textures\npc\npc_h_pilot_inact.tga" height="128" width="128"></icon>
+  <icon name="pilot_select" texture="assets\fx\gui\textures\npc\npc_h_pilot_sel.tga" height="128" width="128"></icon>
+  <icon name="marineofficer" active="marineofficer_active" inactive="marineofficer_inactive" selected="marineofficer_select"></icon>
+  <icon name="marineofficer_active" texture="assets\fx\gui\textures\npc\npc_h_marineofficer_act.tga" height="128" width="128"></icon>
+  <icon name="marineofficer_inactive" texture="assets\fx\gui\textures\npc\npc_h_marineofficer_inact.tga" height="128" width="128"></icon>
+  <icon name="marineofficer_select" texture="assets\fx\gui\textures\npc\npc_h_marineofficer_sel.tga" height="128" width="128"></icon>
+  <!--Icon currently wrong. Not hirable. To be fixed.-->
+  <icon name="recruitingofficer" active="recruitingofficer_active" inactive="recruitingofficer_inactive" selected="recruitingofficer_select"></icon>
+  <icon name="recruitingofficer_active" texture="assets\fx\gui\textures\npc\npc_h_recruitingofficer_act.tga" height="128" width="128"></icon>
+  <icon name="recruitingofficer_inactive" texture="assets\fx\gui\textures\npc\npc_h_recruitingofficer_inact.tga" height="128" width="128"></icon>
+  <icon name="recruitingofficer_select" texture="assets\fx\gui\textures\npc\npc_h_recruitingofficer_sel.tga" height="128" width="128"></icon>
+
+  <!-- non hireable -->
+  <!-- Entitytype upgradetrader removed -->
+  <icon name="mechanic" active="mechanic_active" inactive="mechanic_inactive" selected="mechanic_select"></icon>
+  <icon name="mechanic_active" texture="assets\fx\gui\textures\npc\npc_nh_mechanic_act.tga" height="128" width="128"></icon>
+  <icon name="mechanic_inactive" texture="assets\fx\gui\textures\npc\npc_nh_mechanic_inact.tga" height="128" width="128"></icon>
+  <icon name="mechanic_select" texture="assets\fx\gui\textures\npc\npc_nh_mechanic_sel.tga" height="128" width="128"></icon>
+
+  <icon name="dronedealer" active="dronedealer_active" inactive="dronedealer_inactive" selected="dronedealer_select"></icon>
+  <icon name="dronedealer_active" texture="assets\fx\gui\textures\npc\npc_nh_dronedealer_act.tga" height="128" width="128"></icon>
+  <icon name="dronedealer_inactive" texture="assets\fx\gui\textures\npc\npc_nh_dronedealer_inact.tga" height="128" width="128"></icon>
+  <icon name="dronedealer_select" texture="assets\fx\gui\textures\npc\npc_nh_dronedealer_sel.tga" height="128" width="128"></icon>
+  <icon name="armsdealer" active="armsdealer_active" inactive="armsdealer_inactive" selected="armsdealer_select"></icon>
+  <icon name="armsdealer_active" texture="assets\fx\gui\textures\npc\npc_nh_armsdealer_act.tga" height="128" width="128"></icon>
+  <icon name="armsdealer_inactive" texture="assets\fx\gui\textures\npc\npc_nh_armsdealer_inact.tga" height="128" width="128"></icon>
+  <icon name="armsdealer_select" texture="assets\fx\gui\textures\npc\npc_nh_armsdealer_sel.tga" height="128" width="128"></icon>
+  <icon name="shipdealer" active="shipdealer_active" inactive="shipdealer_inactive" selected="shipdealer_select"></icon>
+  <icon name="shipdealer_active" texture="assets\fx\gui\textures\npc\npc_nh_shipdealer_act.tga" height="128" width="128"></icon>
+  <icon name="shipdealer_inactive" texture="assets\fx\gui\textures\npc\npc_nh_shipdealer_inact.tga" height="128" width="128"></icon>
+  <icon name="shipdealer_select" texture="assets\fx\gui\textures\npc\npc_nh_shipdealer_sel.tga" height="128" width="128"></icon>
+  <icon name="licencebroker" active="licencebroker_active" inactive="licencebroker_inactive" selected="licencebroker_select"></icon>
+  <icon name="licencebroker_active" texture="assets\fx\gui\textures\npc\npc_nh_licensebroker_act.tga" height="128" width="128"></icon>
+  <icon name="licencebroker_inactive" texture="assets\fx\gui\textures\npc\npc_nh_licensebroker_inact.tga" height="128" width="128"></icon>
+  <icon name="licencebroker_select" texture="assets\fx\gui\textures\npc\npc_nh_licensebroker_sel.tga" height="128" width="128"></icon>
+  <icon name="miningsupplier" active="miningsupplier_active" inactive="miningsupplier_inactive" selected="miningsupplier_select"></icon>
+  <icon name="miningsupplier_active" texture="assets\fx\gui\textures\npc\npc_nh_miningsupplier_act.tga" height="128" width="128"></icon>
+  <icon name="miningsupplier_inactive" texture="assets\fx\gui\textures\npc\npc_nh_miningsupplier_inact.tga" height="128" width="128"></icon>
+  <icon name="miningsupplier_select" texture="assets\fx\gui\textures\npc\npc_nh_miningsupplier_sel.tga" height="128" width="128"></icon>
+  <icon name="junkdealer" active="junkdealer_active" inactive="junkdealer_inactive" selected="junkdealer_select"></icon>
+  <icon name="junkdealer_active" texture="assets\fx\gui\textures\npc\npc_nh_junkdealer_act.tga" height="128" width="128"></icon>
+  <icon name="junkdealer_inactive" texture="assets\fx\gui\textures\npc\npc_nh_junkdealer_inact.tga" height="128" width="128"></icon>
+  <icon name="junkdealer_select" texture="assets\fx\gui\textures\npc\npc_nh_junkdealer_sel.tga" height="128" width="128"></icon>
+  <icon name="spacefarmer" active="spacefarmer_active" inactive="spacefarmer_inactive" selected="spacefarmer_select"></icon>
+  <icon name="spacefarmer_active" texture="assets\fx\gui\textures\npc\npc_nh_spacefarmer_act.tga" height="128" width="128"></icon>
+  <icon name="spacefarmer_inactive" texture="assets\fx\gui\textures\npc\npc_nh_spacefarmer_inact.tga" height="128" width="128"></icon>
+  <icon name="spacefarmer_select" texture="assets\fx\gui\textures\npc\npc_nh_spacefarmer_sel.tga" height="128" width="128"></icon>
+  <icon name="shiptechnican" active="shiptechnican_active" inactive="shiptechnican_inactive" selected="shiptechnican_select"></icon>
+  <icon name="shiptechnican_active" texture="assets\fx\gui\textures\npc\npc_nh_shiptechnican_act.tga" height="128" width="128"></icon>
+  <icon name="shiptechnican_inactive" texture="assets\fx\gui\textures\npc\npc_nh_shiptechnican_inact.tga" height="128" width="128"></icon>
+  <icon name="shiptechnican_select" texture="assets\fx\gui\textures\npc\npc_nh_shiptechnican_sel.tga" height="128" width="128"></icon>
+  <icon name="equipmentvendor" active="equipmentvendor_active" inactive="equipmentvendor_inactive" selected="equipmentvendor_select"></icon>
+  <icon name="equipmentvendor_active" texture="assets\fx\gui\textures\npc\npc_nh_equipmentvendor_act.tga" height="128" width="128"></icon>
+  <icon name="equipmentvendor_inactive" texture="assets\fx\gui\textures\npc\npc_nh_equipmentvendor_inact.tga" height="128" width="128"></icon>
+  <icon name="equipmentvendor_select" texture="assets\fx\gui\textures\npc\npc_nh_equipmentvendor_sel.tga" height="128" width="128"></icon>
+  <icon name="foodmerchant" active="foodmerchant_active" inactive="foodmerchant_inactive" selected="foodmerchant_select"></icon>
+  <icon name="foodmerchant_active" texture="assets\fx\gui\textures\npc\npc_nh_foodmerchant_act.tga" height="128" width="128"></icon>
+  <icon name="foodmerchant_inactive" texture="assets\fx\gui\textures\npc\npc_nh_foodmerchant_inact.tga" height="128" width="128"></icon>
+  <icon name="foodmerchant_select" texture="assets\fx\gui\textures\npc\npc_nh_foodmerchant_sel.tga" height="128" width="128"></icon>
+
+  <icon name="shadyguy" active="shadyguy_active" inactive="shadyguy_inactive" selected="shadyguy_select"></icon>
+  <icon name="shadyguy_active" texture="assets\fx\gui\textures\npc\npc_nh_shadyguy_act.tga" height="128" width="128"></icon>
+  <icon name="shadyguy_inactive" texture="assets\fx\gui\textures\npc\npc_nh_shadyguy_inact.tga" height="128" width="128"></icon>
+  <icon name="shadyguy_select" texture="assets\fx\gui\textures\npc\npc_nh_shadyguy_sel.tga" height="128" width="128"></icon>
+
+  <!-- old entity type icons -->
+  <icon name="factionrepresentative" active="factionrepresentative_active" inactive="factionrepresentative_inactive" selected="factionrepresentative_select"></icon>
+  <icon name="factionrepresentative_active" texture="assets\fx\gui\textures\npc\npc_commander_act.tga" height="128" width="128"></icon>
+  <icon name="factionrepresentative_inactive" texture="assets\fx\gui\textures\npc\npc_commander_inact.tga" height="128" width="128"></icon>
+  <icon name="factionrepresentative_select" texture="assets\fx\gui\textures\npc\npc_commander_sel.tga" height="128" width="128"></icon>
+
+  <icon name="shiptrader" active="shiptrader_active" inactive="shiptrader_inactive" selected="shiptrader_select"></icon>
+  <icon name="shiptrader_active" texture="assets\fx\gui\textures\npc\npc_shiptrader_act.tga" height="128" width="128"></icon>
+  <icon name="shiptrader_inactive" texture="assets\fx\gui\textures\npc\npc_shiptrader_inact.tga" height="128" width="128"></icon>
+  <icon name="shiptrader_select" texture="assets\fx\gui\textures\npc\npc_shiptrader_sel.tga" height="128" width="128"></icon>
+
+  <icon name="specialengineer" active="specialengineer_active" inactive="specialengineer_inactive" selected="specialengineer_select"></icon>
+  <icon name="specialengineer_active" texture="assets\fx\gui\textures\npc\npc_specialist_act.tga" height="128" width="128"></icon>
+  <icon name="specialengineer_inactive" texture="assets\fx\gui\textures\npc\npc_specialist_inact.tga" height="128" width="128"></icon>
+  <icon name="specialengineer_select" texture="assets\fx\gui\textures\npc\npc_specialist_sel.tga" height="128" width="128"></icon>
+  <icon name="temporaryactor" active="temporary_active" inactive="temporary_inactive" selected="temporary_select"></icon>
+
+  <icon name="temporary_active" texture="assets\fx\gui\textures\npc\npc_temporary_act.tga" height="128" width="128"></icon>
+  <icon name="temporary_inactive" texture="assets\fx\gui\textures\npc\npc_temporary_inact.tga" height="128" width="128"></icon>
+  <icon name="temporary_select" texture="assets\fx\gui\textures\npc\npc_temporary_sel.tga" height="128" width="128"></icon>
+
+  <icon name="trader" active="trader_active" inactive="trader_inactive" selected="trader_select"></icon>
+  <icon name="trader_active" texture="assets\fx\gui\textures\npc\npc_trader_act.tga" height="128" width="128"></icon>
+  <icon name="trader_inactive" texture="assets\fx\gui\textures\npc\npc_trader_inact.tga" height="128" width="128"></icon>
+  <icon name="trader_select" texture="assets\fx\gui\textures\npc\npc_trader_sel.tga" height="128" width="128"></icon>
+  <icon name="unknownactor" active="unknown_active" inactive="unknown_inactive" selected="unknown_select"></icon>
+
+  <icon name="unknown_active" texture="assets\fx\gui\textures\npc\npc_unknown_act.tga" height="128" width="128"></icon>
+  <icon name="unknown_inactive" texture="assets\fx\gui\textures\npc\npc_unknown_inact.tga" height="128" width="128"></icon>
+  <icon name="unknown_select" texture="assets\fx\gui\textures\npc\npc_unknown_sel.tga" height="128" width="128"></icon>
+
+  <!-- target system icons -->
+  <icon name="asteroidtarget_active" texture="assets\fx\gui\textures\target_elements\tsys_asteroid_act.tga" height="128" width="128"></icon>
+  <icon name="asteroidtarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_asteroid_inact.tga" height="128" width="128"></icon>
+  <icon name="asteroidtarget_select" texture="assets\fx\gui\textures\target_elements\tsys_asteroid_sel.tga" height="128" width="128"></icon>
+  <icon name="buildtarget_active" texture="assets\fx\gui\textures\target_elements\tsys_build_act.tga" height="128" width="128"></icon>
+  <icon name="buildtarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_build_inact.tga" height="128" width="128"></icon>
+  <icon name="buildtarget_select" texture="assets\fx\gui\textures\target_elements\tsys_build_sel.tga" height="128" width="128"></icon>
+  <icon name="detachbombtarget_active" texture="assets\fx\gui\textures\target_elements\tsys_detachbomb_act.tga" height="128" width="128"></icon>
+  <icon name="detachbombtarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_detachbomb_inact.tga" height="128" width="128"></icon>
+  <icon name="detachbombtarget_select" texture="assets\fx\gui\textures\target_elements\tsys_detachbomb_sel.tga" height="128" width="128"></icon>
+  <icon name="hacktarget_active" texture="assets\fx\gui\textures\target_elements\tsys_hack_act.tga" height="128" width="128"></icon>
+  <icon name="hacktarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_hack_inact.tga" height="128" width="128"></icon>
+  <icon name="hacktarget_select" texture="assets\fx\gui\textures\target_elements\tsys_hack_sel.tga" height="128" width="128"></icon>
+  <icon name="infotarget_active" texture="assets\fx\gui\textures\target_elements\tsys_info_act.tga" height="128" width="128"></icon>
+  <icon name="infotarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_info_inact.tga" height="128" width="128"></icon>
+  <icon name="infotarget_select" texture="assets\fx\gui\textures\target_elements\tsys_info_sel.tga" height="128" width="128"></icon>
+  <icon name="normaltarget_active" texture="assets\fx\gui\textures\target_elements\tsys_target_act.tga" height="128" width="128"></icon>
+  <icon name="normaltarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_target_inact.tga" height="128" width="128"></icon>
+  <icon name="normaltarget_select" texture="assets\fx\gui\textures\target_elements\tsys_target_sel.tga" height="128" width="128"></icon>
+  <icon name="opentarget_active" texture="assets\fx\gui\textures\target_elements\tsys_target_act.tga" height="128" width="128"></icon>
+  <icon name="opentarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_target_inact.tga" height="128" width="128"></icon>
+  <icon name="opentarget_select" texture="assets\fx\gui\textures\target_elements\tsys_target_sel.tga" height="128" width="128"></icon>
+  <icon name="scantarget_active" texture="assets\fx\gui\textures\target_elements\tsys_scan_act.tga" height="128" width="128"></icon>
+  <icon name="scantarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_scan_inact.tga" height="128" width="128"></icon>
+  <icon name="scantarget_select" texture="assets\fx\gui\textures\target_elements\tsys_scan_sel.tga" height="128" width="128"></icon>
+  <icon name="subordinatetarget_active" texture="assets\fx\gui\textures\target_elements\tsys_subordinatetarget_act.tga" height="128" width="128"></icon>
+  <icon name="subordinatetarget_inactive" texture="assets\fx\gui\textures\target_elements\tsys_subordinatetarget_inact.tga" height="128" width="128"></icon>
+  <icon name="subordinatetarget_select" texture="assets\fx\gui\textures\target_elements\tsys_subordinatetarget_sel.tga" height="128" width="128"></icon>
+
+  <icon name="autopilot_on_active" texture="assets\fx\gui\textures\target_elements\tsys_apon_act.tga" height="128" width="128"></icon>
+  <icon name="autopilot_on_inactive" texture="assets\fx\gui\textures\target_elements\tsys_apon_inact.tga" height="128" width="128"></icon>
+  <icon name="autopilot_on_select" texture="assets\fx\gui\textures\target_elements\tsys_apon_sel.tga" height="128" width="128"></icon>
+  <icon name="autopilot_off_active" texture="assets\fx\gui\textures\target_elements\tsys_apoff_act.tga" height="128" width="128"></icon>
+  <icon name="autopilot_off_inactive" texture="assets\fx\gui\textures\target_elements\tsys_apoff_inact.tga" height="128" width="128"></icon>
+  <icon name="autopilot_off_select" texture="assets\fx\gui\textures\target_elements\tsys_apoff_sel.tga" height="128" width="128"></icon>
+
+  <!-- poi icons -->
+  <icon name="poi_gate_inactive" texture="assets\fx\gui\textures\poi\poi_gate_inact.tga" height="128" width="128"></icon>
+  <icon name="poi_gate_active" texture="assets\fx\gui\textures\poi\poi_gate_act.tga" height="128" width="128"></icon>
+  <icon name="poi_gate_select" texture="assets\fx\gui\textures\poi\poi_gate_sel.tga" height="128" width="128"></icon>
+  <icon name="poi_superhighway_inactive" texture="assets\fx\gui\textures\poi\poi_superhighway_inact.tga" height="128" width="128"></icon>
+  <icon name="poi_superhighway_active" texture="assets\fx\gui\textures\poi\poi_superhighway_act.tga" height="128" width="128"></icon>
+  <icon name="poi_superhighway_select" texture="assets\fx\gui\textures\poi\poi_superhighway_sel.tga" height="128" width="128"></icon>
+  <icon name="poi_zonehighway_inactive" texture="assets\fx\gui\textures\poi\poi_zonehighway_inact.tga" height="128" width="128"></icon>
+  <icon name="poi_zonehighway_active" texture="assets\fx\gui\textures\poi\poi_zonehighway_act.tga" height="128" width="128"></icon>
+  <icon name="poi_zonehighway_select" texture="assets\fx\gui\textures\poi\poi_zonehighway_sel.tga" height="128" width="128"></icon>
+
+
+  <!-- ware icons -->
+  <icon name="ware_advancedcomposites" texture="assets\fx\gui\textures\wares\ware_advancedcomposites.tga" height="128" width="128"></icon>
+  <icon name="ware_advancedelectronics" texture="assets\fx\gui\textures\wares\ware_advancedelectronics.tga" height="128" width="128"></icon>
+  <icon name="ware_antimattercells" texture="assets\fx\gui\textures\wares\ware_antimattercells.tga" height="128" width="128"></icon>
+  <icon name="ware_antimatterconverters" texture="assets\fx\gui\textures\wares\ware_antimatterconverters.tga" height="128" width="128"></icon>
+  <icon name="ware_claytronics" texture="assets\fx\gui\textures\wares\ware_claytronics.tga" height="128" width="128"></icon>
+  <icon name="ware_default" texture="assets\fx\gui\textures\wares\ware_default.tga" height="128" width="128"></icon>
+  <icon name="ware_dronecomponents" texture="assets\fx\gui\textures\wares\ware_dronecomponents.tga" height="128" width="128"></icon>
+  <icon name="ware_energycells" texture="assets\fx\gui\textures\wares\ware_energycells.tga" height="128" width="128"></icon>
+  <icon name="ware_engineparts" texture="assets\fx\gui\textures\wares\ware_engineparts.tga" height="128" width="128"></icon>
+  <icon name="ware_fieldcoils" texture="assets\fx\gui\textures\wares\ware_fieldcoils.tga" height="128" width="128"></icon>
+  <icon name="ware_flares" texture="assets\fx\gui\textures\wares\ware_flares.tga" height="128" width="128"></icon>
+  <icon name="ware_foodrations" texture="assets\fx\gui\textures\wares\ware_foodrations.tga" height="128" width="128"></icon>
+  <icon name="ware_graphene" texture="assets\fx\gui\textures\wares\ware_graphene.tga" height="128" width="128"></icon>
+  <icon name="ware_helium" texture="assets\fx\gui\textures\wares\ware_helium.tga" height="128" width="128"></icon>
+  <icon name="ware_hullparts" texture="assets\fx\gui\textures\wares\ware_hullparts.tga" height="128" width="128"></icon>
+  <icon name="ware_hydrogen" texture="assets\fx\gui\textures\wares\ware_hydrogen.tga" height="128" width="128"></icon>
+  <icon name="ware_ice" texture="assets\fx\gui\textures\wares\ware_ice.tga" height="128" width="128"></icon>
+  <icon name="ware_majadust" texture="assets\fx\gui\textures\wares\ware_majadust.tga" height="128" width="128"></icon>
+  <icon name="ware_majasnails" texture="assets\fx\gui\textures\wares\ware_majasnails.tga" height="128" width="128"></icon>
+  <icon name="ware_marine" texture="assets\fx\gui\textures\wares\ware_marine.tga" height="128" width="128"></icon>
+  <icon name="ware_meat" texture="assets\fx\gui\textures\wares\ware_meat.tga" height="128" width="128"></icon>
+  <icon name="ware_medicalsupplies" texture="assets\fx\gui\textures\wares\ware_medicalsupplies.tga" height="128" width="128"></icon>
+  <icon name="ware_methane" texture="assets\fx\gui\textures\wares\ware_methane.tga" height="128" width="128"></icon>
+  <icon name="ware_microchips" texture="assets\fx\gui\textures\wares\ware_microchips.tga" height="128" width="128"></icon>
+  <icon name="ware_missilecomponents" texture="assets\fx\gui\textures\wares\ware_missilecomponents.tga" height="128" width="128"></icon>
+  <icon name="ware_nividium" texture="assets\fx\gui\textures\wares\ware_nividium.tga" height="128" width="128"></icon>
+  <icon name="ware_nostropoil" texture="assets\fx\gui\textures\wares\ware_nostropoil.tga" height="128" width="128"></icon>
+  <icon name="ware_ore" texture="assets\fx\gui\textures\wares\ware_ore.tga" height="128" width="128"></icon>
+  <icon name="ware_plasmaconductors" texture="assets\fx\gui\textures\wares\ware_plasmaconductors.tga" height="128" width="128"></icon>
+  <icon name="ware_quantumtubes" texture="assets\fx\gui\textures\wares\ware_quantumtubes.tga" height="128" width="128"></icon>
+  <icon name="ware_refinedmetals" texture="assets\fx\gui\textures\wares\ware_refinedmetals.tga" height="128" width="128"></icon>
+  <icon name="ware_scanningarrays" texture="assets\fx\gui\textures\wares\ware_scanningarray.tga" height="128" width="128"></icon>
+  <icon name="ware_shieldcomponents" texture="assets\fx\gui\textures\wares\ware_shieldcomponents.tga" height="128" width="128"></icon>
+  <icon name="ware_silicon" texture="assets\fx\gui\textures\wares\ware_silicon.tga" height="128" width="128"></icon>
+  <icon name="ware_siliconwafers" texture="assets\fx\gui\textures\wares\ware_siliconwafers.tga" height="128" width="128"></icon>
+  <icon name="ware_smartchips" texture="assets\fx\gui\textures\wares\ware_smartchips.tga" height="128" width="128"></icon>
+  <icon name="ware_sojabeans" texture="assets\fx\gui\textures\wares\ware_sojabeans.tga" height="128" width="128"></icon>
+  <icon name="ware_sojahusk" texture="assets\fx\gui\textures\wares\ware_plankton.tga" height="128" width="128"></icon>
+  <icon name="ware_spacefuel" texture="assets\fx\gui\textures\wares\ware_spacefuel.tga" height="128" width="128"></icon>
+  <icon name="ware_spaceweed" texture="assets\fx\gui\textures\wares\ware_spaceweed.tga" height="128" width="128"></icon>
+  <icon name="ware_spices" texture="assets\fx\gui\textures\wares\ware_spices.tga" height="128" width="128"></icon>
+  <icon name="ware_sunriseflowers" texture="assets\fx\gui\textures\wares\ware_sojahusk.tga" height="128" width="128"></icon>
+  <icon name="ware_superfluidcoolant" texture="assets\fx\gui\textures\wares\ware_superfluidcoolant.tga" height="128" width="128"></icon>
+  <icon name="ware_swampplant" texture="assets\fx\gui\textures\wares\ware_swampplant.tga" height="128" width="128"></icon>
+  <icon name="ware_teladianium" texture="assets\fx\gui\textures\wares\ware_teladianium.tga" height="128" width="128"></icon>
+  <icon name="ware_turretcomponents" texture="assets\fx\gui\textures\wares\ware_turretcomponents.tga" height="128" width="128"></icon>
+  <icon name="ware_water" texture="assets\fx\gui\textures\wares\ware_water.tga" height="128" width="128"></icon>
+  <icon name="ware_weaponcomponents" texture="assets\fx\gui\textures\wares\ware_weaponcomponents.tga" height="128" width="128"></icon>
+  <icon name="ware_wheat" texture="assets\fx\gui\textures\wares\ware_wheat.tga" height="128" width="128"></icon>
+
+  <!-- ware missile icons -->
+  <icon name="ware_missile_cluster_heavy" texture="assets\fx\gui\textures\wares\ware_missile_cluster_heavy.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_cluster_light" texture="assets\fx\gui\textures\wares\ware_missile_cluster_light.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_dumbfire_heavy_mk1" texture="assets\fx\gui\textures\wares\ware_missile_dumbfire_heavy_mk1.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_dumbfire_heavy_mk2" texture="assets\fx\gui\textures\wares\ware_missile_dumbfire_heavy_mk2.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_dumbfire_light_mk1" texture="assets\fx\gui\textures\wares\ware_missile_dumbfire_light_mk1.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_dumbfire_light_mk2" texture="assets\fx\gui\textures\wares\ware_missile_dumbfire_light_mk2.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_emp" texture="assets\fx\gui\textures\wares\ware_missile_emp.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_guided_heavy" texture="assets\fx\gui\textures\wares\ware_missile_guided_heavy.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_guided_light" texture="assets\fx\gui\textures\wares\ware_missile_guided_light.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_heatseeker_heavy" texture="assets\fx\gui\textures\wares\ware_missile_heatseeker_heavy.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_heatseeker_light" texture="assets\fx\gui\textures\wares\ware_missile_heatseeker_light.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_smart_heavy" texture="assets\fx\gui\textures\wares\ware_missile_smart_heavy.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_smart_light" texture="assets\fx\gui\textures\wares\ware_missile_smart_light.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_swarm_heavy" texture="assets\fx\gui\textures\wares\ware_missile_swarm_heavy.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_swarm_light" texture="assets\fx\gui\textures\wares\ware_missile_swarm_light.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_torpedo_heavy" texture="assets\fx\gui\textures\wares\ware_missile_torpedo_heavy.tga" height="128" width="128"></icon>
+  <icon name="ware_missile_torpedo_light" texture="assets\fx\gui\textures\wares\ware_missile_torpedo_light.tga" height="128" width="128"></icon>
+
+
+  <!-- REMOVED in P1, icons may be useful for new wares, see below 
+  <icon name="ware_bioelectricneurongel" texture="assets\fx\gui\textures\wares\wares_bioelectricneurongel.tga" height="128" width="128"></icon>
+  <icon name="ware_bioopticwiring" texture="assets\fx\gui\textures\wares\wares_bioopticwiring.tga" height="128" width="128"></icon>
+  <icon name="ware_bofu" texture="assets\fx\gui\textures\wares\wares_bofu.tga" height="128" width="128"></icon>
+  <icon name="ware_co2scrubbers" texture="assets\fx\gui\textures\wares\wares_co2scrubbers.tga" height="128" width="128"></icon>
+  <icon name="ware_crystals" texture="assets\fx\gui\textures\wares\wares_crystals.tga" height="128" width="128"></icon>
+  <icon name="ware_cutcrystals" texture="assets\fx\gui\textures\wares\wares_cutcrystals.tga" height="128" width="128"></icon>
+  <icon name="ware_dumbfiremissile" texture="assets\fx\gui\textures\wares\wares_dumbfiremissile.tga" height="128" width="128"></icon>
+  <icon name="ware_emspectrometer" texture="assets\fx\gui\textures\wares\wares_emspectrometer.tga" height="128" width="128"></icon>
+  <icon name="ware_energyregulator" texture="assets\fx\gui\textures\wares\wares_energyregulator.tga" height="128" width="128"></icon>
+  <icon name="ware_fusionreactor" texture="assets\fx\gui\textures\wares\wares_fusionreactor.tga" height="128" width="128"></icon>
+  <icon name="ware_guidedmissile" texture="assets\fx\gui\textures\wares\wares_guidedmissile.tga" height="128" width="128"></icon>
+  <icon name="ware_holtzmanfieldgenerator" texture="assets\fx\gui\textures\wares\wares_holtzmanfieldgenerator.tga" height="128" width="128"></icon>
+  <icon name="ware_narcotics" texture="assets\fx\gui\textures\wares\wares_narcotics.tga" height="128" width="128"></icon>
+  <icon name="ware_plankton" texture="assets\fx\gui\textures\wares\wares_plankton.tga" height="128" width="128"></icon>
+  <icon name="ware_plasmaflowregulator" texture="assets\fx\gui\textures\wares\wares_plasmaflowregulator.tga" height="128" width="128"></icon>
+  <icon name="ware_reactionchamber" texture="assets\fx\gui\textures\wares\wares_reactionchamber.tga" height="128" width="128"></icon>
+  <icon name="ware_reinforcedmetalplating" texture="assets\fx\gui\textures\wares\wares_reinforcedmetalplating.tga" height="128" width="128"></icon>
+  <icon name="ware_soybeans" texture="assets\fx\gui\textures\wares\wares_soybeans.tga" height="128" width="128"></icon>
+  <icon name="ware_swarmmissile" texture="assets\fx\gui\textures\wares\wares_swarmmissile.tga" height="128" width="128"></icon>
+  <icon name="ware_torpedo" texture="assets\fx\gui\textures\wares\wares_torpedo.tga" height="128" width="128"></icon>
+  <icon name="ware_warheads" texture="assets\fx\gui\textures\wares\wares_warheads.tga" height="128" width="128"></icon>
+  <icon name="ware_meteroitemissile" texture="assets\fx\gui\textures\wares\wares_meteroitemissile.tga" height="128" width="128"></icon>
+  <icon name="ware_starflashmissile" texture="assets\fx\gui\textures\wares\wares_starflashmissile.tga" height="128" width="128"></icon>
+  <icon name="ware_hellbustermissile" texture="assets\fx\gui\textures\wares\wares_hellbustermissile.tga" height="128" width="128"></icon>
+  <icon name="ware_tristarmissile" texture="assets\fx\gui\textures\wares\wares_tristarmissile.tga" height="128" width="128"></icon>
+   -->
+
+
+  <!-- money icon as dummy ware -->
+  <icon name="ware_money" texture="assets\fx\gui\textures\wares\wares_money.tga" height="128" width="128"></icon>
+
+  <!-- ware groups -->
+  <icon name="waregroup_agricultural" active="waregroup_agricultural_active" inactive="waregroup_agricultural_inactive" selected="waregroup_agricultural_selected"></icon>
+  <icon name="waregroup_agricultural_active" texture="assets\fx\gui\textures\ware_groups\wgroups_agricultural_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_agricultural_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_agricultural_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_agricultural_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_agricultural_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_energy" active="waregroup_energy_active" inactive="waregroup_energy_inactive" selected="waregroup_energy_selected"></icon>
+  <icon name="waregroup_energy_active" texture="assets\fx\gui\textures\ware_groups\wgroups_energy_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_energy_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_energy_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_energy_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_energy_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_food" active="waregroup_food_active" inactive="waregroup_food_inactive" selected="waregroup_food_selected"></icon>
+  <icon name="waregroup_food_active" texture="assets\fx\gui\textures\ware_groups\wgroups_food_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_food_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_food_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_food_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_food_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_gases" active="waregroup_gases_active" inactive="waregroup_gases_inactive" selected="waregroup_gases_selected"></icon>
+  <icon name="waregroup_gases_active" texture="assets\fx\gui\textures\ware_groups\wgroups_gases_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_gases_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_gases_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_gases_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_gases_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_hightech" active="waregroup_hightech_active" inactive="waregroup_hightech_inactive" selected="waregroup_hightech_selected"></icon>
+  <icon name="waregroup_hightech_active" texture="assets\fx\gui\textures\ware_groups\wgroups_hightech_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_hightech_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_hightech_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_hightech_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_hightech_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_ice" active="waregroup_ice_active" inactive="waregroup_ice_inactive" selected="waregroup_ice_selected"></icon>
+  <icon name="waregroup_ice_active" texture="assets\fx\gui\textures\ware_groups\wgroups_ice_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_ice_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_ice_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_ice_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_ice_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_minerals" active="waregroup_minerals_active" inactive="waregroup_minerals_inactive" selected="waregroup_minerals_selected"></icon>
+  <icon name="waregroup_minerals_active" texture="assets\fx\gui\textures\ware_groups\wgroups_minerals_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_minerals_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_minerals_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_minerals_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_minerals_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_pharmaceutical" active="waregroup_pharmaceutical_active" inactive="waregroup_pharmaceutical_inactive" selected="waregroup_pharmaceutical_selected"></icon>
+  <icon name="waregroup_pharmaceutical_active" texture="assets\fx\gui\textures\ware_groups\wgroups_pharmaceutical_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_pharmaceutical_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_pharmaceutical_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_pharmaceutical_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_pharmaceutical_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_refined" active="waregroup_refined_active" inactive="waregroup_refined_inactive" selected="waregroup_refined_selected"></icon>
+  <icon name="waregroup_refined_active" texture="assets\fx\gui\textures\ware_groups\wgroups_refined_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_refined_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_refined_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_refined_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_refined_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_shiptech" active="waregroup_shiptech_active" inactive="waregroup_shiptech_inactive" selected="waregroup_shiptech_selected"></icon>
+  <icon name="waregroup_shiptech_active" texture="assets\fx\gui\textures\ware_groups\wgroups_shiptech_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_shiptech_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_shiptech_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_shiptech_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_shiptech_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_upgrades" active="waregroup_upgrades_active" inactive="waregroup_upgrades_inactive" selected="waregroup_upgrades_selected"></icon>
+  <icon name="waregroup_upgrades_active" texture="assets\fx\gui\textures\ware_groups\wgroups_surfel_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_upgrades_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_surfel_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_upgrades_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_surfel_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_water" active="waregroup_water_active" inactive="waregroup_water_inactive" selected="waregroup_water_selected"></icon>
+  <icon name="waregroup_water_active" texture="assets\fx\gui\textures\ware_groups\wgroups_water_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_water_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_water_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_water_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_water_sel.tga" width="128" height="128"></icon>
+  <icon name="waregroup_weapontech" active="waregroup_weapontech_active" inactive="waregroup_weapontech_inactive" selected="waregroup_weapontech_selected"></icon>
+  <icon name="waregroup_weapontech_active" texture="assets\fx\gui\textures\ware_groups\wgroups_weapontech_act.tga" width="128" height="128"></icon>
+  <icon name="waregroup_weapontech_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_weapontech_inact.tga" width="128" height="128"></icon>
+  <icon name="waregroup_weapontech_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_weapontech_sel.tga" width="128" height="128"></icon>
+
+  <!-- trade location icon -->
+  <icon name="tradelocation" active="tradelocation_active" inactive="tradelocation_inactive" selected="tradelocation_selected"></icon>
+  <icon name="tradelocation_active" texture="assets\fx\gui\textures\ware_groups\wgroups_water_act.tga" width="128" height="128"></icon>
+  <icon name="tradelocation_inactive" texture="assets\fx\gui\textures\ware_groups\wgroups_water_inact.tga" width="128" height="128"></icon>
+  <icon name="tradelocation_selected" texture="assets\fx\gui\textures\ware_groups\wgroups_water_sel.tga" width="128" height="128"></icon>
+
+  <!-- widget button elements -->
+  <icon name="be_upgrade_installed" texture="assets\fx\gui\textures\button_elements\be_upgrade_installed.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_uninstalled" texture="assets\fx\gui\textures\button_elements\be_upgrade_uninstalled.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_warning" texture="assets\fx\gui\textures\button_elements\be_upgrade_warning.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_claiming" texture="assets\fx\gui\textures\button_elements\be_upgrade_claiming.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_tier_1" texture="assets\fx\gui\textures\button_elements\be_upgrade_tier_1.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_tier_2" texture="assets\fx\gui\textures\button_elements\be_upgrade_tier_2.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_tier_3" texture="assets\fx\gui\textures\button_elements\be_upgrade_tier_3.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_tier_4" texture="assets\fx\gui\textures\button_elements\be_upgrade_tier_4.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_size_small" texture="assets\fx\gui\textures\button_elements\be_upgrade_size_s.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_size_medium" texture="assets\fx\gui\textures\button_elements\be_upgrade_size_m.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_size_large" texture="assets\fx\gui\textures\button_elements\be_upgrade_size_l.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_size_extralarge" texture="assets\fx\gui\textures\button_elements\be_upgrade_size_xl.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_bio" texture="assets\fx\gui\textures\button_elements\be_upgrade_bio.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_equipmenparts" texture="assets\fx\gui\textures\button_elements\be_upgrade_equipmenparts.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_food" texture="assets\fx\gui\textures\button_elements\be_upgrade_food.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_pharma" texture="assets\fx\gui\textures\button_elements\be_upgrade_pharma.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_refined" texture="assets\fx\gui\textures\button_elements\be_upgrade_refined.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_resource" texture="assets\fx\gui\textures\button_elements\be_upgrade_resource.tga" width="512" height="512"></icon>
+  <icon name="be_upgrade_tech" texture="assets\fx\gui\textures\button_elements\be_upgrade_tech.tga" width="512" height="512"></icon>
+
+  <!-- icons for widget system -->
+  <icon name="solid" texture="assets\fx\gui\textures\widget\solid.tga" height="1" width="1"></icon>
+  <icon name="table_arrow" texture="assets\fx\gui\textures\widget\table_arrow.tga" height="40" width="16"></icon>
+  <icon name="table_arrow_inv" texture="assets\fx\gui\textures\widget\table_arrow_inv.tga" height="40" width="16"></icon>
+
+  <!-- options menu fore- & background -->
+  <icon name="optionsmenu_bg" texture="assets\fx\gui\textures\options_menu\menue_bg.tga" height="720" width="880"></icon>
+  <icon name="optionsmenu_fg" texture="assets\fx\gui\textures\options_menu\menue_fg.tga" height="720" width="880"></icon>
+
+  <!-- pda fore- & background -->
+  <icon name="pda_bg" texture="assets\fx\gui\textures\detailmonitor_firstperson\detailmonitor_firstperson_background.tga" height="583" width="825"></icon>
+  <icon name="pda_fg" texture="assets\fx\gui\textures\detailmonitor_firstperson\detailmonitor_firstperson_clamps.tga" height="583" width="825"></icon>
+  <!--<icon name="pda_bg2" texture="assets\fx\gui\textures\detailmonitor_firstperson\detailmonitor_firstperson_background2.tga" height="850" width="1225"></icon>-->
+  <!--<icon name="pda_fg2" texture="assets\fx\gui\textures\detailmonitor_firstperson\detailmonitor_firstperson_clamps2.tga" height="850" width="1225"></icon>-->
+
+  <!-- menu icons -->
+  <icon name="menu_reload" texture="assets\fx\gui\textures\menu\menu_reload.tga" height="128" width="128"></icon>
+  <icon name="menu_edit" texture="assets\fx\gui\textures\menu\menu_edit.tga" height="128" width="128"></icon>
+  <icon name="table_arrow_inv_left" texture="assets\fx\gui\textures\widget\table_arrow_inv_l.tga" height="40" width="16"></icon>
+  <icon name="table_arrow_inv_right" texture="assets\fx\gui\textures\widget\table_arrow_inv.tga" height="40" width="16"></icon>
+  <icon name="table_arrow_inv_up" texture="assets\fx\gui\textures\widget\table_arrow_inv_u.tga" height="16" width="40"></icon>
+  <icon name="table_arrow_inv_down" texture="assets\fx\gui\textures\widget\table_arrow_inv_d.tga" height="16" width="40"></icon>
+  <icon name="encyclopedia" texture="assets\fx\gui\textures\widget\encyclopedia_bg.tga" height="512" width="768"></icon>
+  <icon name="warning" texture="assets\fx\gui\textures\widget\steam_workshop.tga" height="128" width="128"></icon>
+  <icon name="workshop_error" texture="assets\fx\gui\textures\widget\steam_workshop.tga" height="128" width="128"></icon>
+  <icon name="menu_inventory" texture="assets\fx\gui\textures\menu\menu_inventory.tga" height="128" width="128"></icon>
+  <icon name="menu_weapons" texture="assets\fx\gui\textures\menu\menu_weapons.tga" height="128" width="128"></icon>
+  <icon name="menu_save" texture="assets\fx\gui\textures\menu\menu_save.tga" height="128" width="128"></icon>
+  <icon name="menu_reset_view" texture="assets\fx\gui\textures\menu\menu_reset_view.tga" height="128" width="128"></icon>
+  <icon name="menu_undo" texture="assets\fx\gui\textures\menu\menu_undo.tga" height="128" width="128"></icon>
+  <icon name="menu_redo" texture="assets\fx\gui\textures\menu\menu_redo.tga" height="128" width="128"></icon>
+  <icon name="menu_shuffle" texture="assets\fx\gui\textures\menu\menu_shuffle.tga" height="128" width="128"></icon>
+  <icon name="menu_dismiss" texture="assets\fx\gui\textures\menu\menu_dismiss.tga" height="128" width="128"></icon>
+  <icon name="menu_reset" texture="assets\fx\gui\textures\menu\menu_reset.tga" height="128" width="128"></icon>
+  <icon name="menu_on_off" texture="assets\fx\gui\textures\menu\menu_on_off.tga" height="128" width="128"></icon>
+  <icon name="menu_star_01" texture="assets\fx\gui\textures\menu\menu_star_01.tga" height="64" width="64"></icon>
+  <icon name="menu_star_02" texture="assets\fx\gui\textures\menu\menu_star_02.tga" height="64" width="64"></icon>
+  <icon name="menu_star_03" texture="assets\fx\gui\textures\menu\menu_star_03.tga" height="64" width="64"></icon>
+  <icon name="menu_star_04" texture="assets\fx\gui\textures\menu\menu_star_04.tga" height="64" width="64"></icon>
+
+  <!-- button sub elements -->
+  <icon name="bse_star" texture="assets\fx\gui\textures\button_subelements\bse_star_01.tga" height="128" width="128"></icon>
+
+  <!-- encyclopedia -->
+  <icon name="ency_timeline_arrow_01" texture="assets\fx\gui\textures\encyclopedia\ency_timeline_arrow_01.tga" height="128" width="128"></icon>
+  <icon name="ency_timeline_dot_01" texture="assets\fx\gui\textures\encyclopedia\ency_timeline_dot_01.tga" height="128" width="128"></icon>
+  <icon name="ency_timeline_line_01" texture="assets\fx\gui\textures\encyclopedia\ency_timeline_line_01.tga" height="1" width="128"></icon>
+  <icon name="ency_timeline_01" texture="assets\fx\gui\textures\encyclopedia\ency_timeline_01.tga" height="128" width="128"></icon>
+  <icon name="ency_timeline_empty_01" texture="assets\fx\gui\textures\encyclopedia\ency_timeline_empty_01.tga" height="128" width="128"></icon>
+
+  <!-- gamestarts -->
+  <icon name="gamestart_default" texture="assets\fx\gui\textures\gamestarts\gamestart_df.tga" height="256" width="512"></icon>
+  <icon name="gamestart_1" texture="assets\fx\gui\textures\gamestarts\gamestart_01.tga" height="256" width="512"></icon>
+  <icon name="gamestart_2" texture="assets\fx\gui\textures\gamestarts\gamestart_02.tga" height="256" width="512"></icon>
+  <icon name="gamestart_3" texture="assets\fx\gui\textures\gamestarts\gamestart_03.tga" height="256" width="512"></icon>
+  <icon name="gamestart_4" texture="assets\fx\gui\textures\gamestarts\gamestart_04.tga" height="256" width="512"></icon>
+  <icon name="gamestart_5" texture="assets\fx\gui\textures\gamestarts\gamestart_05.tga" height="256" width="512"></icon>
+  <icon name="gamestart_6" texture="assets\fx\gui\textures\gamestarts\gamestart_06.tga" height="256" width="512"></icon>
+
+  <!-- top level tabs -->
+  <icon name="tlt_encyclopedia" texture="assets\fx\gui\textures\top_level_tabs\tlt_encyclopedia.tga" height="128" width="128"></icon>
+  <icon name="tlt_map" texture="assets\fx\gui\textures\top_level_tabs\tlt_map.tga" height="128" width="128"></icon>
+  <icon name="tlt_optionsmenu" texture="assets\fx\gui\textures\top_level_tabs\tlt_optionsmenu.tga" height="128" width="128"></icon>
+  <icon name="tlt_playerinfo" texture="assets\fx\gui\textures\top_level_tabs\tlt_playerinfo.tga" height="128" width="128"></icon>
+  <icon name="tlt_research" texture="assets\fx\gui\textures\top_level_tabs\tlt_research.tga" height="128" width="128"></icon>
+  <icon name="tlt_docked" texture="assets\fx\gui\textures\top_level_tabs\tlt_docked.tga" height="128" width="128"></icon>
+  <icon name="tlt_shipinteractions" texture="assets\fx\gui\textures\top_level_tabs\tlt_shipinteractions.tga" height="128" width="128"></icon>
+  <icon name="tlt_help" texture="assets\fx\gui\textures\top_level_tabs\tlt_help.tga" height="128" width="128"></icon>
+  <icon name="tlt_arrow" texture="assets\fx\gui\textures\top_level_tabs\tlt_arrow.tga" height="128" width="128"></icon>
+
+  <!-- tutorials and help -->
+  <icon name="tut_tutorial" texture="assets\fx\gui\textures\tutorial_help\tut_tutorial.tga" height="128" width="128"></icon>
+  <icon name="tut_external" texture="assets\fx\gui\textures\tutorial_help\tut_external.tga" height="128" width="128"></icon>
+
+  <!-- venture stuff -->
+  <!-- venture types -->
+  <icon name="vt_aggressive" texture="assets\fx\gui\textures\venture\vt_aggressive.tga" height="128" width="128"></icon>
+  <icon name="vt_diplomatic" texture="assets\fx\gui\textures\venture\vt_diplomatic.tga" height="128" width="128"></icon>
+  <icon name="vt_economic" texture="assets\fx\gui\textures\venture\vt_economic.tga" height="128" width="128"></icon>
+  <icon name="vt_exploration" texture="assets\fx\gui\textures\venture\vt_explore.tga" height="128" width="128"></icon>
+
+  <!-- venture tabs -->
+  <icon name="vt_mission" texture="assets\fx\gui\textures\venture\vt_mission.tga" height="128" width="128"></icon>
+  <icon name="vt_reward" texture="assets\fx\gui\textures\venture\vt_reward.tga" height="128" width="128"></icon>
+
+  <!-- venture rewards -->
+  <icon name="vt_reward_offlinecurrency" texture="assets\fx\gui\textures\venture\vt_reward_offlinecurrency.tga" height="128" width="128"></icon>
+  <icon name="vt_reward_onlinecurrency" texture="assets\fx\gui\textures\venture\vt_reward_onlinecurrency.tga" height="128" width="128"></icon>
+  <icon name="vt_reward_paintmod" texture="assets\fx\gui\textures\venture\vt_reward_paintmod.tga" height="128" width="128"></icon>
+  <icon name="vt_reward_equipmentmod" texture="assets\fx\gui\textures\venture\vt_reward_equipmentmod.tga" height="128" width="128"></icon>
+  <icon name="vt_reward_crewskill" texture="assets\fx\gui\textures\venture\vt_reward_crewskill.tga" height="128" width="128"></icon>
+  <icon name="vt_reward_inventory" texture="assets\fx\gui\textures\venture\vt_reward_inventory.tga" height="128" width="128"></icon>
+
+  <!-- tutorials -->
+  <!--<icon name="tut_overview" texture="assets\fx\gui\textures\tutorials\tut_overview.tga" height="360" width="640"></icon>
+  <icon name="tut_exploration" texture="assets\fx\gui\textures\tutorials\tut_exploration.tga" height="360" width="640"></icon>
+  <icon name="tut_fleetcontrol" texture="assets\fx\gui\textures\tutorials\tut_fleetcontrol.tga" height="360" width="640"></icon>
+  <icon name="tut_teachnpc" texture="assets\fx\gui\textures\tutorials\tut_teachnpc.tga" height="360" width="640"></icon>
+  <icon name="tut_stealing" texture="assets\fx\gui\textures\tutorials\tut_stealing.tga" height="360" width="640"></icon>
+  <icon name="tut_trading" texture="assets\fx\gui\textures\tutorials\tut_trading.tga" height="360" width="640"></icon>
+  <icon name="tut_building" texture="assets\fx\gui\textures\tutorials\tut_building.tga" height="360" width="640"></icon>
+  <icon name="tut_boarding" texture="assets\fx\gui\textures\tutorials\tut_boarding.tga" height="360" width="640"></icon>
+  <icon name="tut_diplomaid" texture="assets\fx\gui\textures\tutorials\tut_diplomaid.tga" height="360" width="640"></icon>
+  <icon name="tut_offers" texture="assets\fx\gui\textures\tutorials\tut_offers.tga" height="360" width="640"></icon>
+  <icon name="tut_upkeep" texture="assets\fx\gui\textures\tutorials\tut_upkeep.tga" height="360" width="640"></icon>-->
+
+
+  <!-- ship icons v2 -->
+
+  <icon name="ship_xs_fight_01" texture="assets\fx\gui\textures\shipicon\ship_xs_fight_01.tga" height="128" width="128"></icon>
+  <icon name="ship_s_fight_01" texture="assets\fx\gui\textures\shipicon\ship_s_fight_01.tga" height="128" width="128"></icon>
+  <icon name="ship_m_fight_01" texture="assets\fx\gui\textures\shipicon\ship_m_fight_01.tga" height="128" width="128"></icon>
+  <icon name="ship_l_fight_01" texture="assets\fx\gui\textures\shipicon\ship_l_fight_01.tga" height="128" width="128"></icon>
+  <icon name="ship_xl_fight_01" texture="assets\fx\gui\textures\shipicon\ship_xl_fight_01.tga" height="128" width="128"></icon>
+
+  <icon name="ship_xs_trade_01" texture="assets\fx\gui\textures\shipicon\ship_xs_trade_01.tga" height="128" width="128"></icon>
+  <icon name="ship_s_trade_01" texture="assets\fx\gui\textures\shipicon\ship_s_trade_01.tga" height="128" width="128"></icon>
+  <icon name="ship_m_trade_01" texture="assets\fx\gui\textures\shipicon\ship_m_trade_01.tga" height="128" width="128"></icon>
+  <icon name="ship_l_trade_01" texture="assets\fx\gui\textures\shipicon\ship_l_trade_01.tga" height="128" width="128"></icon>
+  <icon name="ship_xl_trade_01" texture="assets\fx\gui\textures\shipicon\ship_xl_trade_01.tga" height="128" width="128"></icon>
+
+  <icon name="ship_xs_mine_01" texture="assets\fx\gui\textures\shipicon\ship_xs_mine_01.tga" height="128" width="128"></icon>
+  <icon name="ship_s_mine_01" texture="assets\fx\gui\textures\shipicon\ship_s_mine_01.tga" height="128" width="128"></icon>
+  <icon name="ship_m_mine_01" texture="assets\fx\gui\textures\shipicon\ship_m_mine_01.tga" height="128" width="128"></icon>
+  <icon name="ship_l_mine_01" texture="assets\fx\gui\textures\shipicon\ship_l_mine_01.tga" height="128" width="128"></icon>
+  <icon name="ship_xl_mine_01" texture="assets\fx\gui\textures\shipicon\ship_xl_mine_01.tga" height="128" width="128"></icon>
+
+  <icon name="ship_xs_neutral_01" texture="assets\fx\gui\textures\shipicon\ship_xs_neutral_01.tga" height="128" width="128"></icon>
+  <icon name="ship_s_neutral_01" texture="assets\fx\gui\textures\shipicon\ship_s_neutral_01.tga" height="128" width="128"></icon>
+  <icon name="ship_m_neutral_01" texture="assets\fx\gui\textures\shipicon\ship_m_neutral_01.tga" height="128" width="128"></icon>
+  <icon name="ship_l_neutral_01" texture="assets\fx\gui\textures\shipicon\ship_l_neutral_01.tga" height="128" width="128"></icon>
+  <icon name="ship_xl_neutral_01" texture="assets\fx\gui\textures\shipicon\ship_xl_neutral_01.tga" height="128" width="128"></icon>
+
+  <icon name="ship_xs_build_01" texture="assets\fx\gui\textures\shipicon\ship_xs_build_01.tga" height="128" width="128"></icon>
+  <icon name="ship_xl_build_01" texture="assets\fx\gui\textures\shipicon\ship_xl_build_01.tga" height="128" width="128"></icon>
+
+  <icon name="ship_squadleader_01" texture="assets\fx\gui\textures\shipicon\ship_squadleader_01.tga" height="128" width="128"></icon>
+
+  <!-- main menu -->
+  <icon name="mm_externallink" texture="assets\fx\gui\textures\mainmenu\mm_externallink.tga" height="720" width="564"></icon>
+
+  <icon name="module_*" texture="assets\fx\gui\textures\stationmodules\*.tga" height="256" width="256"></icon>
+  <icon name="ship_*" texture="assets\fx\gui\textures\ships\*.tga" height="256" width="256"></icon>
+  <icon name="upgrade_*" texture="assets\fx\gui\textures\upgrades\*.tga" height="256" width="256"></icon>
+  <icon name="*" texture="assets\fx\gui\textures\paintmods\*.tga" height="256" width="256"></icon>
+
+  <icon name="joystick_input_*" texture="assets\fx\gui\textures\button_icons\joystick\*.tga" height="64" width="64"></icon>
+  <icon name="keyboard_input_*" texture="assets\fx\gui\textures\button_icons\keyboard\*.tga" height="64" width="64"></icon>
+  <icon name="gamepad_input_*" texture="assets\fx\gui\textures\button_icons\xbox\*.tga" height="64" width="64"></icon>
+
+  <icon name="input_device_keyboard" texture="assets\fx\gui\textures\button_icons\input_device\input_device_keyboard.tga" height="64" width="64"></icon>
+  <icon name="input_device_controller" texture="assets\fx\gui\textures\button_icons\input_device\input_device_controller.tga" height="64" width="64"></icon>
+  <icon name="input_device_mouse" texture="assets\fx\gui\textures\button_icons\input_device\input_device_mouse.tga" height="64" width="64"></icon>
+  <icon name="input_device_joystick" texture="assets\fx\gui\textures\button_icons\input_device\input_device_joystick.tga" height="64" width="64"></icon>
+  <icon name="input_device_number_1" texture="assets\fx\gui\textures\button_icons\input_device\input_device_number_1.tga" height="64" width="64"></icon>
+  <icon name="input_device_number_2" texture="assets\fx\gui\textures\button_icons\input_device\input_device_number_2.tga" height="64" width="64"></icon>
+  <icon name="input_device_number_3" texture="assets\fx\gui\textures\button_icons\input_device\input_device_number_3.tga" height="64" width="64"></icon>
+  <icon name="input_device_number_4" texture="assets\fx\gui\textures\button_icons\input_device\input_device_number_4.tga" height="64" width="64"></icon>
+  <icon name="input_device_number_5" texture="assets\fx\gui\textures\button_icons\input_device\input_device_number_5.tga" height="64" width="64"></icon>
+  <icon name="input_device_number_6" texture="assets\fx\gui\textures\button_icons\input_device\input_device_number_6.tga" height="64" width="64"></icon>
+  <icon name="input_device_number_7" texture="assets\fx\gui\textures\button_icons\input_device\input_device_number_7.tga" height="64" width="64"></icon>
+  <icon name="input_device_number_8" texture="assets\fx\gui\textures\button_icons\input_device\input_device_number_8.tga" height="64" width="64"></icon>
+
+  <!-- map objects -->
+  <!-- stations -->
+  <icon name="mapob_factory" texture="assets\fx\gui\textures\map_objects\mapob_factory.tga" height="128" width="128"></icon>
+  <icon name="mapob_equipmentdock" texture="assets\fx\gui\textures\map_objects\mapob_equipmentdock.tga" height="128" width="128"></icon>
+  <icon name="mapob_equipmentdock_headquarter" texture="assets\fx\gui\textures\map_objects\mapob_equipmentdock_headquarter.tga" height="128" width="128"></icon>
+  <icon name="mapob_tradestation" texture="assets\fx\gui\textures\map_objects\mapob_tradestation.tga" height="128" width="128"></icon>
+  <icon name="mapob_tradestation_headquarter" texture="assets\fx\gui\textures\map_objects\mapob_tradestation_headquarter.tga" height="128" width="128"></icon>
+  <icon name="mapob_shipyard" texture="assets\fx\gui\textures\map_objects\mapob_shipyard.tga" height="128" width="128"></icon>
+  <icon name="mapob_shipyard_headquarter" texture="assets\fx\gui\textures\map_objects\mapob_shipyard_headquarter.tga" height="128" width="128"></icon>
+  <icon name="mapob_wharf" texture="assets\fx\gui\textures\map_objects\mapob_wharf.tga" height="128" width="128"></icon>
+  <icon name="mapob_wharf_headquarter" texture="assets\fx\gui\textures\map_objects\mapob_wharf_headquarter.tga" height="128" width="128"></icon>
+  <icon name="mapob_defensestation" texture="assets\fx\gui\textures\map_objects\mapob_defensestation.tga" height="128" width="128"></icon>
+  <icon name="mapob_defensestation_headquarter" texture="assets\fx\gui\textures\map_objects\mapob_defensestation_headquarter.tga" height="128" width="128"></icon>
+  <icon name="mapob_playerhq" texture="assets\fx\gui\textures\map_objects\mapob_playerhq.tga" height="128" width="128"></icon>
+  <icon name="mapob_piratestation" texture="assets\fx\gui\textures\map_objects\mapob_piratestation.tga" height="128" width="128"></icon>
+  <icon name="mapob_piratestation_headquarter" texture="assets\fx\gui\textures\map_objects\mapob_piratestation_headquarter.tga" height="128" width="128"></icon>
+  <icon name="mapob_lockbox" texture="assets\fx\gui\textures\map_objects\mapob_lockbox.tga" height="128" width="128"></icon>
+  <icon name="mapob_drop" texture="assets\fx\gui\textures\map_objects\mapob_drop.tga" height="128" width="128"></icon>
+  <icon name="mapob_asteroid" texture="assets\fx\gui\textures\map_objects\mapob_asteroid.tga" height="128" width="128"></icon>
+  <icon name="mapob_loudspeaker" texture="assets\fx\gui\textures\map_objects\mapob_loudspeaker.tga" height="128" width="128"></icon>
+
+  <!-- other map object icons -->
+  <icon name="mapob_alert" texture="assets\fx\gui\textures\map_objects\mapob_alert.tga" height="128" width="128"></icon>
+  <icon name="mapob_jumpgate" texture="assets\fx\gui\textures\map_objects\mapob_jumpgate.tga" height="128" width="128"></icon>
+  <icon name="mapob_transorbital_accelerator" texture="assets\fx\gui\textures\map_objects\mapob_transorbital_accelerator.tga" height="128" width="128"></icon>
+  <icon name="mapob_superhighway" texture="assets\fx\gui\textures\map_objects\mapob_superhighway.tga" height="128" width="128"></icon>
+  <icon name="mapob_satellite_01" texture="assets\fx\gui\textures\map_objects\mapob_satellite_01.tga" height="128" width="128"></icon>
+  <icon name="mapob_satellite_02" texture="assets\fx\gui\textures\map_objects\mapob_satellite_02.tga" height="128" width="128"></icon>
+  <icon name="mapob_poi" texture="assets\fx\gui\textures\map_objects\mapob_poi.tga" height="128" width="128"></icon>
+  <icon name="mapob_missionboard" texture="assets\fx\gui\textures\map_objects\mapob_missionboard.tga" height="128" width="128"></icon>
+  <icon name="mapob_missiontarget" texture="assets\fx\gui\textures\map_objects\mapob_alert.tga" height="128" width="128"></icon>
+  <icon name="mapob_unknown" texture="assets\fx\gui\textures\map_objects\mapob_unknown.tga" height="128" width="128"></icon>
+  <icon name="mapob_mine" texture="assets\fx\gui\textures\map_objects\mapob_mine.tga" height="128" width="128"></icon>
+  <icon name="mapob_resourceprobe" texture="assets\fx\gui\textures\map_objects\mapob_resourceprobe.tga" height="128" width="128"></icon>
+  <icon name="mapob_positioncursor" texture="assets\fx\gui\textures\map_objects\mapob_positioncursor.tga" height="128" width="128"></icon>
+  <icon name="mapob_lasertower_xs" texture="assets\fx\gui\textures\map_objects\mapob_lasertower_xs.tga" height="128" width="128"></icon>
+  <icon name="mapob_lasertower_s" texture="assets\fx\gui\textures\map_objects\mapob_lasertower_s.tga" height="128" width="128"></icon>
+  <icon name="mapob_busy" texture="assets\fx\gui\textures\map_objects\mapob_busy.tga" height="128" width="128"></icon>
+  <icon name="mapob_navbeacon" texture="assets\fx\gui\textures\map_objects\mapob_navbeacon.tga" height="128" width="128"></icon>
+
+  <!-- map sidebar tabs -->
+  <icon name="mapst_objectlist" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_ol.tga" height="128" width="128"></icon>
+  <icon name="mapst_propertyowned" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_po.tga" height="128" width="128"></icon>
+  <icon name="mapst_orderqueue" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_oq.tga" height="128" width="128"></icon>
+  <icon name="mapst_orderqueue_advanced" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_oq_advanced.tga" height="128" width="128"></icon>
+  <icon name="mapst_plotmanagement" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mp.tga" height="128" width="128"></icon>
+  <icon name="mapst_information" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_info.tga" height="128" width="128"></icon>
+  <icon name="mapst_filtersystem" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_fs.tga" height="128" width="128"></icon>
+  <icon name="mapst_mission_accepted" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mission_accepted.tga" height="128" width="128"></icon>
+  <icon name="mapst_mission_offers" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mission_offers.tga" height="128" width="128"></icon>
+  <icon name="mapst_seperator_line" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_seperator_line.tga" height="32" width="128"></icon>
+  <icon name="mapst_cheats" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_cheats.tga" height="128" width="128"></icon>
+  <icon name="mapst_legend" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_legend.tga" height="128" width="128"></icon>
+
+  <!--  map trade icons -->
+  <icon name="maptr_buildstorage" texture="assets\fx\gui\textures\map_trade\maptr_buildstorage.tga" height="128" width="128"></icon>
+  <icon name="maptr_hexagon" texture="assets\fx\gui\textures\map_trade\maptr_hexagon.tga" height="128" width="128"></icon>
+  <icon name="maptr_illegal" texture="assets\fx\gui\textures\map_trade\maptr_illegal.tga" height="128" width="128"></icon>
+
+  <!-- map sidebar tabs (filter system) -->
+  <icon name="mapst_fs_trade" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_trade.tga" height="128" width="128"></icon>
+  <icon name="mapst_fs_trade_disabled" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_trade_disabled.tga" height="128" width="128"></icon>
+
+  <icon name="mapst_fs_fight" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_fight.tga" height="128" width="128"></icon>
+  <icon name="mapst_fs_fight_disabled" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_fight_disabled.tga" height="128" width="128"></icon>
+
+  <icon name="mapst_fs_think" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_think.tga" height="128" width="128"></icon>
+  <icon name="mapst_fs_think_disabled" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_think_disabled.tga" height="128" width="128"></icon>
+
+  <icon name="mapst_fs_build" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_build.tga" height="128" width="128"></icon>
+  <icon name="mapst_fs_build_disabled" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_build_disabled.tga" height="128" width="128"></icon>
+
+  <icon name="mapst_fs_diplomacy" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_diplomacy.tga" height="128" width="128"></icon>
+  <icon name="mapst_fs_diplomacy_disabled" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_diplomacy_disabled.tga" height="128" width="128"></icon>
+
+  <icon name="mapst_fs_mining" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mining.tga" height="128" width="128"></icon>
+  <icon name="mapst_fs_mining_disabled" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mining_disabled.tga" height="128" width="128"></icon>
+
+  <icon name="mapst_fs_other" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_other.tga" height="128" width="128"></icon>
+  <icon name="mapst_fs_other_disabled" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_other_disabled.tga" height="128" width="128"></icon>
+
+  <!-- map sidebar tabs (advanced orders) -->
+  <icon name="mapst_ao_default_global" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_default_global.tga" height="128" width="128"></icon>
+  <icon name="mapst_ao_default_object" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_default_object.tga" height="128" width="128"></icon>
+  <icon name="mapst_ao_orderqueue" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_oq.tga" height="128" width="128"></icon>
+
+  <!-- map sidebar tabs (mission offers/accepted missions) -->
+  <icon name="mapst_mission_guild" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mission_guild.tga" height="128" width="128"></icon>
+  <icon name="mapst_mission_other" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mission_other.tga" height="128" width="128"></icon>
+  <icon name="mapst_mission_mentor" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mission_mentor.tga" height="128" width="128"></icon>
+  <icon name="mapst_mission_upkeep" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mission_upkeep.tga" height="128" width="128"></icon>
+  <icon name="mapst_mission_guidance" texture="assets\fx\gui\textures\map_sidebar_tabs\mapst_mission_guidance.tga" height="128" width="128"></icon>
+
+  <!-- station build/upgrade sidebar tabs  -->
+  <icon name="stationbuildst_buildmodule" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_buildmodule.tga" height="128" width="128"></icon>
+  <icon name="stationbuildst_defense" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_defense.tga" height="128" width="128"></icon>
+  <icon name="stationbuildst_dock" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_dock.tga" height="128" width="128"></icon>
+  <icon name="stationbuildst_habitation" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_habitation.tga" height="128" width="128"></icon>
+  <icon name="stationbuildst_other" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_other.tga" height="128" width="128"></icon>
+  <icon name="stationbuildst_production" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_production.tga" height="128" width="128"></icon>
+  <icon name="stationbuildst_storage" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_storage.tga" height="128" width="128"></icon>
+  <icon name="stationbuildst_lsov" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_lsov.tga" height="128" width="128"></icon>
+  <icon name="stationbuildst_venture" texture="assets\fx\gui\textures\station_build_sidebar_tabs\stationbuildst_venture.tga" height="128" width="128"></icon>
+
+  <!-- ship build/upgrade sidebar tabs  -->
+  <icon name="shipbuildst_chassis" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_chassis.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_consumable" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_consumable.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_crew" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_crew.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_engine" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_engine.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_enginegroups" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_enginegroups.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_turretgroups" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_turretgroups.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_repair" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_repair.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_shield" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_shield.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_software" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_software.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_thruster" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_thruster.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_turret" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_turret.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_weapon" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_weapon.tga" height="128" width="128"></icon>
+  <icon name="shipbuildst_paint" texture="assets\fx\gui\textures\ship_build_sidebar_tabs\shipbuildst_paint.tga" height="128" width="128"></icon>
+
+  <!-- map legend icons  -->
+  <icon name="maplegend_hexagon_01" texture="assets\fx\gui\textures\map_legend\maplegend_hexagon_01.tga" height="128" width="128"></icon>
+  <icon name="maplegend_hexagon_fog_01" texture="assets\fx\gui\textures\map_legend\maplegend_hexagon_fog_01.tga" height="128" width="128"></icon>
+  <icon name="maplegend_hw_01" texture="assets\fx\gui\textures\map_legend\maplegend_hw_01.tga" height="128" width="128"></icon>
+  <icon name="maplegend_hq_01" texture="assets\fx\gui\textures\map_legend\maplegend_hq_01.tga" height="128" width="128"></icon>
+
+  <!-- player information -->
+  <icon name="pi_account" texture="assets\fx\gui\textures\player_info\pi_account.tga" height="128" width="128"></icon>
+  <icon name="pi_accountmanagement" texture="assets\fx\gui\textures\player_info\pi_accountmanagement.tga" height="128" width="128"></icon>
+  <icon name="pi_transactionlog" texture="assets\fx\gui\textures\player_info\pi_transactionlog.tga" height="128" width="128"></icon>
+  <icon name="pi_crafting" texture="assets\fx\gui\textures\player_info\pi_crafting.tga" height="128" width="128"></icon>
+  <icon name="pi_diplomacy" texture="assets\fx\gui\textures\player_info\pi_diplomacy.tga" height="128" width="128"></icon>
+  <icon name="pi_inventory" texture="assets\fx\gui\textures\player_info\pi_inventory.tga" height="128" width="128"></icon>
+  <icon name="pi_logbook" texture="assets\fx\gui\textures\player_info\pi_logbook.tga" height="128" width="128"></icon>
+  <icon name="pi_statistics" texture="assets\fx\gui\textures\player_info\pi_statistics.tga" height="128" width="128"></icon>
+  <icon name="pi_equipmentmods" texture="assets\fx\gui\textures\player_info\pi_equipmentmods.tga" height="128" width="128"></icon>
+  <icon name="pi_background_01" texture="assets\fx\gui\textures\player_info\pi_background_01.tga" height="64" width="512"></icon>
+  <icon name="pi_spacesuit" texture="assets\fx\gui\textures\player_info\pi_spacesuit.tga" height="128" width="128"></icon>
+  <icon name="pi_empire" texture="assets\fx\gui\textures\player_info\pi_empire.tga" height="128" width="128"></icon>
+
+  <!-- HUD station icons (visible at target rectangle) -->
+  <icon name="si_defensestation" texture="assets\fx\gui\textures\stationicon\si_defensestation.tga" height="128" width="128"></icon>
+  <icon name="si_defensestation_headquarter" texture="assets\fx\gui\textures\stationicon\si_defensestation.tga" height="128" width="128"></icon>
+  <icon name="si_equipmentdock" texture="assets\fx\gui\textures\stationicon\si_equipmentdock.tga" height="128" width="128"></icon>
+  <icon name="si_equipmentdock_headquarter" texture="assets\fx\gui\textures\stationicon\si_equipmentdock.tga" height="128" width="128"></icon>
+  <icon name="si_factory" texture="assets\fx\gui\textures\stationicon\si_factory.tga" height="128" width="128"></icon>
+  <icon name="si_playerhq" texture="assets\fx\gui\textures\stationicon\si_playerhq.tga" height="128" width="128"></icon>
+  <icon name="si_poi" texture="assets\fx\gui\textures\stationicon\si_poi.tga" height="128" width="128"></icon>
+  <icon name="si_shipyard" texture="assets\fx\gui\textures\stationicon\si_shipyard.tga" height="128" width="128"></icon>
+  <icon name="si_shipyard_headquarter" texture="assets\fx\gui\textures\stationicon\si_shipyard.tga" height="128" width="128"></icon>
+  <icon name="si_wharf" texture="assets\fx\gui\textures\stationicon\si_wharf.tga" height="128" width="128"></icon>
+  <icon name="si_wharf_headquarter" texture="assets\fx\gui\textures\stationicon\si_wharf.tga" height="128" width="128"></icon>
+  <icon name="si_tradestation" texture="assets\fx\gui\textures\stationicon\si_tradestation.tga" height="128" width="128"></icon>
+  <icon name="si_tradestation_headquarter" texture="assets\fx\gui\textures\stationicon\si_tradestation.tga" height="128" width="128"></icon>
+  <icon name="si_piratestation" texture="assets\fx\gui\textures\stationicon\si_piratestation.tga" height="128" width="128"></icon>
+  <icon name="si_piratestation_headquarter" texture="assets\fx\gui\textures\stationicon\si_piratestation.tga" height="128" width="128"></icon>
+  <icon name="si_missionboard" texture="assets\fx\gui\textures\stationicon\si_missionboard.tga" height="128" width="128"></icon>
+  <icon name="si_unknown" texture="assets\fx\gui\textures\stationicon\si_unknown.tga" height="128" width="128"></icon>
+
+  <!-- NPC icons for target element and map -->
+  <icon name="npc_factionrep" texture="assets\fx\gui\textures\npc\npc_factionrep.tga" height="128" width="128"></icon>
+  <icon name="npc_missionactor" texture="assets\fx\gui\textures\npc\npc_missionactor.tga" height="128" width="128"></icon>
+  <icon name="npc_shadyguy" texture="assets\fx\gui\textures\npc\npc_shadyguy.tga" height="128" width="128"></icon>
+
+  <!-- Map icons (outdated?)   -->
+  <icon name="map_jumpgate_01" texture="assets\fx\gui\textures\shipicon\ship_xs_fight_01.tga" height="128" width="128"></icon>
+
+  <!-- Modification icons  -->
+  <icon name="mods_grade_01" texture="assets\fx\gui\textures\modifications\mods_grade_01.tga" height="128" width="128"></icon>
+  <icon name="mods_grade_02" texture="assets\fx\gui\textures\modifications\mods_grade_02.tga" height="128" width="128"></icon>
+  <icon name="mods_grade_03" texture="assets\fx\gui\textures\modifications\mods_grade_03.tga" height="128" width="128"></icon>
+  <icon name="mods_grade_circle_01" texture="assets\fx\gui\textures\modifications\mods_grade_circle_01.tga" height="128" width="128"></icon>
+  <icon name="mods_grade_circle_02" texture="assets\fx\gui\textures\modifications\mods_grade_circle_02.tga" height="128" width="128"></icon>
+  <icon name="mods_grade_circle_03" texture="assets\fx\gui\textures\modifications\mods_grade_circle_03.tga" height="128" width="128"></icon>
+
+  <!-- AI orders -->
+  <icon name="order_assigncommander" texture="assets\fx\gui\textures\order\order_assigncommander.tga" height="32" width="32"></icon>
+  <icon name="order_attack" texture="assets\fx\gui\textures\order\order_attack.tga" height="32" width="32"></icon>
+  <icon name="order_board" texture="assets\fx\gui\textures\order\order_board.tga" height="32" width="32"></icon>
+  <icon name="order_collect" texture="assets\fx\gui\textures\order\order_collect.tga" height="32" width="32"></icon>
+  <icon name="order_collectdropsinradius" texture="assets\fx\gui\textures\order\order_collectdropsinradius.tga" height="32" width="32"></icon>
+  <icon name="order_deployobjectatposition" texture="assets\fx\gui\textures\order\order_deployobjectatposition.tga" height="32" width="32"></icon>
+  <icon name="order_deploytostation" texture="assets\fx\gui\textures\order\order_deploytostation.tga" height="32" width="32"></icon>
+  <icon name="order_disitributewares" texture="assets\fx\gui\textures\order\order_disitributewares.tga" height="32" width="32"></icon>
+  <icon name="order_dockandwait" texture="assets\fx\gui\textures\order\order_dockandwait.tga" height="32" width="32"></icon>
+  <icon name="order_dockat" texture="assets\fx\gui\textures\order\order_dockat.tga" height="32" width="32"></icon>
+  <icon name="order_equip" texture="assets\fx\gui\textures\order\order_equip.tga" height="32" width="32"></icon>
+  <icon name="order_escort" texture="assets\fx\gui\textures\order\order_escort.tga" height="32" width="32"></icon>
+  <icon name="order_explore" texture="assets\fx\gui\textures\order\order_explore.tga" height="32" width="32"></icon>
+  <icon name="order_exploreupdate" texture="assets\fx\gui\textures\order\order_exploreupdate.tga" height="32" width="32"></icon>
+  <icon name="order_findbuildtasks" texture="assets\fx\gui\textures\order\order_findbuildtasks.tga" height="32" width="32"></icon>
+  <icon name="order_flee" texture="assets\fx\gui\textures\order\order_flee.tga" height="32" width="32"></icon>
+  <icon name="order_follow" texture="assets\fx\gui\textures\order\order_follow.tga" height="32" width="32"></icon>
+  <icon name="order_lasertower" texture="assets\fx\gui\textures\order\order_lasertower.tga" height="32" width="32"></icon>
+  <icon name="order_miningplayer" texture="assets\fx\gui\textures\order\order_miningplayer.tga" height="32" width="32"></icon>
+  <icon name="order_miningcollect" texture="assets\fx\gui\textures\order\order_miningcollect.tga" height="32" width="32"></icon>
+  <icon name="order_miningroutine" texture="assets\fx\gui\textures\order\order_miningroutine.tga" height="32" width="32"></icon>
+  <icon name="order_moveandwait" texture="assets\fx\gui\textures\order\order_moveandwait.tga" height="32" width="32"></icon>
+  <icon name="order_movedie" texture="assets\fx\gui\textures\order\order_movedie.tga" height="32" width="32"></icon>
+  <icon name="order_moverecycle" texture="assets\fx\gui\textures\order\order_moverecycle.tga" height="32" width="32"></icon>
+  <icon name="order_movetaxi" texture="assets\fx\gui\textures\order\order_movetaxi.tga" height="32" width="32"></icon>
+  <icon name="order_movetoobject" texture="assets\fx\gui\textures\order\order_movetoobject.tga" height="32" width="32"></icon>
+  <icon name="order_movewait" texture="assets\fx\gui\textures\order\order_movewait.tga" height="32" width="32"></icon>
+  <icon name="order_patrol" texture="assets\fx\gui\textures\order\order_patrol.tga" height="32" width="32"></icon>
+  <icon name="order_playerattack" texture="assets\fx\gui\textures\order\order_playerattack.tga" height="32" width="32"></icon>
+  <icon name="order_playerdocktotrade" texture="assets\fx\gui\textures\order\order_playerdocktotrade.tga" height="32" width="32"></icon>
+  <icon name="order_plunder" texture="assets\fx\gui\textures\order\order_plunder.tga" height="32" width="32"></icon>
+  <icon name="order_protectposition" texture="assets\fx\gui\textures\order\order_protectposition.tga" height="32" width="32"></icon>
+  <icon name="order_protectship" texture="assets\fx\gui\textures\order\order_protectship.tga" height="32" width="32"></icon>
+  <icon name="order_protectstation" texture="assets\fx\gui\textures\order\order_protectstation.tga" height="32" width="32"></icon>
+  <icon name="order_recallsubordinates" texture="assets\fx\gui\textures\order\order_recallsubordinates.tga" height="32" width="32"></icon>
+  <icon name="order_recon" texture="assets\fx\gui\textures\order\order_recon.tga" height="32" width="32"></icon>
+  <icon name="order_repair" texture="assets\fx\gui\textures\order\order_repair.tga" height="32" width="32"></icon>
+  <icon name="order_restocksubordinates" texture="assets\fx\gui\textures\order\order_restocksubordinates.tga" height="32" width="32"></icon>
+  <icon name="order_resupply" texture="assets\fx\gui\textures\order\order_resupply.tga" height="32" width="32"></icon>
+  <icon name="order_singlebuy" texture="assets\fx\gui\textures\order\order_singlebuy.tga" height="32" width="32"></icon>
+  <icon name="order_singlesell" texture="assets\fx\gui\textures\order\order_singlesell.tga" height="32" width="32"></icon>
+  <icon name="order_tradeexchange" texture="assets\fx\gui\textures\order\order_tradeexchange.tga" height="32" width="32"></icon>
+  <icon name="order_tradeexchangenonship" texture="assets\fx\gui\textures\order\order_tradeexchangenonship.tga" height="32" width="32"></icon>
+  <icon name="order_tradeexchangepassive" texture="assets\fx\gui\textures\order\order_tradeexchangepassive.tga" height="32" width="32"></icon>
+  <icon name="order_tradeperform" texture="assets\fx\gui\textures\order\order_tradeperform.tga" height="32" width="32"></icon>
+  <icon name="order_undock" texture="assets\fx\gui\textures\order\order_undock.tga" height="32" width="32"></icon>
+  <icon name="order_wait" texture="assets\fx\gui\textures\order\order_wait.tga" height="32" width="32"></icon>
+  <icon name="order_waitforsignal" texture="assets\fx\gui\textures\order\order_waitforsignal.tga" height="32" width="32"></icon>
+
+  <!-- dummy icons used in quick menu -->
+  <icon name="dummy_seta" texture="assets\fx\gui\textures\drone_abilities\da_seta.tga" height="128" width="128"></icon>
+  <icon name="dummy_zonemap" texture="assets\fx\gui\textures\drone_abilities\da_zonemap.tga" height="128" width="128"></icon>
+
 </icons>

@@ -4,13 +4,16 @@
     "module": "commonjs",
     "outDir": "./dist",
     "declaration": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": false,
     "noFallthroughCasesInSwitch": true,
     "strict": true,
     "esModuleInterop": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "baseUrl": "./",
+    "paths": {
+      "@@/*": ["src/*"]
+    }
   },
   "compileOnSave": true,
-  "exclude": ["src/**/*.spec.ts"],
   "include": ["src/**/*.ts"]
 }

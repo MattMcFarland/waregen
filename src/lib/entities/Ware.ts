@@ -11,7 +11,7 @@ import {
   Attributes11,
   Attributes14,
   Attributes12
-} from "../../../XMLTypes/X4LibraryWares";
+} from "@@/XMLTypes/X4LibraryWares";
 
 export type ProductionEntities = ProductionEntity2[];
 export type ProductionEntity = ProductionEntity2;

@@ -3,22 +3,17 @@ import { cloneDeep, merge } from "lodash";
 import { dig } from "../utils/objectUtils";
 
 export enum X4EntityType {
-  BASE_ENTITY = "BASE_ENTITY",
   ADDWARE = "ADDWARE",
-  WARE_MACRO = "WARE_MACRO",
-  WARE_PROD_MACRO = "WARE_PROD_MACRO",
+  BASE_ENTITY = "BASE_ENTITY",
+  HASH = "HASH",
   LIBRARY_BASKET = "LIBRARY_BASKET",
   LIBRARY_BASKETS = "LIBRARY_BASKETS",
-  INDEX_COMPONENT = "INDEX_COMPONENT",
-  INDEX_COMPONENTS = "INDEX_COMPONENTS",
-  LIBRARY_ICON = "LIBRARY_ICON",
-  LIBRARY_ICONS = "LIBRARY_ICONS",
-  INDEX_MACRO = "INDEX_MACRO",
-  INDEX_MACROS = "INDEX_MACROS",
   LIBRARY_MODULE_GROUP = "LIBRARY_MODULE_GROUP",
   LIBRARY_MODULE_GROUPS = "LIBRARY_MODULE_GROUPS",
   LIBRARY_WARE = "LIBRARY_WARE",
-  LIBRARY_WARES = "LIBRARY_WARES"
+  LIBRARY_WARES = "LIBRARY_WARES",
+  WARE_MACRO = "WARE_MACRO",
+  WARE_PROD_MACRO = "WARE_PROD_MACRO"
 }
 export class X4Entity<T> {
   private entityType: X4EntityType = X4EntityType.BASE_ENTITY;
@@ -99,11 +94,11 @@ export class X4Entity<T> {
     };
     this.create = _options => {
       if (typeof options === "undefined") {
-        this.xmlDef = defaults;
+        this.xmlDef = cloneDeep(defaults);
         return this;
       }
       if (options) {
-        this.xmlDef = _options;
+        this.xmlDef = cloneDeep(_options);
       }
       return this;
     };

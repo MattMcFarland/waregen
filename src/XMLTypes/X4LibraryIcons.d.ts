@@ -9,7 +9,11 @@ export interface IconEntity {
 }
 export interface Attributes {
   name: string;
-  texture: string;
-  height: number;
-  width: number;
+  texture?: string | null;
+  personal?: null;
+  height?: number | null;
+  width?: number | null;
+  active?: string | null;
+  inactive?: string | null;
+  selected?: string | null;
 }

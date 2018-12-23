@@ -1,5 +1,5 @@
 import { IndexHash, findInXmlDef } from "./IndexHash";
-import { EntryEntity, Index as IndexHashItems } from "@@/XMLTypes/X4Index";
+import { EntryEntity, Index as IndexItems } from "@@/XMLTypes/X4Index";
 
 describe("IndexHash", () => {
   describe("constructor(hash)", () => {
@@ -23,11 +23,12 @@ describe("IndexHash", () => {
         aBool: true
       });
       expect(findInXmlDef(testIndex.__xmlDef, "foo")).toBeDefined();
-      const items = <IndexHashItems>testIndex.__xmlDef.entry;
-      expect(items).toBeDefined();
-      if (items.entry) {
-        expect(items.entry[0].Attributes.name).toEqual("foo");
-      }
+      const items = <IndexItems>testIndex.__xmlDef;
+      expect(items.entry).toBeDefined();
+      expect(items.entry && items.entry[0].Attributes.name).toBeTruthy();
+      const atts = items.entry && items.entry[0].Attributes;
+      expect(atts && atts.name).toEqual("foo");
+      expect(atts && atts.value).toEqual("bar");
     });
   });
 

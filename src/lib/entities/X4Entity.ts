@@ -23,6 +23,7 @@ export enum X4EntityType {
 export class X4Entity<T> {
   private entityType: X4EntityType = X4EntityType.BASE_ENTITY;
   protected xmlDef: T = <any>{};
+  protected onImport(xmlDef: any): void {}
   private buildOptions: BuilderOptions;
   private create: (options: any) => any;
   get __entityType() {
@@ -42,16 +43,16 @@ export class X4Entity<T> {
       this.xmlDef = await (<T>(<any>new Parser({
         explicitRoot: false
       }).parseString(xmlString)));
+      this.onImport(this.__xmlDef);
       return this;
     }
     const _fullObj = await new Parser({
       explicitRoot: true,
       rootName: rootNode
     }).parseString(xmlString);
-    //this.xmlDef = { [rootNode]: dig(_fullObj, rootNode) };
     this.xmlDef = dig(_fullObj, rootNode)[0];
-
     this.buildOptions.rootName = rootNode;
+    this.onImport(this.__xmlDef);
     return this;
   }
   clone(): X4Entity<T> {

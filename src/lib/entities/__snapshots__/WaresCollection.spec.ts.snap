@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WaresCollection adding a ware toJson() 1`] = `"{\\"ware\\":[{\\"Attributes\\":{\\"id\\":\\"ware1\\",\\"name\\":\\"default\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}],\\"container\\":[{\\"Attributes\\":{\\"ref\\":\\"sm_gen_pickup_container_01_macro\\"}}],\\"icon\\":[{\\"Attributes\\":{\\"active\\":\\"ware_default\\",\\"video\\":\\"ware_noicon_macro\\"}}]},{\\"Attributes\\":{\\"id\\":\\"ware2\\",\\"name\\":\\"default\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}],\\"container\\":[{\\"Attributes\\":{\\"ref\\":\\"sm_gen_pickup_container_01_macro\\"}}],\\"icon\\":[{\\"Attributes\\":{\\"active\\":\\"ware_default\\",\\"video\\":\\"ware_noicon_macro\\"}}]}]}"`;
+
+exports[`WaresCollection adding a ware toXml() 1`] = `
+"<wares>
+  <ware id=\\"ware1\\" name=\\"default\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+    <container ref=\\"sm_gen_pickup_container_01_macro\\"/>
+    <icon active=\\"ware_default\\" video=\\"ware_noicon_macro\\"/>
+  </ware>
+  <ware id=\\"ware2\\" name=\\"default\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+    <container ref=\\"sm_gen_pickup_container_01_macro\\"/>
+    <icon active=\\"ware_default\\" video=\\"ware_noicon_macro\\"/>
+  </ware>
+</wares>"
+`;
+
+exports[`WaresCollection importing XML toXML() 1`] = `
+"<wares>
+  <ware id=\\"advancedcomposites\\" name=\\"{20201,401}\\" description=\\"{20201,402}\\" factoryname=\\"{20201,404}\\" group=\\"hightech\\" transport=\\"container\\" volume=\\"32\\" tags=\\"container economy\\">
+    <price min=\\"735\\" average=\\"865\\" max=\\"994\\"/>
+    <production time=\\"300\\" amount=\\"60\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+        <ware ware=\\"graphene\\" amount=\\"80\\"/>
+        <ware ware=\\"refinedmetals\\" amount=\\"80\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.2\\"/>
+      </effects>
+    </production>
+    <production time=\\"300\\" amount=\\"60\\" method=\\"teladi\\" name=\\"{20206,401}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+        <ware ware=\\"graphene\\" amount=\\"80\\"/>
+        <ware ware=\\"teladianium\\" amount=\\"58\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.2\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_advancedcomposites\\" video=\\"ware_advancedcomposites_macro\\"/>
+  </ware>
+  <ware id=\\"advancedelectronics\\" name=\\"{20201,101}\\" description=\\"{20201,102}\\" factoryname=\\"{20201,104}\\" group=\\"shiptech\\" transport=\\"container\\" volume=\\"30\\" tags=\\"container economy stationbuilding\\">
+    <price min=\\"1986\\" average=\\"2207\\" max=\\"2428\\"/>
+    <production time=\\"720\\" amount=\\"60\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"60\\"/>
+        <ware ware=\\"microchips\\" amount=\\"44\\"/>
+        <ware ware=\\"quantumtubes\\" amount=\\"20\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.22\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_advancedelectronics\\" video=\\"ware_advancedelectronics_macro\\"/>
+  </ware>
+  <ware id=\\"antimattercells\\" name=\\"{20201,201}\\" description=\\"{20201,202}\\" factoryname=\\"{20201,204}\\" group=\\"refined\\" transport=\\"container\\" volume=\\"18\\" tags=\\"container economy\\">
+    <price min=\\"181\\" average=\\"202\\" max=\\"222\\"/>
+    <production time=\\"120\\" amount=\\"110\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"100\\"/>
+        <ware ware=\\"hydrogen\\" amount=\\"320\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.21\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_antimattercells\\" video=\\"ware_antimattercells_macro\\"/>
+  </ware>
+  <ware id=\\"antimatterconverters\\" name=\\"{20201,301}\\" description=\\"{20201,302}\\" factoryname=\\"{20201,304}\\" group=\\"shiptech\\" transport=\\"container\\" volume=\\"10\\" tags=\\"container economy\\">
+    <price min=\\"626\\" average=\\"737\\" max=\\"847\\"/>
+    <production time=\\"300\\" amount=\\"150\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"advancedcomposites\\" amount=\\"20\\"/>
+        <ware ware=\\"energycells\\" amount=\\"80\\"/>
+        <ware ware=\\"microchips\\" amount=\\"30\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.23\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_antimatterconverters\\" video=\\"ware_antimatterconverters_macro\\"/>
+  </ware>
+</wares>"
+`;
+
+exports[`WaresCollection importing XML with add 1`] = `
+"<wares>
+  <ware id=\\"advancedcomposites\\" name=\\"{20201,401}\\" description=\\"{20201,402}\\" factoryname=\\"{20201,404}\\" group=\\"hightech\\" transport=\\"container\\" volume=\\"32\\" tags=\\"container economy\\">
+    <price min=\\"735\\" average=\\"865\\" max=\\"994\\"/>
+    <production time=\\"300\\" amount=\\"60\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+        <ware ware=\\"graphene\\" amount=\\"80\\"/>
+        <ware ware=\\"refinedmetals\\" amount=\\"80\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.2\\"/>
+      </effects>
+    </production>
+    <production time=\\"300\\" amount=\\"60\\" method=\\"teladi\\" name=\\"{20206,401}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+        <ware ware=\\"graphene\\" amount=\\"80\\"/>
+        <ware ware=\\"teladianium\\" amount=\\"58\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.2\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_advancedcomposites\\" video=\\"ware_advancedcomposites_macro\\"/>
+  </ware>
+  <ware id=\\"advancedelectronics\\" name=\\"{20201,101}\\" description=\\"{20201,102}\\" factoryname=\\"{20201,104}\\" group=\\"shiptech\\" transport=\\"container\\" volume=\\"30\\" tags=\\"container economy stationbuilding\\">
+    <price min=\\"1986\\" average=\\"2207\\" max=\\"2428\\"/>
+    <production time=\\"720\\" amount=\\"60\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"60\\"/>
+        <ware ware=\\"microchips\\" amount=\\"44\\"/>
+        <ware ware=\\"quantumtubes\\" amount=\\"20\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.22\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_advancedelectronics\\" video=\\"ware_advancedelectronics_macro\\"/>
+  </ware>
+  <ware id=\\"antimattercells\\" name=\\"{20201,201}\\" description=\\"{20201,202}\\" factoryname=\\"{20201,204}\\" group=\\"refined\\" transport=\\"container\\" volume=\\"18\\" tags=\\"container economy\\">
+    <price min=\\"181\\" average=\\"202\\" max=\\"222\\"/>
+    <production time=\\"120\\" amount=\\"110\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"100\\"/>
+        <ware ware=\\"hydrogen\\" amount=\\"320\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.21\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_antimattercells\\" video=\\"ware_antimattercells_macro\\"/>
+  </ware>
+  <ware id=\\"antimatterconverters\\" name=\\"{20201,301}\\" description=\\"{20201,302}\\" factoryname=\\"{20201,304}\\" group=\\"shiptech\\" transport=\\"container\\" volume=\\"10\\" tags=\\"container economy\\">
+    <price min=\\"626\\" average=\\"737\\" max=\\"847\\"/>
+    <production time=\\"300\\" amount=\\"150\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"advancedcomposites\\" amount=\\"20\\"/>
+        <ware ware=\\"energycells\\" amount=\\"80\\"/>
+        <ware ware=\\"microchips\\" amount=\\"30\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.23\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_antimatterconverters\\" video=\\"ware_antimatterconverters_macro\\"/>
+  </ware>
+  <ware id=\\"A\\" name=\\"A\\" transport=\\"test\\" volume=\\"1\\"/>
+</wares>"
+`;
+
+exports[`WaresCollection importing XML with remove 1`] = `
+"<wares>
+  <ware id=\\"advancedelectronics\\" name=\\"{20201,101}\\" description=\\"{20201,102}\\" factoryname=\\"{20201,104}\\" group=\\"shiptech\\" transport=\\"container\\" volume=\\"30\\" tags=\\"container economy stationbuilding\\">
+    <price min=\\"1986\\" average=\\"2207\\" max=\\"2428\\"/>
+    <production time=\\"720\\" amount=\\"60\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"60\\"/>
+        <ware ware=\\"microchips\\" amount=\\"44\\"/>
+        <ware ware=\\"quantumtubes\\" amount=\\"20\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.22\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_advancedelectronics\\" video=\\"ware_advancedelectronics_macro\\"/>
+  </ware>
+  <ware id=\\"antimattercells\\" name=\\"{20201,201}\\" description=\\"{20201,202}\\" factoryname=\\"{20201,204}\\" group=\\"refined\\" transport=\\"container\\" volume=\\"18\\" tags=\\"container economy\\">
+    <price min=\\"181\\" average=\\"202\\" max=\\"222\\"/>
+    <production time=\\"120\\" amount=\\"110\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"100\\"/>
+        <ware ware=\\"hydrogen\\" amount=\\"320\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.21\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_antimattercells\\" video=\\"ware_antimattercells_macro\\"/>
+  </ware>
+  <ware id=\\"antimatterconverters\\" name=\\"{20201,301}\\" description=\\"{20201,302}\\" factoryname=\\"{20201,304}\\" group=\\"shiptech\\" transport=\\"container\\" volume=\\"10\\" tags=\\"container economy\\">
+    <price min=\\"626\\" average=\\"737\\" max=\\"847\\"/>
+    <production time=\\"300\\" amount=\\"150\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"advancedcomposites\\" amount=\\"20\\"/>
+        <ware ware=\\"energycells\\" amount=\\"80\\"/>
+        <ware ware=\\"microchips\\" amount=\\"30\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"work\\" product=\\"0.23\\"/>
+      </effects>
+    </production>
+    <icon active=\\"ware_antimatterconverters\\" video=\\"ware_antimatterconverters_macro\\"/>
+  </ware>
+</wares>"
+`;
+
+exports[`WaresCollection removing a ware toJson() 1`] = `"{\\"ware\\":[{\\"Attributes\\":{\\"id\\":\\"ware1\\",\\"name\\":\\"default\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}],\\"container\\":[{\\"Attributes\\":{\\"ref\\":\\"sm_gen_pickup_container_01_macro\\"}}],\\"icon\\":[{\\"Attributes\\":{\\"active\\":\\"ware_default\\",\\"video\\":\\"ware_noicon_macro\\"}}]},{\\"Attributes\\":{\\"id\\":\\"ware2\\",\\"name\\":\\"default\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}],\\"container\\":[{\\"Attributes\\":{\\"ref\\":\\"sm_gen_pickup_container_01_macro\\"}}],\\"icon\\":[{\\"Attributes\\":{\\"active\\":\\"ware_default\\",\\"video\\":\\"ware_noicon_macro\\"}}]}]}"`;
+
+exports[`WaresCollection removing a ware toXml() 1`] = `
+"<wares>
+  <ware id=\\"ware1\\" name=\\"default\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+    <container ref=\\"sm_gen_pickup_container_01_macro\\"/>
+    <icon active=\\"ware_default\\" video=\\"ware_noicon_macro\\"/>
+  </ware>
+  <ware id=\\"ware2\\" name=\\"default\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+    <container ref=\\"sm_gen_pickup_container_01_macro\\"/>
+    <icon active=\\"ware_default\\" video=\\"ware_noicon_macro\\"/>
+  </ware>
+</wares>"
+`;
+
+exports[`WaresCollection replacing wares toJson() 1`] = `"{\\"ware\\":[{\\"Attributes\\":{\\"id\\":\\"ware1\\",\\"name\\":\\"default\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}],\\"container\\":[{\\"Attributes\\":{\\"ref\\":\\"sm_gen_pickup_container_01_macro\\"}}],\\"icon\\":[{\\"Attributes\\":{\\"active\\":\\"ware_default\\",\\"video\\":\\"ware_noicon_macro\\"}}]},{\\"Attributes\\":{\\"id\\":\\"ware2\\",\\"name\\":\\"replacement\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}],\\"container\\":[{\\"Attributes\\":{\\"ref\\":\\"sm_gen_pickup_container_01_macro\\"}}],\\"icon\\":[{\\"Attributes\\":{\\"active\\":\\"ware_default\\",\\"video\\":\\"ware_noicon_macro\\"}}]}]}"`;
+
+exports[`WaresCollection replacing wares toXml() 1`] = `
+"<wares>
+  <ware id=\\"ware1\\" name=\\"default\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+    <container ref=\\"sm_gen_pickup_container_01_macro\\"/>
+    <icon active=\\"ware_default\\" video=\\"ware_noicon_macro\\"/>
+  </ware>
+  <ware id=\\"ware2\\" name=\\"replacement\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+    <container ref=\\"sm_gen_pickup_container_01_macro\\"/>
+    <icon active=\\"ware_default\\" video=\\"ware_noicon_macro\\"/>
+  </ware>
+</wares>"
+`;

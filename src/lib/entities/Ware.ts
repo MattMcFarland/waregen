@@ -25,50 +25,6 @@ export interface WareEntity extends BaseWareEntity {
   container?: (ContainerEntity)[] | null;
 }
 
-const baseXmlDef: WareEntity = {
-  Attributes: {
-    id: "default",
-    name: "default",
-    transport: "container",
-    volume: 1
-  },
-  price: [
-    {
-      Attributes: {
-        min: 1,
-        average: 1,
-        max: 1
-      }
-    }
-  ],
-  production: [
-    {
-      Attributes: {
-        time: 10,
-        amount: 1,
-        method: "default",
-        name: "{20206, 101}"
-      },
-      primary: [
-        {
-          ware: [{ Attributes: { ware: "energycells", amount: 50 } }]
-        }
-      ],
-      effects: [
-        {
-          effect: [
-            {
-              Attributes: { type: "efficiency", product: 1 }
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  container: [{ Attributes: { ref: "sm_gen_pickup_container_01_macro" } }],
-  icon: [{ Attributes: { active: "ware_default", video: "ware_noicon_macro" } }]
-};
-
 export class Ware extends X4Entity<WareEntity> {
   set id(v: string) {
     this.xmlDef.Attributes.id = v;
@@ -184,6 +140,57 @@ export class Ware extends X4Entity<WareEntity> {
   }
 
   constructor(options?: WareEntity) {
-    super(X4EntityType.LIBRARY_WARE, "ware", baseXmlDef, options);
+    super(
+      X4EntityType.LIBRARY_WARE,
+      "ware",
+      {
+        Attributes: {
+          id: "default",
+          name: "default",
+          transport: "container",
+          volume: 1
+        },
+        price: [
+          {
+            Attributes: {
+              min: 1,
+              average: 1,
+              max: 1
+            }
+          }
+        ],
+        production: [
+          {
+            Attributes: {
+              time: 10,
+              amount: 1,
+              method: "default",
+              name: "{20206, 101}"
+            },
+            primary: [
+              {
+                ware: [{ Attributes: { ware: "energycells", amount: 50 } }]
+              }
+            ],
+            effects: [
+              {
+                effect: [
+                  {
+                    Attributes: { type: "efficiency", product: 1 }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        container: [
+          { Attributes: { ref: "sm_gen_pickup_container_01_macro" } }
+        ],
+        icon: [
+          { Attributes: { active: "ware_default", video: "ware_noicon_macro" } }
+        ]
+      },
+      options
+    );
   }
 }

@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- ?xml-stylesheet href="index.xsl" type="text\xsl" ? -->
-<index>
-  <!--manually copied-->
-  <entry name="testminingnode_macro" value="libraries\macro" />
-  <entry name="test_room_gen_managersoffice_01_macro" value="assets\test\macros\test_room_gen_managersoffice_01_macro" />
-</index>

@@ -1,4 +1,4 @@
-export interface X4IndexMacros {
+export interface X4Index {
   index: Index;
 }
 export interface Index {

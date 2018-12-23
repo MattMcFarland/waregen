@@ -1,18 +1,75 @@
-import { X4Entity } from "./X4Entity";
-import { WareEntity, Attributes8 } from "../../../XMLTypes/X4LibraryWares";
+import { X4Entity, X4EntityType } from "./X4Entity";
+
+import idx from "idx";
+import {
+  WareEntity as BaseWareEntity,
+  ContainerEntity,
+  Attributes3,
+  Attributes10,
+  ProductionEntity2,
+  Attributes13,
+  Attributes11,
+  Attributes14,
+  Attributes12
+} from "../../../XMLTypes/X4LibraryWares";
+
+export type ProductionEntities = ProductionEntity2[];
+export type ProductionEntity = ProductionEntity2;
+export type ComponentAttributes = Attributes11;
+export type PriceAttributes = Attributes3;
+export type IconAttributes = Attributes10;
+export type RestrictionAttributes = Attributes13;
+export type OwnerAttributes = Attributes14;
+export type UseAttributes = Attributes12;
+export interface WareEntity extends BaseWareEntity {
+  container?: (ContainerEntity)[] | null;
+}
 
 const baseXmlDef: WareEntity = {
   Attributes: {
-    id: "",
-    name: "",
-    transport: "",
+    id: "default",
+    name: "default",
+    transport: "container",
     volume: 1
-  }
+  },
+  price: [
+    {
+      Attributes: {
+        min: 1,
+        average: 1,
+        max: 1
+      }
+    }
+  ],
+  production: [
+    {
+      Attributes: {
+        time: 10,
+        amount: 1,
+        method: "default",
+        name: "{20206, 101}"
+      },
+      primary: [
+        {
+          ware: [{ Attributes: { ware: "energycells", amount: 50 } }]
+        }
+      ],
+      effects: [
+        {
+          effect: [
+            {
+              Attributes: { type: "efficiency", product: 1 }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  container: [{ Attributes: { ref: "sm_gen_pickup_container_01_macro" } }],
+  icon: [{ Attributes: { active: "ware_default", video: "ware_noicon_macro" } }]
 };
 
-export class Ware extends X4Entity {
-  xmlDef: WareEntity = baseXmlDef;
-  rootName: string = "ware";
+export class Ware extends X4Entity<WareEntity> {
   set id(v: string) {
     this.xmlDef.Attributes.id = v;
   }
@@ -67,27 +124,66 @@ export class Ware extends X4Entity {
   get illegal() {
     return this.xmlDef.Attributes.illegal || null;
   }
-  constructor(
-    options: WareConstructOptions | WareEntity | undefined = baseXmlDef
-  ) {
-    super("ware");
-    if (isXmlDef(options)) {
-      this.xmlDef = options;
-    } else if (isWareConstructionOptions(options)) {
-      this.xmlDef = {
-        Attributes: options
-      };
-    }
+
+  set price(v: PriceAttributes) {
+    this.xmlDef.price = [{ Attributes: v }];
   }
-}
+  get price(): PriceAttributes {
+    return <PriceAttributes>idx(this.xmlDef.price, _ => _[0].Attributes);
+  }
 
-interface WareConstructOptions extends Attributes8 {}
+  set icon(v: IconAttributes) {
+    this.xmlDef.icon = [{ Attributes: v }];
+  }
+  get icon() {
+    return <IconAttributes>idx(this.xmlDef, _ => _.icon[0].Attributes) || null;
+  }
 
-function isXmlDef(arg: any | WareEntity): arg is WareEntity {
-  return (<WareEntity>arg && arg).$ !== undefined;
-}
-function isWareConstructionOptions(
-  arg: any | WareConstructOptions
-): arg is WareConstructOptions {
-  return (<WareConstructOptions>arg).id !== undefined;
+  set productionNodes(v: ProductionEntities) {
+    this.xmlDef.production = v;
+  }
+  get productionNodes() {
+    return <ProductionEntities>this.xmlDef.production || null;
+  }
+
+  set component(v: ComponentAttributes) {
+    this.xmlDef.component = [{ Attributes: v }];
+  }
+  get component() {
+    return (
+      <ComponentAttributes>idx(this.xmlDef, _ => _.component[0].Attributes) ||
+      null
+    );
+  }
+
+  set restriction(v: RestrictionAttributes) {
+    this.xmlDef.restriction = [{ Attributes: v }];
+  }
+  get restriction() {
+    return (
+      <RestrictionAttributes>(
+        idx(this.xmlDef, _ => _.restriction[0].Attributes)
+      ) || null
+    );
+  }
+
+  set owner(v: OwnerAttributes) {
+    this.xmlDef.owner = [{ Attributes: v }];
+  }
+  get owner() {
+    return <OwnerAttributes>(
+      (idx(this.xmlDef, _ => _.owner[0].Attributes) || null)
+    );
+  }
+
+  set use(v: UseAttributes) {
+    this.xmlDef.use = [{ Attributes: v }];
+  }
+  get use() {
+    return <UseAttributes>idx(this.xmlDef, _ => _.use[0].Attributes) || null;
+  }
+
+  constructor(options?: WareEntity) {
+    super(X4EntityType.LIBRARY_WARE, "ware", baseXmlDef, options);
+  }
 }

@@ -65,7 +65,6 @@ export class Builder {
   constructor(options?: ParserOptions) {
     this._settings = Object.assign(xml2jsParserOptions, options);
     this.builder = new XBuilder(this._settings);
-    console.log(this._settings);
     this.buildObject = (obj: any) => this.builder.buildObject(obj);
   }
 }

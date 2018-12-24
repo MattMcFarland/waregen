@@ -1,7 +1,8 @@
-import * as XMLUtils from "./utils/xml/XMLUtils";
-import { get } from "lodash";
+import { safeRead as readAbsXMLFile, Parser } from "./utils/xml";
+import idx from "idx";
 import { log, die, exhaustiveFail } from "./utils/System";
 import Jetpack from "fs-jetpack";
+import { X4WareGenXML } from "@@/XMLTypes/X4WareGenXML";
 
 enum WareGenConfigItem {
   PREFIX = "prefix",
@@ -14,16 +15,14 @@ enum WareGenConfigItem {
 const setupConfig = async (
   configPath: string
 ): Promise<(selector: WareGenConfigItem) => string> => {
-  const configData = await XMLUtils.readAbsXMLFile<string>(configPath);
+  const configData = await new Parser<X4WareGenXML>().parseFile(configPath);
   return (selector: WareGenConfigItem) => {
-    const obj: any = configData.definition;
-    const result = <any>(
-      get(obj, `addwares.configuration[0].${selector}[0].$.value`)
+    const result = <string>(
+      (<unknown>idx(configData, _ => _.addwares.configuration[0][selector]))
     );
-    if (typeof result === undefined) {
+    if (typeof result !== "string") {
       exhaustiveFail(`<${selector}/> missing in configuration xml`);
     }
-
     return <string>(
       result.replace(/%(.*)%/gm, (match: string, p1: string) =>
         match.replace(match, <string>process.env[p1])

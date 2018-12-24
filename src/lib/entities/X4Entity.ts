@@ -1,17 +1,15 @@
-import { Parser, Builder, BuilderOptions } from "../utils/xml/XMLParser";
+import { Parser, Builder, BuilderOptions } from "../utils/xml";
 import { cloneDeep, merge } from "lodash";
 import { dig } from "../utils/objectUtils";
 
 export enum X4EntityType {
-  ADDWARE = "ADDWARE",
-  BASE_ENTITY = "BASE_ENTITY",
-  HASH = "HASH",
-  LIBRARY_BASKET = "LIBRARY_BASKET",
+  BASE_ENTITY = "BASE_ENTITY" /* x */,
+  HASH = "HASH" /* x */,
   LIBRARY_BASKETS = "LIBRARY_BASKETS",
   LIBRARY_MODULE_GROUP = "LIBRARY_MODULE_GROUP",
   LIBRARY_MODULE_GROUPS = "LIBRARY_MODULE_GROUPS",
-  LIBRARY_WARE = "LIBRARY_WARE",
-  LIBRARY_WARES = "LIBRARY_WARES",
+  LIBRARY_WARE = "LIBRARY_WARE" /* x */,
+  LIBRARY_WARES = "LIBRARY_WARES" /* x */,
   WARE_MACRO = "WARE_MACRO",
   WARE_PROD_MACRO = "WARE_PROD_MACRO"
 }
@@ -24,15 +22,10 @@ export class X4Entity<T> {
   get __entityType() {
     return this.entityType;
   }
-  set __entityType(v) {
-    throw new Error("readonly prop __entityType");
-  }
   get __xmlDef() {
     return JSON.parse(this.toJson());
   }
-  set __xmlDef(v) {
-    throw new Error("readonly prop __xmlDef");
-  }
+
   async import(xmlString: string, rootNode?: string): Promise<this> {
     if (!rootNode) {
       this.xmlDef = await (<T>(<any>new Parser({
@@ -78,6 +71,7 @@ export class X4Entity<T> {
     }
     return new Builder(buildOptions).buildObject(this.xmlDef);
   }
+
   toJson(...stringifyOptions: any): string {
     return JSON.stringify(this.xmlDef, ...stringifyOptions);
   }

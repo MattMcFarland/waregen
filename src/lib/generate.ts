@@ -1,11 +1,17 @@
 import Path from "path";
 
-import { Resolver, Sources } from "./utils/PathResolver";
-import { die, log } from "./utils/System";
+import { Resolver } from "./utils/PathResolver";
+import { log } from "./utils/System";
 import { getConfig } from "./config";
-import * as XMLUtils from "./utils/xml/XMLUtils";
+import readAbsXMLFile from "./utils/xml/safeRead";
+import { Parser } from "./utils/xml";
+
 // import { cloneDeep, merge } from "lodash";
-import { X4WareGenXML, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
+import {
+  X4WareGenXML,
+  AddwareEntity,
+  DefaultsEntity
+} from "@@/XMLTypes/X4WareGenXML";
 // import jetpack from "fs-jetpack";
 // import { X4WareMacro } from "../../XMLTypes/X4WareMacro";
 // import { X4WareProductionMacro } from "../../XMLTypes/X4WareProductionMacro";
@@ -15,7 +21,6 @@ import { X4WareGenXML, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
 import idx from "idx";
 // import { X4IndexMacros } from "../../XMLTypes/X4IndexMacros";
 // import { X4LibraryIcons } from "../../XMLTypes/X4LibraryIcons";
-import { DefaultsEntity } from "@@/XMLTypes/X4WareGenXML";
 
 const MSG_FORCE = "Use option -force to overwrite";
 type AddWaresList = Array<AddwareEntity>;
@@ -29,11 +34,13 @@ export default async (configXmlPath: string, force: boolean) => {
     configXmlFullPath
   );
   const resolver = new Resolver(gamepath, prefix, modpath, unpackedpath);
-  const addWaresXml = await XMLUtils.readAbsXMLFile<X4WareGenXML>(
-    configXmlPath
+
+  const addWaresXml = await new Parser<X4WareGenXML>().parseFile(
+    configXmlFullPath
   );
+
   const addWares: AddWaresList = <AddWaresList>(
-    idx(addWaresXml, _ => _.definition.addwares.generation[0].addware)
+    idx(addWaresXml, _ => _.addwares.generation[0].addware)
   );
 
   addWares.forEach(async addWare => {
@@ -48,12 +55,7 @@ export default async (configXmlPath: string, force: boolean) => {
     );
 
     const defaultWare: DefaultsEntity = <DefaultsEntity>(
-      (<unknown>(
-        idx(
-          addWaresXml,
-          _ => _.definition.addwares.configuration[0].defaults[0]
-        )
-      ))
+      (<unknown>idx(addWaresXml, _ => _.addwares.configuration[0].defaults[0]))
     );
     log.info(defaultWare);
     // console.log(addWaresXml);

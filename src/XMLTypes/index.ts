@@ -1,9 +1,0 @@
-export { default as X4Index } from "./X4Index";
-export { default as X4LibraryBaskets } from "./X4LibraryBaskets";
-export { default as X4LibraryIcons } from "./X4LibraryIcons";
-export { default as X4LibraryModuleGroups } from "./X4LibraryModuleGroups";
-export { default as X4LibraryModules } from "./X4LibraryModules";
-export { default as X4LibraryWares } from "./X4LibraryWares";
-export { default as X4WareGenXML } from "./X4WareGenXML";
-export { default as X4WareMacro } from "./X4WareMacro";
-export { default as X4WareProductionMacro } from "./X4WareProductionMacro";

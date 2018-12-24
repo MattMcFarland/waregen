@@ -74,6 +74,7 @@ describe("X4Entity", () => {
       );
     });
   });
+
   describe("using import", () => {
     const xmlString = `<entity id="antimattercells" name="{20201,201}" description="{20201,202}" factoryname="{20201,204}" group="refined" transport="container" volume="18" tags="container economy"><price min="181" average="202" max="222"/><production time="120" amount="110" method="default" name="{20206,101}"><primary><entity entity="energycells" amount="100"/><entity entity="hydrogen" amount="320"/></primary><effects><effect type="work" product="0.21"/></effects></production><icon active="entity_antimattercells" video="entity_antimattercells_macro"/></entity>`;
     test("import a child node", async () => {

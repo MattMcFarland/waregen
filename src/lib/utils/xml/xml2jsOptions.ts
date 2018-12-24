@@ -1,9 +1,10 @@
-import { Builder as XBuilder, Parser as XParser, OptionsV2 } from "xml2js";
+import { OptionsV2 as Xml2jsOptions } from "xml2js";
 import { parseBooleans, parseNumbers } from "xml2js/lib/processors";
-export interface ParserOptions extends OptionsV2 {}
-export interface BuilderOptions extends OptionsV2 {}
 
-export const xml2jsParserOptions: ParserOptions = {
+export interface ParserOptions extends Xml2jsOptions {}
+export interface BuilderOptions extends Xml2jsOptions {}
+
+export default <Xml2jsOptions>{
   attrkey: "Attributes" /* Prefix that is used to access the attributes. */,
   charkey:
     "Characters" /* Prefix that is used to access the character content. */,
@@ -33,38 +34,3 @@ export const xml2jsParserOptions: ParserOptions = {
   tagNameProcessors: undefined /* Allows the addition of tag name processing functions. Accepts an Array of functions. */,
   valueProcessors: undefined /* Allows the addition of element value processing functions. Accepts an Array of functions. */
 };
-
-export class Parser {
-  private parser: XParser;
-  private _settings: ParserOptions;
-  get settings(): ParserOptions {
-    return this._settings;
-  }
-  parseString: (xmlString: string) => Promise<string>;
-  constructor(options?: ParserOptions) {
-    this._settings = Object.assign(xml2jsParserOptions, options);
-    this.parser = new XParser(this._settings);
-    this.parseString = (xmlString: string) =>
-      new Promise((resolve, reject) => {
-        this.parser.parseString(xmlString, (err: Error, res: string) => {
-          if (err) return reject(err);
-          if (!res) return reject(`invalid "Falsey" result: ${res}`);
-          return resolve(res);
-        });
-      });
-  }
-}
-
-export class Builder {
-  private builder: XBuilder;
-  private _settings: ParserOptions;
-  get settings(): ParserOptions {
-    return this._settings;
-  }
-  buildObject: (obj: any) => string;
-  constructor(options?: ParserOptions) {
-    this._settings = Object.assign(xml2jsParserOptions, options);
-    this.builder = new XBuilder(this._settings);
-    this.buildObject = (obj: any) => this.builder.buildObject(obj);
-  }
-}

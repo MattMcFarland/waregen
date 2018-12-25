@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AssetWareProdMacro using import tJson() 1`] = `"{\\"macro\\":[{\\"Attributes\\":{\\"name\\":\\"prod_arg_foodrations_macro\\",\\"class\\":\\"production\\"},\\"component\\":[{\\"Attributes\\":{\\"ref\\":\\"prod_arg_foodrations\\"}}],\\"properties\\":[{\\"identification\\":[{\\"Attributes\\":{\\"name\\":\\"{20104,13401}\\",\\"shortname\\":\\"{20104,13403}\\",\\"makerrace\\":\\"argon\\",\\"description\\":\\"{20104,13402}\\"}}],\\"build\\":[{\\"sets\\":[{\\"set\\":[{\\"Attributes\\":{\\"ref\\":\\"factory\\"}},{\\"Attributes\\":{\\"ref\\":\\"headquarters_player\\"}}]}]}],\\"explosiondamage\\":[{\\"Attributes\\":{\\"value\\":10000}}],\\"hull\\":[{\\"Attributes\\":{\\"max\\":133000}}],\\"secrecy\\":[{\\"Attributes\\":{\\"level\\":2}}],\\"production\\":[{\\"Attributes\\":{\\"wares\\":\\"foodrations\\"},\\"queue\\":[{\\"Attributes\\":{\\"ware\\":\\"foodrations\\",\\"method\\":\\"argon\\"}}]}],\\"workforce\\":[{\\"Attributes\\":{\\"max\\":90}}]}]}]}"`;
+
+exports[`AssetWareProdMacro using import toXml() 1`] = `
+"<macros>
+  <macro name=\\"prod_arg_foodrations_macro\\" class=\\"production\\">
+    <component ref=\\"prod_arg_foodrations\\"/>
+    <properties>
+      <identification name=\\"{20104,13401}\\" shortname=\\"{20104,13403}\\" makerrace=\\"argon\\" description=\\"{20104,13402}\\"/>
+      <build>
+        <sets>
+          <set ref=\\"factory\\"/>
+          <set ref=\\"headquarters_player\\"/>
+        </sets>
+      </build>
+      <explosiondamage value=\\"10000\\"/>
+      <hull max=\\"133000\\"/>
+      <secrecy level=\\"2\\"/>
+      <production wares=\\"foodrations\\">
+        <queue ware=\\"foodrations\\" method=\\"argon\\"/>
+      </production>
+      <workforce max=\\"90\\"/>
+    </properties>
+  </macro>
+</macros>"
+`;

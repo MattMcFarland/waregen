@@ -81,3 +81,5 @@ export class ModuleGroupCollection extends X4Entity<ModuleGroups> {
     }
   }
 }
+
+export default ModuleGroupCollection;

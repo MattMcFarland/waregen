@@ -69,7 +69,7 @@ export class ModuleGroup extends X4Entity<ModuleGroupEntity> {
   }
 }
 
-function mapName(name: string): any {
+export function mapName(name: string): any {
   return {
     Attributes: {
       macro: name
@@ -81,3 +81,5 @@ export function findInXmlDef(xmlDef: GroupEntity, value: string) {
   const macrosArray = <SelectEntity[]>idx(xmlDef, _ => _.select);
   return macrosArray.find((e: SelectEntity) => e.Attributes.macro === value);
 }
+
+export default ModuleGroup;

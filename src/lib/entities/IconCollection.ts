@@ -69,3 +69,5 @@ export class IconCollection extends X4Entity<Icons> {
     }
   }
 }
+
+export default IconCollection;

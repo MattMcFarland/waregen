@@ -9,7 +9,7 @@ import {
 export type IconEntity = IconEntity;
 export type IconAttributes = IconAttributes;
 
-const iconDefaults = (): IconAttributes =>
+export const iconDefaults = (): IconAttributes =>
   clone({
     name: "",
     texture: "",
@@ -85,3 +85,5 @@ export class Icon extends X4Entity<IconEntity> {
     );
   }
 }
+
+export default Icon;

@@ -103,3 +103,5 @@ export class X4Entity<T> {
     this.entityType = entityType;
   }
 }
+
+export default X4Entity;

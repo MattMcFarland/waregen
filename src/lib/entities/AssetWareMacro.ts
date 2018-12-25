@@ -33,3 +33,5 @@ function filledXmlObject(name: string, ref: string): Macros {
     ]
   };
 }
+
+export default AssetWareMacro;

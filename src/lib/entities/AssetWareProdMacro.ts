@@ -15,3 +15,5 @@ export class AssetWareProdMacro extends X4Entity<Macros> {
     super(X4EntityType.ASSET_WARE_MACRO, "macros", xmlObj);
   }
 }
+
+export default AssetWareProdMacro;

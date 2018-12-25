@@ -79,13 +79,13 @@ export class Basket extends X4Entity<BasketEntity> {
   }
 }
 
-function getBasketDefaults() {
+export function getBasketDefaults() {
   return clone(<BasketEntity>(<unknown>{
     Attributes: {}
   }));
 }
 
-function mapName(name: string): any {
+export function mapName(name: string): any {
   return {
     Attributes: {
       ware: name
@@ -97,3 +97,5 @@ export function findInXmlDef(xmlDef: BasketEntity, value: string) {
   const waresArray = <BasketWareEntities>idx(xmlDef, _ => _.wares[0].ware);
   return waresArray.find((e: BasketWareEntity) => e.Attributes.ware === value);
 }
+
+export default Basket;

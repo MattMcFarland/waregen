@@ -8,7 +8,7 @@ export interface IndexHashInterface {
   [key: string]: string | number | boolean;
 }
 
-const getIndexDefaults = () => {
+export const getIndexDefaults = () => {
   return clone(<IndexHashItems>{
     entry: []
   });
@@ -66,7 +66,7 @@ export class IndexHash extends X4Entity<IndexHashItems> {
   }
 }
 
-function mapKeyValue(key: string, value: string) {
+export function mapKeyValue(key: string, value: string) {
   return {
     Attributes: {
       name: key,
@@ -74,3 +74,5 @@ function mapKeyValue(key: string, value: string) {
     }
   };
 }
+
+export default IndexHash;

@@ -81,8 +81,10 @@ export class BasketCollection extends X4Entity<Baskets> {
   }
 }
 
-function importBasketWares(wares: BasketEntityWares[]) {
+export function importBasketWares(wares: BasketEntityWares[]) {
   if (wares[0].ware) {
     return wares[0].ware.map(ware => ware.Attributes.ware);
   }
 }
+
+export default BasketCollection;

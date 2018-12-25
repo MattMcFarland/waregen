@@ -194,3 +194,5 @@ export class Ware extends X4Entity<WareEntity> {
     );
   }
 }
+
+export default Ware;

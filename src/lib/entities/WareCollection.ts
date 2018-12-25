@@ -61,3 +61,5 @@ export class WareCollection extends X4Entity<Wares> {
     }
   }
 }
+
+export default WareCollection;

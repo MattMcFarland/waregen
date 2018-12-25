@@ -1,4 +1,3 @@
-import idx from "idx";
 import { X4Entity, X4EntityType } from "./X4Entity";
 import {
   BasketEntity,
@@ -6,7 +5,7 @@ import {
   WareEntity as BasketWareEntity,
   WaresEntityOrWareEntity as BasketEntityWares
 } from "@@/XMLTypes/X4LibraryBaskets";
-import { clone } from "lodash";
+
 import { Basket, BasketInterface } from "./Basket";
 
 export type BasketWareEntity = BasketWareEntity;

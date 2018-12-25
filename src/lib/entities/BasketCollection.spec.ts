@@ -1,6 +1,5 @@
 import { BasketCollection } from "./BasketCollection";
 import { Basket } from "./Basket";
-import { BasketEntity } from "@@/XMLTypes/X4LibraryBaskets";
 
 const basketTest = (id: string, wares: string[] = []) => ({
   id,

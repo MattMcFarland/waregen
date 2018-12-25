@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconCollection instance.import() toXML() 1`] = `
+"<icons>
+  <icon name=\\"missile_dumbfire_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_dumbfire_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_dumbfire_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"weapon_beam_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_wp_beam_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"weapon_beam_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_wp_beam_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"weapon_beam_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_wp_beam_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+</icons>"
+`;
+
+exports[`IconCollection instance.import() with add 1`] = `
+"<icons>
+  <icon name=\\"missile_dumbfire_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_dumbfire_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_dumbfire_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"weapon_beam_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_wp_beam_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"weapon_beam_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_wp_beam_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"weapon_beam_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_wp_beam_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"A\\" texture=\\"assets/A\\"/>
+</icons>"
+`;
+
+exports[`IconCollection instance.import() with remove 1`] = `
+"<icons>
+  <icon name=\\"missile_dumbfire_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_dumbfire_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_dumbfire_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_dumbfire_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_guided_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_guided_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk1\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk1.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk2\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk2.tga\\" height=\\"32\\" width=\\"64\\"/>
+  <icon name=\\"missile_torpedo_mk3\\" texture=\\"assets/fx/gui/textures/PlayerHud/hud_ms_torpedo_mk3.tga\\" height=\\"32\\" width=\\"64\\"/>
+</icons>"
+`;

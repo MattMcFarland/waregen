@@ -5,7 +5,8 @@ import { dig } from "../utils/objectUtils";
 export enum X4EntityType {
   BASE_ENTITY = "BASE_ENTITY" /* x */,
   HASH = "HASH" /* x */,
-  LIBRARY_BASKETS = "LIBRARY_BASKETS",
+  LIBRARY_BASKET = "LIBRARY_BASKET" /* x */,
+  LIBRARY_BASKETS = "LIBRARY_BASKETS" /* x */,
   LIBRARY_MODULE_GROUP = "LIBRARY_MODULE_GROUP",
   LIBRARY_MODULE_GROUPS = "LIBRARY_MODULE_GROUPS",
   LIBRARY_WARE = "LIBRARY_WARE" /* x */,

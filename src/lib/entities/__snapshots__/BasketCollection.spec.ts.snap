@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasketCollection instance.import() toXML() 1`] = `
+"<baskets>
+  <basket id=\\"foo\\">
+    <wares>
+      <ware ware=\\"fooware1\\"/>
+      <ware ware=\\"fooware2\\"/>
+      <ware ware=\\"fooware3\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"bar\\">
+    <wares>
+      <ware ware=\\"barware1\\"/>
+      <ware ware=\\"barware2\\"/>
+      <ware ware=\\"barware3\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"baz\\">
+    <wares>
+      <ware ware=\\"bazware1\\"/>
+      <ware ware=\\"bazware2\\"/>
+      <ware ware=\\"bazware3\\"/>
+    </wares>
+  </basket>
+</baskets>"
+`;
+
+exports[`BasketCollection instance.import() with add 1`] = `
+"<baskets>
+  <basket id=\\"foo\\">
+    <wares>
+      <ware ware=\\"fooware1\\"/>
+      <ware ware=\\"fooware2\\"/>
+      <ware ware=\\"fooware3\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"bar\\">
+    <wares>
+      <ware ware=\\"barware1\\"/>
+      <ware ware=\\"barware2\\"/>
+      <ware ware=\\"barware3\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"baz\\">
+    <wares>
+      <ware ware=\\"bazware1\\"/>
+      <ware ware=\\"bazware2\\"/>
+      <ware ware=\\"bazware3\\"/>
+    </wares>
+  </basket>
+  <basket description=\\"description of A\\" id=\\"A\\" name=\\"name for A\\"/>
+</baskets>"
+`;
+
+exports[`BasketCollection instance.import() with remove 1`] = `
+"<baskets>
+  <basket id=\\"foo\\">
+    <wares>
+      <ware ware=\\"fooware1\\"/>
+      <ware ware=\\"fooware2\\"/>
+      <ware ware=\\"fooware3\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"bar\\">
+    <wares>
+      <ware ware=\\"barware1\\"/>
+      <ware ware=\\"barware2\\"/>
+      <ware ware=\\"barware3\\"/>
+    </wares>
+  </basket>
+</baskets>"
+`;

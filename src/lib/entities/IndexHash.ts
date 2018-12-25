@@ -62,6 +62,7 @@ export class IndexHash extends X4Entity<IndexHashItems> {
   constructor(hash: IndexHashInterface = {}) {
     super(X4EntityType.HASH, "index", getIndexDefaults());
     this.entries = hash;
+    delete this.import;
   }
 }
 

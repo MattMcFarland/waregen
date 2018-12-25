@@ -13,8 +13,8 @@ export enum X4EntityType {
   LIBRARY_MODULE_GROUPS = "LIBRARY_MODULE_GROUPS" /* x */,
   LIBRARY_WARE = "LIBRARY_WARE" /* x */,
   LIBRARY_WARES = "LIBRARY_WARES" /* x */,
-  WARE_MACRO = "WARE_MACRO",
-  WARE_PROD_MACRO = "WARE_PROD_MACRO"
+  ASSET_WARE_MACRO = "ASSET_WARE_MACRO" /* x */,
+  ASSET_WARE_PROD_MACRO = "ASSET_WARE_PROD_MACRO" /* x */
 }
 export class X4Entity<T> {
   private entityType: X4EntityType = X4EntityType.BASE_ENTITY;

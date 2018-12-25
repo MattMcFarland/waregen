@@ -8,8 +8,8 @@ export enum X4EntityType {
   LIBRARY_BASKET = "LIBRARY_BASKET" /* x */,
   LIBRARY_BASKETS = "LIBRARY_BASKETS" /* x */,
   LIBRARY_ICON = "LIBRARY_ICON" /* x */,
-  LIBRARY_ICONS = "LIBRARY_ICONS",
-  LIBRARY_MODULE_GROUP = "LIBRARY_MODULE_GROUP",
+  LIBRARY_ICONS = "LIBRARY_ICONS" /* x */,
+  LIBRARY_MODULE_GROUP = "LIBRARY_MODULE_GROUP" /* x */,
   LIBRARY_MODULE_GROUPS = "LIBRARY_MODULE_GROUPS",
   LIBRARY_WARE = "LIBRARY_WARE" /* x */,
   LIBRARY_WARES = "LIBRARY_WARES" /* x */,
@@ -34,7 +34,7 @@ export class X4Entity<T> {
       this.xmlDef = await (<T>(<any>new Parser({
         explicitRoot: false
       }).parseString(xmlString)));
-      this.onImport(this.__xmlDef);
+      typeof this.onImport === "function" && this.onImport(this.__xmlDef);
       return this;
     }
     const _fullObj = await new Parser({
@@ -43,7 +43,7 @@ export class X4Entity<T> {
     }).parseString(xmlString);
     this.xmlDef = dig(_fullObj, rootNode)[0];
     this.buildOptions.rootName = rootNode;
-    this.onImport(this.__xmlDef);
+    typeof this.onImport === "function" && this.onImport(this.__xmlDef);
     return this;
   }
   clone(): X4Entity<T> {

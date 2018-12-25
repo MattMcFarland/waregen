@@ -6,7 +6,7 @@ export { Icon } from "./Icon";
 export { IconCollection } from "./IconCollection";
 export { IndexHash } from "./IndexHash";
 export { ModuleGroup } from "./ModuleGroup";
-export { ModuleGroupCollection } from "./ModuleGroupCollection";
+export { ModuleGroupsCollection } from "./ModuleGroupsCollection";
 export { Ware } from "./Ware";
 export { WareCollection } from "./WareCollection";
 export { X4Entity } from "./X4Entity";

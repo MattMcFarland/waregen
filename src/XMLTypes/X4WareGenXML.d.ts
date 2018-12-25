@@ -89,6 +89,7 @@ export interface AddwareEntity {
 export interface Attributes6 {
   id: string;
   cloneProductionModuleFrom: string;
+  baskets: string;
 }
 export interface WareEntity2 {
   Attributes: Attributes7;

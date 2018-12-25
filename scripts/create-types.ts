@@ -1,5 +1,5 @@
 import jetpack from "fs-jetpack";
-import { Parser } from "../src/lib/utils/xml/XMLParser";
+import Parser from "../src/lib/utils/xml/Parser";
 
 const shelljs = require("shelljs");
 

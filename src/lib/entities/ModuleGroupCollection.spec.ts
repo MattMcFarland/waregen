@@ -1,4 +1,4 @@
-import { ModuleGroupCollection } from "./ModuleGroupCollection";
+import { ModuleGroupsCollection } from "./ModuleGroupsCollection";
 import { ModuleGroup, ModuleGroupConstructOptions } from "./ModuleGroup";
 
 const groupTest = (
@@ -9,9 +9,9 @@ const groupTest = (
   macros
 });
 
-describe("ModuleGroupCollection", () => {
+describe("ModuleGroupsCollection", () => {
   describe("constructor", () => {
-    const testCollection = new ModuleGroupCollection([
+    const testCollection = new ModuleGroupsCollection([
       new ModuleGroup(groupTest("group_1", ["foo", "bar"])),
       new ModuleGroup(groupTest("group_2", ["foo", "bar"])),
       new ModuleGroup(groupTest("group_3", ["foo", "bar"]))
@@ -46,7 +46,7 @@ describe("ModuleGroupCollection", () => {
     });
   });
   describe("instance.add()", () => {
-    const testCollection = new ModuleGroupCollection();
+    const testCollection = new ModuleGroupsCollection();
     testCollection.add(new ModuleGroup(groupTest("group_1", ["foo", "bar"])));
     test("instance.toXml()", () => {
       expect(testCollection.toXml()).toMatchInlineSnapshot(`
@@ -65,7 +65,7 @@ describe("ModuleGroupCollection", () => {
     });
   });
   describe("instance.remove()", () => {
-    const testCollection = new ModuleGroupCollection();
+    const testCollection = new ModuleGroupsCollection();
     testCollection.add(new ModuleGroup(groupTest("group_1", ["foo", "bar"])));
     testCollection.add(new ModuleGroup(groupTest("group_2", ["foo", "bar"])));
     testCollection.remove("group_1");
@@ -86,7 +86,7 @@ describe("ModuleGroupCollection", () => {
     });
   });
   describe("instance.replace()", () => {
-    const testCollection = new ModuleGroupCollection();
+    const testCollection = new ModuleGroupsCollection();
     testCollection.add(new ModuleGroup(groupTest("group_1", ["foo", "bar"])));
     testCollection.add(new ModuleGroup(groupTest("group_2", ["foo", "bar"])));
     const replacement = new ModuleGroup(groupTest("group_2", ["replaced!!"]));
@@ -141,12 +141,12 @@ describe("ModuleGroupCollection", () => {
       `;
     };
     test("toXml()", async () => {
-      const testCollection = new ModuleGroupCollection();
+      const testCollection = new ModuleGroupsCollection();
       await testCollection.import(testXml());
       expect(testCollection.toXml()).toMatchSnapshot();
     });
     test("toJson()", async () => {
-      const testCollection = new ModuleGroupCollection();
+      const testCollection = new ModuleGroupsCollection();
       await testCollection.import(testXml());
       expect(testCollection.toJson()).toMatchSnapshot();
     });

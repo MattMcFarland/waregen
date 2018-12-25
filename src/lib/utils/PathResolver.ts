@@ -13,6 +13,11 @@ export class Resolver {
   unpackedPath: string;
 
   /**
+   * @param relPath: path relative to current working directory (process.cwd())
+   */
+  static resolveConfigPath = (relPath: string): string =>
+    resolvePath(process.cwd(), relPath);
+  /**
    * @param wareId: ware id as described in config xml
    */
   getWareName = (wareId: string): string => `${this.modPrefix}_${wareId}`;
@@ -156,3 +161,5 @@ export class Resolver {
     this.unpackedPath = unpackedPath;
   }
 }
+
+export default Resolver;

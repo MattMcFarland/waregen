@@ -14,7 +14,7 @@ export type ModuleGroupEntities = ModuleGroupEntity[];
 export interface ModuleGroupIndex {
   [key: string]: ModuleGroup;
 }
-export class ModuleGroupCollection extends X4Entity<ModuleGroups> {
+export class ModuleGroupsCollection extends X4Entity<ModuleGroups> {
   private moduleGroupIndex: ModuleGroupIndex = {};
   protected onImport(_xmlDef: ModuleGroups) {
     delete this.moduleGroupIndex;
@@ -82,4 +82,4 @@ export class ModuleGroupCollection extends X4Entity<ModuleGroups> {
   }
 }
 
-export default ModuleGroupCollection;
+export default ModuleGroupsCollection;

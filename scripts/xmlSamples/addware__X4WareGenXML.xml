@@ -22,7 +22,7 @@
     </defaults>
   </configuration>
   <generation>
-    <addware id="glass" cloneProductionModuleFrom="prod_gen_refinedmetals">
+    <addware id="glass" cloneProductionModuleFrom="prod_gen_refinedmetals" baskets="[refined, pirate_container, all_container, all]">
       <ware name="Glass" group="refined" transport="container" volume="32" tags="container economy">
         <price min="735" average="865" max="994" />
         <production time="300" amount="60" method="default" name="Glass">
@@ -36,7 +36,7 @@
         </production>
       </ware>
     </addware>
-    <addware id="plastic" cloneProductionModuleFrom="prod_gen_refinedmetals">
+    <addware id="plastic" cloneProductionModuleFrom="prod_gen_refinedmetals" baskets="[refined, pirate_container, all_container, all]">
       <ware name="Plastic" group="refined" transport="container" volume="32" tags="container economy">
         <price min="735" average="865" max="994" />
         <production time="300" amount="60" method="default" name="Plastic">

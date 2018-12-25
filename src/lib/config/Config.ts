@@ -1,8 +1,12 @@
-import { safeRead as readAbsXMLFile, Parser } from "./utils/xml";
+import { safeRead as readAbsXMLFile, Parser } from "../utils/xml";
 import idx from "idx";
-import { log, die, exhaustiveFail } from "./utils/System";
+import { log, die, exhaustiveFail } from "../utils/System";
 import Jetpack from "fs-jetpack";
-import { X4WareGenXML } from "@@/XMLTypes/X4WareGenXML";
+import {
+  X4WareGenXML,
+  Addwares as AddwaresList,
+  DefaultsEntity
+} from "@@/XMLTypes/X4WareGenXML";
 
 enum WareGenConfigItem {
   PREFIX = "prefix",
@@ -31,9 +35,10 @@ const setupConfig = async (
   };
 };
 
-class Config {
+export class Config {
   private select: (selector: WareGenConfigItem) => string;
   private configPath: string;
+  private configData: X4WareGenXML | undefined;
   constructor(configPath: string) {
     this.configPath = configPath;
     this.select = () => "You must call async init function first";
@@ -41,6 +46,16 @@ class Config {
   async init() {
     this.select = await setupConfig(this.configPath);
     return this;
+  }
+  get addwaresList() {
+    return <AddwaresList>(
+      idx(this.configData, _ => _.addwares.generation[0].addware)
+    );
+  }
+  get defaultWare() {
+    return <DefaultsEntity>(
+      idx(this.configData, _ => _.addwares.configuration[0].defaults[0])
+    );
   }
   get prefix() {
     return this.select(WareGenConfigItem.PREFIX);
@@ -53,9 +68,6 @@ class Config {
   }
   get unpackedpath() {
     return this.select(WareGenConfigItem.UNPACKEDPATH);
-  }
-  get defaults() {
-    return this.select(WareGenConfigItem.DEFAULTS);
   }
 }
 

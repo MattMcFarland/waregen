@@ -3,12 +3,12 @@ import createMacroIndex from "../createMacroIndex";
 
 describe("generator/helper", () => {
   describe("createMacroIndex", () => {
-    test("creates appropriate objects", () => {
+    test("toJson()", () => {
       const mockConfig = mockGeneratorConfig();
       const macroIndex = createMacroIndex(mockConfig);
       expect(macroIndex.toJson()).toMatchSnapshot();
     });
-    test("creates XML", () => {
+    test("toXml()", () => {
       const mockConfig = mockGeneratorConfig();
       const macroIndex = createMacroIndex(mockConfig);
       expect(macroIndex.toXml()).toMatchSnapshot();

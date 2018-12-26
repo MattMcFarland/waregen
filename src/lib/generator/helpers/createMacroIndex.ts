@@ -13,7 +13,7 @@ export default function createMacroIndex(config: GeneratorConfig): IndexHash {
       acc[ids.productionMacro] = new PathBuilder(config, baseId)
         .dirModPath()
         .fileProductionMacroXML()
-        .resolve();
+        .toString();
       return acc;
     },
     {}

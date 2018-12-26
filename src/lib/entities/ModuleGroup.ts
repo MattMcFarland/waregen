@@ -6,8 +6,6 @@ import {
   GroupEntity
 } from "@@/XMLTypes/X4LibraryModuleGroups";
 
-import { clone } from "lodash";
-
 export type ModuleGroupEntity = ModuleGroupEntity;
 export type ModuleGroupSelectEntity = SelectEntity;
 

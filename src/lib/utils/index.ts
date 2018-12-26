@@ -1,4 +1,6 @@
-export { default as objectUtils } from "./objectUtils";
-export { default as Resolver } from "./PathResolver";
-export { default as System } from "./System";
-export { default as xml } from "./xml";
+export * from "./array";
+export * from "./fs";
+export * from "./object";
+export { Resolver } from "./PathResolver";
+export * from "./System";
+export * from "./xml";

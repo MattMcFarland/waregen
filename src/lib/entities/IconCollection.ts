@@ -3,7 +3,7 @@ import {
   IconEntity,
   Icons,
   Attributes as IconAttributes
-} from "@@/XMLTypes/X4LibraryIcons";
+} from "../../XMLTypes/X4LibraryIcons";
 
 import { Icon } from "./Icon";
 

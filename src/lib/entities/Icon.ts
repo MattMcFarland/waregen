@@ -1,5 +1,5 @@
 import { X4Entity, X4EntityType } from "./X4Entity";
-import { clone } from "lodash";
+import { clone } from "../utils/object";
 
 import {
   IconEntity,

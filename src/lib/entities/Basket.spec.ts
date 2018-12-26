@@ -1,5 +1,5 @@
 import { Basket, findInXmlDef } from "./Basket";
-import { BasketEntity } from "@@/XMLTypes/X4LibraryBaskets";
+import { BasketEntity } from "../../XMLTypes/X4LibraryBaskets";
 const testBasketOps = {
   id: "foo",
   name: "bar",

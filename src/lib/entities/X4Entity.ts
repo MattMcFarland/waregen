@@ -1,6 +1,5 @@
 import { Parser, Builder, BuilderOptions } from "../utils/xml";
-import { cloneDeep, merge } from "lodash";
-import { dig } from "../utils/objectUtils";
+import { cloneDeep, merge, dig } from "../utils/object";
 
 export enum X4EntityType {
   BASE_ENTITY = "BASE_ENTITY" /* x */,

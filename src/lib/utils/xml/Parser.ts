@@ -1,6 +1,6 @@
 import { Parser as XParser } from "xml2js";
 import xml2jsParserOptions, { ParserOptions } from "./xml2jsOptions";
-import safeRead from "./safeRead";
+import safeRead from "../fs/safeRead";
 
 export default class Parser<T = any> {
   private parser: XParser;

@@ -4,7 +4,7 @@ import {
   BasketEntity,
   WareEntity as BasketWareEntity
 } from "@@/XMLTypes/X4LibraryBaskets";
-import { clone } from "lodash";
+import { clone } from "../../lib/utils/object";
 export type BasketWareEntity = BasketWareEntity;
 export type BasketWareEntities = BasketWareEntity[];
 

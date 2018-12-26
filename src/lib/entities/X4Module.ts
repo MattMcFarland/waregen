@@ -1,7 +1,7 @@
 import idx from "idx";
 import { X4Entity, X4EntityType } from "./X4Entity";
 import { ModuleEntity } from "@@/XMLTypes/X4LibraryModules";
-import { clone } from "lodash";
+import { clone } from "@@/lib/utils/object";
 
 export interface ModuleInterface {
   id: string;

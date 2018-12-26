@@ -1,22 +1,21 @@
-import Jetpack from "fs-jetpack";
+import { readFile } from "fs";
+
 import * as System from "../System";
 
 export default (absolutePath: string): Promise<string> => {
   return new Promise(async (resolve, reject) => {
-    try {
-      const rawFile = Jetpack.read(absolutePath);
-      System.log.read(absolutePath);
-
-      if (!rawFile) {
-        return reject(System.die(`0 bytes ${absolutePath}`));
+    System.log.read(absolutePath);
+    readFile(absolutePath, (err, result) => {
+      if (err) {
+        if (err.code === "ENOENT") {
+          return System.die(`File not found: ${absolutePath}`);
+        }
+        return reject(err);
       }
-
-      if (rawFile && typeof rawFile === "string") {
-        return resolve(safeString(rawFile));
+      if (result && typeof result === "string") {
+        return resolve(safeString(result));
       }
-    } catch (e) {
-      return reject(e);
-    }
+    });
   });
 };
 

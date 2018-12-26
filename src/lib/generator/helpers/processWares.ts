@@ -1,6 +1,6 @@
-import { Resolver } from "@@/lib/utils";
+import { Resolver } from "@@/lib/utils/PathResolver";
 import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
-import createWare from "./createWare";
+
 import {
   WareCollection,
   IndexHash,

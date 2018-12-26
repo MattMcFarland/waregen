@@ -1,4 +1,5 @@
 import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
+import createMacroIndex from "./createMacroIndex";
 
 import {
   WareCollection,
@@ -32,7 +33,7 @@ export default async function processWares(
     the constant as much as we need to) ;)  
   */
   /* Create the Macros Index */
-  // todo const macrosIndex = createMacroIndex(config, options);
+  const macrosIndex = createMacroIndex(config);
   /* Create the Icon Collection */
   // todo const iconCollection = createIcons(config, options);
   /* Create Ware Entity and add it to Collection */

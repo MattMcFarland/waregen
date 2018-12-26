@@ -6,7 +6,7 @@
       "request": "launch",
       "name": "Jest Current File",
       "program": "${workspaceRoot}/node_modules/jest/bin/jest.js",
-      "args": ["${relativeFile}"],
+      "args": ["${relativeFile}", "--config", "jest.config.js"],
       "runtimeArgs": ["--nolazy"],
       "console": "internalConsole",
       "internalConsoleOptions": "neverOpen",

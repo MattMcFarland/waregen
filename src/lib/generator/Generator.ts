@@ -1,23 +1,21 @@
-import { Config, getConfig } from "@@/Config";
-import { Resolver } from "@@/utils/PathResolver";
-import {
-  DefaultsEntity,
-  Addwares as AddwaresList
-} from "@@/XMLTypes/X4WareGenXML";
+import { resolve as resolvePath } from "path";
+import { Config, getConfig } from "@@/generator/Config";
+import { end } from "@@/utils/System";
+import { GeneratorOptions } from "./";
 
 const asyncProps: { resolved: Bootstrap } = { resolved: {} };
 
-export class Generator {
+export default class Generator {
   get config(): Config {
     if (!asyncProps.resolved.config) return missing("config");
     return asyncProps.resolved.config;
   }
-  get resolver(): Resolver {
-    if (!asyncProps.resolved.resolver) return missing("resolver");
-    return asyncProps.resolved.resolver;
+  get options(): GeneratorOptions {
+    if (!asyncProps.resolved.options) return missing("options");
+    return asyncProps.resolved.options;
   }
-  async initialize(configXmlPath: string): Promise<this> {
-    asyncProps.resolved = await bootstrap(configXmlPath);
+  async initialize(options: GeneratorOptions): Promise<this> {
+    asyncProps.resolved = await bootstrap(options);
     return this;
   }
   async processWares() {}
@@ -27,17 +25,16 @@ function missing(prop: string): never {
   throw new TypeError(`${prop} missing! Did you forget to call initialize() ?`);
 }
 
-const bootstrap = async (configXmlPath: string): Promise<Bootstrap> => {
-  const configXmlFullPath = Resolver.resolveConfigPath(configXmlPath);
+const bootstrap = async (options: GeneratorOptions): Promise<Bootstrap> => {
+  const configXmlFullPath = resolvePath(process.cwd(), options.configXmlPath);
   const config = await getConfig(configXmlFullPath);
-  const { gamepath, prefix, modpath, unpackedpath } = config;
-  return {
-    config,
-    resolver: new Resolver(gamepath, prefix, modpath, unpackedpath)
-  };
+  if (!config.addwaresList) {
+    end("No wares to generate!");
+  }
+  return { config, options };
 };
 
 interface Bootstrap {
   config?: Config;
-  resolver?: Resolver;
+  options?: GeneratorOptions;
 }

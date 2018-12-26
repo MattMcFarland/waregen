@@ -37,6 +37,10 @@ export const die = (msg: string): void => {
   log.fatal(msg);
   process.exit(1);
 };
+export const end = (msg: string): void => {
+  log.complete(msg);
+  process.exit(0);
+};
 export const exhaustiveFail = (msg: string): never => {
   throw new Error(msg);
 };

@@ -1,6 +1,6 @@
 export * from "./array";
 export * from "./fs";
 export * from "./object";
-export { Resolver } from "./PathResolver";
+export { PathBuilder } from "./PathBuilder";
 export * from "./System";
 export * from "./xml";

@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 import Yargs from "yargs";
-import { generate } from "./lib";
 
 const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
-  yargs.positional("configXML", {
-    describe: "path to your configXML",
+  yargs.positional("configXmlPath", {
+    describe: "path to config file",
     type: "string",
     default: "example.xml"
   })
@@ -16,6 +15,5 @@ const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   .alias("h", "help")
   .help().argv;
 
-if (args.configXML) {
-  generate(args.configXML, Boolean(args.force));
+if (args.configXmlPath) {
 }

@@ -1,27 +1,20 @@
-import { Parser } from "./utils/xml";
-import { safeRead as readAbsXMLFile } from "./utils/fs";
+import { Parser } from "../utils/xml";
+
 import idx from "idx";
-import { log, die, exhaustiveFail } from "./utils/System";
+import { log, die, exhaustiveFail } from "../utils/System";
 import Jetpack from "fs-jetpack";
 import {
   X4WareGenXML,
-  Addwares as AddwaresList,
+  AddwareEntity,
   DefaultsEntity
 } from "@@/XMLTypes/X4WareGenXML";
-
-enum WareGenConfigItem {
-  PREFIX = "prefix",
-  GAMEPATH = "gamepath",
-  MODPATH = "modpath",
-  UNPACKEDPATH = "unpackedpath",
-  DEFAULTS = "defaults"
-}
+import { GeneratorConfig, ConfigSelector } from ".";
 
 const setupConfig = async (
   configPath: string
-): Promise<(selector: WareGenConfigItem) => string> => {
+): Promise<(selector: ConfigSelector) => string> => {
   const configData = await new Parser<X4WareGenXML>().parseFile(configPath);
-  return (selector: WareGenConfigItem) => {
+  return (selector: ConfigSelector) => {
     const result = <string>(
       (<unknown>idx(configData, _ => _.addwares.configuration[0][selector]))
     );
@@ -36,8 +29,8 @@ const setupConfig = async (
   };
 };
 
-export class Config {
-  private select: (selector: WareGenConfigItem) => string;
+export class Config implements GeneratorConfig {
+  private select: (selector: ConfigSelector) => string;
   private configPath: string;
   private configData: X4WareGenXML | undefined;
   constructor(configPath: string) {
@@ -49,7 +42,7 @@ export class Config {
     return this;
   }
   get addwaresList() {
-    return <AddwaresList>(
+    return <AddwareEntity[]>(
       idx(this.configData, _ => _.addwares.generation[0].addware)
     );
   }
@@ -58,17 +51,17 @@ export class Config {
       idx(this.configData, _ => _.addwares.configuration[0].defaults[0])
     );
   }
-  get prefix() {
-    return this.select(WareGenConfigItem.PREFIX);
+  get modPrefix() {
+    return this.select(ConfigSelector.PREFIX);
   }
-  get gamepath() {
-    return this.select(WareGenConfigItem.GAMEPATH);
+  get gamePath() {
+    return this.select(ConfigSelector.GAMEPATH);
   }
-  get modpath() {
-    return this.select(WareGenConfigItem.MODPATH);
+  get modPath() {
+    return this.select(ConfigSelector.MODPATH);
   }
-  get unpackedpath() {
-    return this.select(WareGenConfigItem.UNPACKEDPATH);
+  get unpackedPath() {
+    return this.select(ConfigSelector.UNPACKEDPATH);
   }
 }
 

@@ -1,25 +1,15 @@
-import { Resolver, clone, range } from "@@/utils";
+import { clone, range } from "@@/utils";
 import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
+import { GeneratorConfig } from "@@/generator";
 
-export interface IMockGeneratorArgs {
-  defaults: DefaultsEntity;
-  resolver: Resolver;
-  addWares: AddwareEntity[];
-}
-
-export const mockGeneratorArgs = (): IMockGeneratorArgs => ({
-  resolver: mockResolver(),
-  defaults: mockDefaults(),
-  addWares: mockAddwares(4)
+export const mockGeneratorConfig = (): GeneratorConfig => ({
+  defaultWare: mockDefaults(),
+  addwaresList: mockAddwares(4),
+  gamePath: "/test/Game",
+  modPath: "extensions/test",
+  modPrefix: "pfx",
+  unpackedPath: "unpacked"
 });
-
-export const mockResolver = (): Resolver =>
-  new Resolver(
-    "/test/Game",
-    "test_prefix",
-    "test_extensions/test_mod",
-    "test_unpacked"
-  );
 
 export const mockDefaults = (): DefaultsEntity => ({
   ware: [defaultWare()]
@@ -30,8 +20,8 @@ export const mockAddwares = (count: number): AddwareEntity[] => {
     (i: number): AddwareEntity => ({
       Attributes: {
         baskets: `[test_basket_${i}]`,
-        cloneProductionModuleFrom: `prod_module_macro_${i}`,
-        id: `test_ware_${i}`
+        cloneProductionModuleFrom: `prod_cloned_macro_${i}`,
+        id: `ware${i}`
       }
     })
   );

@@ -3,7 +3,9 @@ import Parser from "../src/lib/utils/xml/Parser";
 
 const shelljs = require("shelljs");
 
-const xmlFiles = jetpack.find("scripts/xmlSamples", { matching: "*.xml" });
+const xmlFiles = jetpack.find("../src/assets/xmlSamples", {
+  matching: "*.xml"
+});
 const parser = new Parser();
 
 xmlFiles.forEach(async (xmlFile: string) => {

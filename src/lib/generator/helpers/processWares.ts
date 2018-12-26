@@ -1,4 +1,3 @@
-import { Resolver } from "@@/utils/PathResolver";
 import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
 
 import {
@@ -10,18 +9,11 @@ import {
   AssetWareMacro,
   AssetWareProdMacro
 } from "@@/entities";
+import { GeneratorConfig, GeneratorOptions } from "@@/generator";
 
-/**
- * Asyncronuosly do all the things
- * @param addWares
- * @param resolver
- * @param defaults
- */
 export default async function processWares(
-  addWares: AddwareEntity[],
-  resolver: Resolver,
-  defaults: DefaultsEntity,
-  force: boolean
+  config: GeneratorConfig,
+  options: GeneratorOptions
 ) {
   // const iconCollection = new IconCollection();
   // const moduleGroupsCollection = new ModuleGroupsCollection();
@@ -40,24 +32,24 @@ export default async function processWares(
     the constant as much as we need to) ;)  
   */
   /* Create the Macros Index */
-  // todo const macrosIndex = createMacroIndex(resolver, defaults, addWares);
+  // todo const macrosIndex = createMacroIndex(config, options);
   /* Create the Icon Collection */
-  // todo const iconCollection = createIcons(resolver, defaults, addWares);
+  // todo const iconCollection = createIcons(config, options);
   /* Create Ware Entity and add it to Collection */
-  // todo const wareCollection = createWareCollection(resolver, defaults, addWares)
+  // todo const wareCollection = createWareCollection(config, options)
   /* Create the Basket Collection */
-  // todo const basketCollection = createBasketCollection(resolver, defaults, addWares)
+  // todo const basketCollection = createBasketCollection(config, options)
   /* Create "Module Groups" Collection */
-  // todo const moduleGroupsCollection = createModuleGroups(resolver, defaults, addWares)
+  // todo const moduleGroupsCollection = createModuleGroups(config, options)
   /* Create Modules Collection */
-  // todo const modulesCollection = createModules(resolver, defaults, addWares)
+  // todo const modulesCollection = createModules(config, options)
   /* Create Array of Promises to import Asset Ware Macros and asset Production Macros */
-  // todo const importWareAssets = enqueueMacroImports(resolver, addWares, force)
+  // todo const importWareAssets = enqueueMacroImports(config, options)
   /* Arry of Promises for gunzipping icons from unpacked to their destination*/
-  // todo const importIconTextures = enqueueIconTextureImports(resolver, addWares, force)
+  // todo const importIconTextures = enqueueIconTextureImports(config, options)
   /* Array of Promises for writing the files */
   // todo consider using Object.entries over a setup object instead.
-  // todo const fileWrites = enqueueFileWrites([ macrosIndex, iconCollection, wareCollection, basketCollection, moduleGroupsCollection, modulesCollection ], force)
+  // todo const fileWrites = enqueueFileWrites([ macrosIndex, iconCollection, wareCollection, basketCollection, moduleGroupsCollection, modulesCollection ], config, options)
   /* return the promises to be resolved */
   // todo return Promise.all([...fileWrites, ...importWareAssets, ...importIconTextures])
 }

@@ -10,3 +10,5 @@ export { ModuleGroupsCollection } from "./ModuleGroupsCollection";
 export { Ware } from "./Ware";
 export { WareCollection } from "./WareCollection";
 export { X4Entity } from "./X4Entity";
+export { X4Module } from "./X4Module";
+export { X4ModuleCollection } from "./X4ModuleCollection";

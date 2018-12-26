@@ -8,7 +8,7 @@ import { X4Module } from "./X4Module";
 export interface ModulesIndex {
   [key: string]: X4Module;
 }
-export class ModuleCollection extends X4Entity<ModuleEntities> {
+export class X4ModuleCollection extends X4Entity<ModuleEntities> {
   private modulesIndex: ModulesIndex = {};
   protected onImport(_xmlDef: ModuleEntities) {
     delete this.modulesIndex;

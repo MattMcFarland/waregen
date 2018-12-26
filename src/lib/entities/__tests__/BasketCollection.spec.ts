@@ -1,5 +1,5 @@
-import { BasketCollection } from "./BasketCollection";
-import { Basket } from "./Basket";
+import { BasketCollection } from "../BasketCollection";
+import { Basket } from "../Basket";
 
 const basketTest = (id: string, wares: string[] = []) => ({
   id,

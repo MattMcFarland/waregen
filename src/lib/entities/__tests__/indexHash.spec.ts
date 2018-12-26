@@ -1,4 +1,4 @@
-import { IndexHash, findInXmlDef } from "./IndexHash";
+import { IndexHash, findInXmlDef } from "../IndexHash";
 import { EntryEntity, Index as IndexItems } from "@@/XMLTypes/X4Index";
 
 describe("IndexHash", () => {

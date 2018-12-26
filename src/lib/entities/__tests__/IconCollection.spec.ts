@@ -1,5 +1,5 @@
-import { IconCollection } from "./IconCollection";
-import { Icon, IconAttributes } from "./Icon";
+import { IconCollection } from "../IconCollection";
+import { Icon, IconAttributes } from "../Icon";
 
 const iconTest = (name: string): IconAttributes => ({
   name,

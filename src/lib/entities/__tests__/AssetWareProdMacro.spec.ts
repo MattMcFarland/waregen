@@ -1,4 +1,4 @@
-import { AssetWareProdMacro } from "./AssetWareProdMacro";
+import { AssetWareProdMacro } from "../AssetWareProdMacro";
 
 describe("AssetWareProdMacro", () => {
   describe("using import", () => {

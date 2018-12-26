@@ -1,4 +1,4 @@
-import { Ware } from "./Ware";
+import { Ware } from "../Ware";
 
 describe("Ware Entity", () => {
   const ware = new Ware();

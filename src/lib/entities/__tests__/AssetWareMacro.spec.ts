@@ -1,4 +1,4 @@
-import { AssetWareMacro } from "./AssetWareMacro";
+import { AssetWareMacro } from "../AssetWareMacro";
 
 describe("WareMacro", () => {
   test("constructor", () => {

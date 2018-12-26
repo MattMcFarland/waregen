@@ -1,5 +1,5 @@
-import { WareCollection } from "./WareCollection";
-import { Ware } from "./Ware";
+import { WareCollection } from "../WareCollection";
+import { Ware } from "../Ware";
 import { WareEntity } from "@@/XMLTypes/X4LibraryWares";
 const wareTest = (id: string): WareEntity => ({
   Attributes: {

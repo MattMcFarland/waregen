@@ -1,5 +1,5 @@
-import { ModuleGroupsCollection } from "./ModuleGroupsCollection";
-import { ModuleGroup, ModuleGroupConstructOptions } from "./ModuleGroup";
+import { ModuleGroupsCollection } from "../ModuleGroupsCollection";
+import { ModuleGroup, ModuleGroupConstructOptions } from "../ModuleGroup";
 
 const groupTest = (
   name: string,

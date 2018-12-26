@@ -1,4 +1,4 @@
-import { X4Entity, X4EntityType } from "./X4Entity";
+import { X4Entity, X4EntityType } from "../X4Entity";
 
 const testDefaults = {
   Attributes: {

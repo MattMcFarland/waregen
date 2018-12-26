@@ -1,5 +1,5 @@
-import { ModuleGroup, findInXmlDef, ModuleGroupEntity } from "./ModuleGroup";
-import { Basket } from "./Basket";
+import { ModuleGroup, findInXmlDef, ModuleGroupEntity } from "../ModuleGroup";
+import { Basket } from "../Basket";
 
 const testGroupOps = {
   name: "test_group",

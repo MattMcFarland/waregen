@@ -14,7 +14,7 @@ xmlFiles.forEach(async (xmlFile: string) => {
     const RootName = xmlFile.split("__")[1].split(".")[0];
     jetpack.write(jsonName, JSON.stringify(xmlObject));
     shelljs.exec(
-      `yarn make_types -i src/XMLTypes/${RootName}.d.ts ${jsonName} ${RootName}`
+      `yarn make_types -i src/lib/XMLTypes/${RootName}.ts ${jsonName} ${RootName}`
     );
     shelljs.exec(`rm ${jsonName}`);
   }

@@ -1,6 +1,7 @@
-import { safeRead as readAbsXMLFile, Parser } from "../utils/xml";
+import { Parser } from "./utils/xml";
+import { safeRead as readAbsXMLFile } from "./utils/fs";
 import idx from "idx";
-import { log, die, exhaustiveFail } from "../utils/System";
+import { log, die, exhaustiveFail } from "./utils/System";
 import Jetpack from "fs-jetpack";
 import {
   X4WareGenXML,

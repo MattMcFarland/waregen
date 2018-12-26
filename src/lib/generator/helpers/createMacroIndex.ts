@@ -1,6 +1,6 @@
-import { Resolver } from "@@/lib/utils";
-import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
-import { IndexHash } from "@@/lib/entities";
+import { Resolver } from "@@/utils";
+import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes\\X4WareGenXML";
+import { IndexHash } from "@@/entities";
 
 export default function createMacroIndex(
   resolver: Resolver,

@@ -1,4 +1,4 @@
-import { Resolver } from "@@/lib/utils/PathResolver";
+import { Resolver } from "@@/utils/PathResolver";
 import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
 
 import {
@@ -9,7 +9,7 @@ import {
   ModuleGroupsCollection,
   AssetWareMacro,
   AssetWareProdMacro
-} from "@@/lib/entities";
+} from "@@/entities";
 
 /**
  * Asyncronuosly do all the things

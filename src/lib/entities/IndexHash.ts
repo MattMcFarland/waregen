@@ -1,8 +1,8 @@
-import { Index as IndexHashItems, EntryEntity } from "../../XMLTypes/X4Index";
+import { Index as IndexHashItems, EntryEntity } from "@@/XMLTypes/X4Index";
 
 import { isIndexEntry } from "./indexValidators";
 import { X4Entity, X4EntityType } from "./X4Entity";
-import { clone } from "../../lib/utils/object";
+import { clone } from "@@/utils/object";
 
 export interface IndexHashInterface {
   [key: string]: string | number | boolean;
@@ -48,8 +48,7 @@ export class IndexHash extends X4Entity<IndexHashItems> {
         if (!isIndexEntry(item)) {
           throw new TypeError(`invalid entry assigned to IndexHash`);
         }
-
-        item.value = value;
+        item.Attributes.value = value;
         return Reflect.set(target, key, value);
       },
       deleteProperty(target: IndexHashInterface, key: string) {

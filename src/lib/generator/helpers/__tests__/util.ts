@@ -1,4 +1,4 @@
-import { Resolver } from "@@/lib/utils";
+import { Resolver } from "@@/utils";
 import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
 
 export interface IMockGeneratorArgs {

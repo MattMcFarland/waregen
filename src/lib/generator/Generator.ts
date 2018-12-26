@@ -1,5 +1,5 @@
-import { Config, getConfig } from "@@/lib/config/Config";
-import { Resolver } from "@@/lib/utils/PathResolver";
+import { Config, getConfig } from "@@/Config";
+import { Resolver } from "@@/utils/PathResolver";
 import {
   DefaultsEntity,
   Addwares as AddwaresList

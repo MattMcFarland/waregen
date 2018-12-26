@@ -1,4 +1,4 @@
-import { Basket, findInXmlDef } from "./Basket";
+import { Basket, findInXmlDef } from "../Basket";
 import { BasketEntity } from "@@/XMLTypes/X4LibraryBaskets";
 const testBasketOps = {
   id: "foo",

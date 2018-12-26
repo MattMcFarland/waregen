@@ -3,6 +3,8 @@ import { IdRoster } from "./IdRoster";
 import { GeneratorConfig } from "@@/generator";
 import { log } from "@@/utils";
 
+const maybeExt = (ext?: string) => (ext ? `.${ext}` : "");
+
 export class PathBuilder {
   private gamepath: string;
   private modPath: string;
@@ -28,45 +30,45 @@ export class PathBuilder {
   dirUnpackedPath() {
     return this.append(this.unpackedPath);
   }
-  fileLibrary(baseName: string, ext: string = "xml") {
-    return this.append("libraries", `${baseName}.${ext}`);
+  fileLibrary(baseName: string, ext?: string) {
+    return this.append("libraries", `${baseName}${maybeExt(ext)}`);
   }
-  fileIndex(baseName: string, ext: string = "xml") {
-    return this.append("index", `${baseName}.${ext}`);
+  fileIndex(baseName: string, ext?: string) {
+    return this.append("index", `${baseName}${maybeExt(ext)}`);
   }
-  fileProductionMacroXML() {
+  fileProductionMacroXML(ext?: string) {
     return this.append(
       "assets",
       "structures",
       "production",
       "macros",
-      `${this.ids.productionMacro}.xml`
+      `${this.ids.productionMacro}${maybeExt(ext)}`
     );
   }
-  fileWareMacroXML() {
+  fileWareMacroXML(ext?: string) {
     return this.append(
       "assets",
       "wares",
       "macros",
-      `${this.ids.wareMacro}.xml`
+      `${this.ids.wareMacro}${maybeExt(ext)}`
     );
   }
-  fileIconGZ() {
+  fileIconGZ(ext: string = "gz") {
     return this.append(
       "assets",
       "fx",
       "gui",
       "textures",
-      `${this.ids.productionMacro}.gz`
+      `${this.ids.productionMacro}${maybeExt(ext)}`
     );
   }
-  fileIconDDS() {
+  fileIconDDS(ext: string = "dds") {
     return this.append(
       "assets",
       "fx",
       "gui",
       "textures",
-      `${this.ids.productionMacro}.dds`
+      `${this.ids.productionMacro}${maybeExt(ext)}`
     );
   }
 

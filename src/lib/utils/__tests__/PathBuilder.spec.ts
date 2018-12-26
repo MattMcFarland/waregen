@@ -25,18 +25,18 @@ describe("PathBuilder", () => {
     });
   });
   describe("building paths from mod", () => {
-    test("fileLibrary(arg) -> extensions/test/libraries/...", () => {
+    test("fileLibrary(arg) -> extensions/test/libraries/arg", () => {
       const result = new PathBuilder(mockConfig, "fooware")
         .dirModPath()
         .fileLibrary("arg")
         .toArray()
         .join("\\");
-      expect(result).toBe("extensions\\test\\libraries\\arg.xml");
+      expect(result).toBe("extensions\\test\\libraries\\arg");
     });
     test("fileIndex(arg) -> extensions/test/index/...", () => {
       const result = new PathBuilder(mockConfig, "fooware")
         .dirModPath()
-        .fileIndex("arg")
+        .fileIndex("arg", "xml")
         .toArray()
         .join("\\");
       expect(result).toBe("extensions\\test\\index\\arg.xml");
@@ -48,7 +48,7 @@ describe("PathBuilder", () => {
         .toArray()
         .join("/");
       expect(result).toBe(
-        "extensions/test/assets/structures/production/macros/pfx_prod_gen_fooware_macro.xml"
+        "extensions/test/assets/structures/production/macros/pfx_prod_gen_fooware_macro"
       );
     });
     test("fileIconDDS() -> extensions/fooware/...", () => {
@@ -70,12 +70,12 @@ describe("PathBuilder", () => {
         .toArray()
         .join("/");
 
-      expect(result).toBe("unpacked/libraries/arg.xml");
+      expect(result).toBe("unpacked/libraries/arg");
     });
     test("fileIndex(arg) -> unpacked/...", () => {
       const result = new PathBuilder(mockConfig, "fooware")
         .dirUnpackedPath()
-        .fileIndex("arg")
+        .fileIndex("arg", "xml")
         .toArray()
         .join("/");
       expect(result).toBe("unpacked/index/arg.xml");
@@ -87,7 +87,7 @@ describe("PathBuilder", () => {
         .toArray()
         .join("/");
       expect(result).toBe(
-        "unpacked/assets/structures/production/macros/pfx_prod_gen_fooware_macro.xml"
+        "unpacked/assets/structures/production/macros/pfx_prod_gen_fooware_macro"
       );
     });
     test("fileIconGZ() -> unpacked/...", () => {

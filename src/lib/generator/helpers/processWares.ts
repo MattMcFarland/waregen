@@ -2,7 +2,7 @@ import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
 import createMacroIndex from "./createMacroIndex";
 import createIcons from "./createIcons";
 import createWareCollection from "./createWareCollection";
-
+import createModuleGroups from "./createModuleGroups";
 import {
   WareCollection,
   IndexHash,
@@ -41,7 +41,7 @@ export default async function processWares(
   /* Create Ware Entity and add it to Collection */
   const wareCollection = createWareCollection(config);
   /* Create "Module Groups" Collection */
-  // todo const moduleGroupsCollection = createModuleGroups(config, options)
+  const moduleGroupsCollection = createModuleGroups(config);
   /* Create Modules Collection */
   // todo const modulesCollection = createModules(config, options)
   /* Create Array of Promises to import Asset Ware Macros and asset Production Macros */

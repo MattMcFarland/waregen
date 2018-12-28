@@ -3,6 +3,7 @@ import createMacroIndex from "./createMacroIndex";
 import createIcons from "./createIcons";
 import createWareCollection from "./createWareCollection";
 import createModuleGroups from "./createModuleGroups";
+import createModules from "./createModules";
 import {
   WareCollection,
   IndexHash,
@@ -43,7 +44,7 @@ export default async function processWares(
   /* Create "Module Groups" Collection */
   const moduleGroupsCollection = createModuleGroups(config);
   /* Create Modules Collection */
-  // todo const modulesCollection = createModules(config, options)
+  const modulesCollection = createModules(config);
   /* Create Array of Promises to import Asset Ware Macros and asset Production Macros */
   // todo const importWareAssets = enqueueMacroImports(config, options)
   /* Arry of Promises for gunzipping icons from unpacked to their destination*/

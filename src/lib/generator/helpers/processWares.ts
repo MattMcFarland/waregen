@@ -45,14 +45,16 @@ export default async function processWares(
   const moduleGroupsCollection = createModuleGroups(config);
   /* Create Modules Collection */
   const modulesCollection = createModules(config);
+
+  /* Create the Basket Collection */
+  // todo const basketCollection = createBasketCollection(config, options)
+
   /* Create Array of Promises to import Asset Ware Macros and asset Production Macros */
   // todo const importWareAssets = enqueueMacroImports(config, options)
   /* Arry of Promises for gunzipping icons from unpacked to their destination*/
   // todo const importIconTextures = enqueueIconTextureImports(config, options)
   /* Array of Promises for writing the files */
   // todo consider using Object.entries over a setup object instead.
-  /* Create the Basket Collection */
-  // todo const basketCollection = createBasketCollection(config, options)
 
   // todo const fileWrites = enqueueFileWrites([ macrosIndex, iconCollection, wareCollection, basketCollection, moduleGroupsCollection, modulesCollection ], config, options)
   /* return the promises to be resolved */

@@ -1,10 +1,9 @@
 import { mockGeneratorConfig } from "./util";
-import createModuleGroups from "../createModuleGroups";
-
+import createModules from "../createModules";
 describe("generator/helpers", () => {
-  describe("createModuleGroups", () => {
+  describe("createModules", () => {
     const mockConfig = mockGeneratorConfig();
-    const modCollection = createModuleGroups(mockConfig);
+    const modCollection = createModules(mockConfig);
     test("toJson()", () => {
       expect(modCollection.toJson()).toMatchSnapshot();
     });

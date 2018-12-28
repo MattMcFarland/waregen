@@ -1,4 +1,4 @@
-import { mockGeneratorConfig } from "@@/__test__utils__";
+import { mockGeneratorConfig } from "./util";
 import createMacroIndex from "../createMacroIndex";
 
 describe("generator/helpers", () => {

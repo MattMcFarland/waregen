@@ -1,4 +1,4 @@
-import { mockGeneratorConfig } from "@@/__test__utils__";
+import { mockGeneratorConfig } from "./util";
 import createIcons from "../createIcons";
 
 describe("generator/helpers", () => {

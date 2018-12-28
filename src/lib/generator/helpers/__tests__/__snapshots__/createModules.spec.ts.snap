@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generator/helpers createModules toJson() 1`] = `"{\\"module\\":[{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_a\\",\\"group\\":\\"pfx_prod_gen_a\\"},\\"category\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_a\\",\\"tags\\":\\"[production, module]\\",\\"race\\":\\"[argon, paranid, teladi]\\",\\"faction\\":\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"}}],\\"compatibilities\\":[{\\"production\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_a\\",\\"chance\\":65}}],\\"limits\\":[{\\"Attributes\\":{\\"production\\":1}}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_b\\",\\"group\\":\\"pfx_prod_gen_b\\"},\\"category\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_b\\",\\"tags\\":\\"[production, module]\\",\\"race\\":\\"[argon, paranid, teladi]\\",\\"faction\\":\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"}}],\\"compatibilities\\":[{\\"production\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_b\\",\\"chance\\":65}}],\\"limits\\":[{\\"Attributes\\":{\\"production\\":1}}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_c\\",\\"group\\":\\"pfx_prod_gen_c\\"},\\"category\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_c\\",\\"tags\\":\\"[production, module]\\",\\"race\\":\\"[argon, paranid, teladi]\\",\\"faction\\":\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"}}],\\"compatibilities\\":[{\\"production\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_c\\",\\"chance\\":65}}],\\"limits\\":[{\\"Attributes\\":{\\"production\\":1}}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_d\\",\\"group\\":\\"pfx_prod_gen_d\\"},\\"category\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_d\\",\\"tags\\":\\"[production, module]\\",\\"race\\":\\"[argon, paranid, teladi]\\",\\"faction\\":\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"}}],\\"compatibilities\\":[{\\"production\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_d\\",\\"chance\\":65}}],\\"limits\\":[{\\"Attributes\\":{\\"production\\":1}}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_e\\",\\"group\\":\\"pfx_prod_gen_e\\"},\\"category\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_e\\",\\"tags\\":\\"[production, module]\\",\\"race\\":\\"[argon, paranid, teladi]\\",\\"faction\\":\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"}}],\\"compatibilities\\":[{\\"production\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_e\\",\\"chance\\":65}}],\\"limits\\":[{\\"Attributes\\":{\\"production\\":1}}]}]}]}"`;
+
+exports[`generator/helpers createModules toXml() 1`] = `
+"<modules>
+  <module id=\\"pfx_prod_gen_a\\" group=\\"pfx_prod_gen_a\\">
+    <category ware=\\"pfx_a\\" tags=\\"[production, module]\\" race=\\"[argon, paranid, teladi]\\" faction=\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"/>
+    <compatibilities>
+      <production ware=\\"pfx_a\\" chance=\\"65\\"/>
+      <limits production=\\"1\\"/>
+    </compatibilities>
+  </module>
+  <module id=\\"pfx_prod_gen_b\\" group=\\"pfx_prod_gen_b\\">
+    <category ware=\\"pfx_b\\" tags=\\"[production, module]\\" race=\\"[argon, paranid, teladi]\\" faction=\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"/>
+    <compatibilities>
+      <production ware=\\"pfx_b\\" chance=\\"65\\"/>
+      <limits production=\\"1\\"/>
+    </compatibilities>
+  </module>
+  <module id=\\"pfx_prod_gen_c\\" group=\\"pfx_prod_gen_c\\">
+    <category ware=\\"pfx_c\\" tags=\\"[production, module]\\" race=\\"[argon, paranid, teladi]\\" faction=\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"/>
+    <compatibilities>
+      <production ware=\\"pfx_c\\" chance=\\"65\\"/>
+      <limits production=\\"1\\"/>
+    </compatibilities>
+  </module>
+  <module id=\\"pfx_prod_gen_d\\" group=\\"pfx_prod_gen_d\\">
+    <category ware=\\"pfx_d\\" tags=\\"[production, module]\\" race=\\"[argon, paranid, teladi]\\" faction=\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"/>
+    <compatibilities>
+      <production ware=\\"pfx_d\\" chance=\\"65\\"/>
+      <limits production=\\"1\\"/>
+    </compatibilities>
+  </module>
+  <module id=\\"pfx_prod_gen_e\\" group=\\"pfx_prod_gen_e\\">
+    <category ware=\\"pfx_e\\" tags=\\"[production, module]\\" race=\\"[argon, paranid, teladi]\\" faction=\\"[argon, paranid, teladi, antigone, holyorder, ministry, hatikvah, alliance, scaleplate]\\"/>
+    <compatibilities>
+      <production ware=\\"pfx_e\\" chance=\\"65\\"/>
+      <limits production=\\"1\\"/>
+    </compatibilities>
+  </module>
+</modules>"
+`;

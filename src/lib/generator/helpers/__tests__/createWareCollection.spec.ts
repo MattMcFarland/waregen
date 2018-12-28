@@ -1,4 +1,4 @@
-import { mockGeneratorConfig } from "@@/__test__utils__";
+import { mockGeneratorConfig } from "./util";
 import createWareCollection from "../createWareCollection";
 
 describe("generator/helpers", () => {

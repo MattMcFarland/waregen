@@ -11,7 +11,8 @@ import {
 import {
   DefaultWareEntity,
   BlueprintWareEntity,
-  WareOrBlueprintEntity
+  WareOrBlueprintEntity,
+  DefaultBlueprintEntity
 } from "@@/entities/Ware";
 import { GeneratorConfig, ConfigSelector } from ".";
 
@@ -52,12 +53,12 @@ export class Config implements GeneratorConfig {
     );
   }
   get defaultWare() {
-    return <WareOrBlueprintEntity>(
+    return <DefaultWareEntity>(
       idx(this.configData, _ => _.addwares.configuration[0].defaults[0].ware[0])
     );
   }
   get defaultBlueprint() {
-    return <WareOrBlueprintEntity>(
+    return <DefaultBlueprintEntity>(
       idx(
         this.configData,
         _ => _.addwares.configuration[0].defaults[0].blueprint[0]

@@ -6,7 +6,7 @@
     <modpath value="extensions\XCG2"/>
     <unpackedpath value="unpacked-150"/>
     <defaults>
-      <ware>
+      <ware transport="container" volume="" tags="container economy">
         <price min="735" average="865" max="994" />
         <production time="300" amount="60" method="default">
           <primary>
@@ -19,6 +19,28 @@
         </production>
         <icon active="ware_default" video="ware_noicon_macro" />
       </ware>
+      <blueprint description="{20104,12302}" transport="container" volume="1" tags="module">
+        <price min="197231" average="232036" max="266841" />
+        <production time="791" amount="1" method="default" name="{20206,101}">
+          <primary>
+            <ware ware="claytronics" amount="36" />
+            <ware ware="energycells" amount="73" />
+            <ware ware="hullparts" amount="135" />
+          </primary>
+        </production>
+        <research time="10">
+          <research>
+            <ware ware="research_module_production" />
+          </research>
+        </research>
+        <component ref="xcg_prod_gen_glass_macro" amount="1" />
+        <restriction licence="station_gen_basic" />
+        <owner faction="antigone" />
+        <owner faction="argon" />
+        <owner faction="holyorder" />
+        <owner faction="paranid" />
+        <owner faction="teladi" />
+      </blueprint>
     </defaults>
   </configuration>
   <generation>
@@ -35,6 +57,16 @@
           </effects>
         </production>
       </ware>
+      <blueprint name="Glass Production" description="{20104,12302}" transport="container" volume="1" tags="module">
+        <price min="197231" average="232036" max="266841" />
+        <production time="791" amount="1" method="default" name="{20206,101}">
+          <primary>
+            <ware ware="claytronics" amount="36" />
+            <ware ware="energycells" amount="73" />
+            <ware ware="hullparts" amount="135" />
+          </primary>
+        </production>
+      </blueprint>
     </addware>
     <addware id="plastic" cloneProductionModuleFrom="prod_gen_refinedmetals" baskets="[refined, pirate_container, all_container, all]">
       <ware name="Plastic" group="refined" transport="container" volume="32" tags="container economy">
@@ -49,6 +81,16 @@
           </effects>
         </production>
       </ware>
+      <blueprint name="Plastic Production" description="{20104,12302}" transport="container" volume="1" tags="module">
+        <price min="197231" average="232036" max="266841" />
+        <production time="791" amount="1" method="default" name="{20206,101}">
+          <primary>
+            <ware ware="claytronics" amount="36" />
+            <ware ware="energycells" amount="33" />
+            <ware ware="hullparts" amount="135" />
+          </primary>
+        </production>
+      </blueprint>
     </addware>
   </generation>
 </addwares>

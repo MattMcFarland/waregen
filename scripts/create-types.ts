@@ -1,11 +1,16 @@
 import jetpack from "fs-jetpack";
 import Parser from "../src/lib/utils/xml/Parser";
+import Path from "path";
 
 const shelljs = require("shelljs");
 
-const xmlFiles = jetpack.find("../src/assets/xmlSamples", {
+const xmlSamplesPath = Path.resolve(process.cwd(), "src/assets/xmlSamples");
+
+const xmlFiles = jetpack.find(xmlSamplesPath, {
   matching: "*.xml"
 });
+console.log("xmlFiles found:\n  ", xmlFiles.join("\n  "));
+
 const parser = new Parser();
 
 xmlFiles.forEach(async (xmlFile: string) => {

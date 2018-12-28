@@ -12,6 +12,10 @@ import {
   Attributes14,
   Attributes12
 } from "@@/XMLTypes/X4LibraryWares";
+import {
+  WareEntity as DefaultWare,
+  BlueprintEntity as DefaultBlueprint
+} from "@@/XMLTypes/X4WareGenXML";
 
 export type ProductionEntities = ProductionEntity2[];
 export type ProductionEntity = ProductionEntity2;
@@ -21,6 +25,10 @@ export type IconAttributes = Attributes10;
 export type RestrictionAttributes = Attributes13;
 export type OwnerAttributes = Attributes14;
 export type UseAttributes = Attributes12;
+export type DefaultWareEntity = WareEntity & DefaultWare;
+export type BlueprintWareEntity = WareEntity & DefaultBlueprint;
+export type WareOrBlueprintEntity = DefaultWareEntity | BlueprintWareEntity;
+
 export interface WareEntity extends BaseWareEntity {
   container?: (ContainerEntity)[] | null;
 }
@@ -139,11 +147,14 @@ export class Ware extends X4Entity<WareEntity> {
     return <UseAttributes>idx(this.xmlDef, _ => _.use[0].Attributes) || null;
   }
 
-  constructor(options?: WareEntity) {
+  constructor(
+    options?: WareOrBlueprintEntity,
+    defaultWare?: DefaultWare | DefaultBlueprint
+  ) {
     super(
       X4EntityType.LIBRARY_WARE,
       "ware",
-      {
+      defaultWare || {
         Attributes: {
           id: "default",
           name: "default",

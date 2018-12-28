@@ -1,11 +1,16 @@
-import { AddwareEntity, DefaultsEntity } from "@@/XMLTypes/X4WareGenXML";
+import {
+  AddwareEntity,
+  WareEntity,
+  BlueprintEntity
+} from "@@/XMLTypes/X4WareGenXML";
 
 export { default as Generator } from "./Generator";
 export { Config, getConfig } from "./Config";
 
 export interface GeneratorConfig {
   readonly addwaresList: AddwareEntity[];
-  readonly defaultWare: DefaultsEntity;
+  readonly defaultWare: WareEntity;
+  readonly defaultBlueprint: BlueprintEntity;
   readonly modPrefix: string;
   readonly gamePath: string;
   readonly modPath: string;

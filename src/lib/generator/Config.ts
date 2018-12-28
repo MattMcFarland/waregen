@@ -6,8 +6,13 @@ import Jetpack from "fs-jetpack";
 import {
   X4WareGenXML,
   AddwareEntity,
-  DefaultsEntity
+  WareEntity
 } from "@@/XMLTypes/X4WareGenXML";
+import {
+  DefaultWareEntity,
+  BlueprintWareEntity,
+  WareOrBlueprintEntity
+} from "@@/entities/Ware";
 import { GeneratorConfig, ConfigSelector } from ".";
 
 const setupConfig = async (
@@ -47,8 +52,16 @@ export class Config implements GeneratorConfig {
     );
   }
   get defaultWare() {
-    return <DefaultsEntity>(
-      idx(this.configData, _ => _.addwares.configuration[0].defaults[0])
+    return <WareOrBlueprintEntity>(
+      idx(this.configData, _ => _.addwares.configuration[0].defaults[0].ware[0])
+    );
+  }
+  get defaultBlueprint() {
+    return <WareOrBlueprintEntity>(
+      idx(
+        this.configData,
+        _ => _.addwares.configuration[0].defaults[0].blueprint[0]
+      )
     );
   }
   get modPrefix() {

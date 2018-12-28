@@ -26,6 +26,7 @@ export type RestrictionAttributes = Attributes13;
 export type OwnerAttributes = Attributes14;
 export type UseAttributes = Attributes12;
 export type DefaultWareEntity = WareEntity & DefaultWare;
+export type DefaultBlueprintEntity = WareEntity & DefaultBlueprint;
 export type BlueprintWareEntity = WareEntity & DefaultBlueprint;
 export type WareOrBlueprintEntity = DefaultWareEntity | BlueprintWareEntity;
 
@@ -110,14 +111,28 @@ export class Ware extends X4Entity<WareEntity> {
     return <ProductionEntities>this.xmlDef.production || null;
   }
 
-  set component(v: ComponentAttributes) {
-    this.xmlDef.component = [{ Attributes: v }];
+  set componentRef(v: string) {
+    this.xmlDef.component = [
+      {
+        Attributes: { amount: this.componentAmount, ref: v }
+      }
+    ];
   }
-  get component() {
-    return (
-      <ComponentAttributes>idx(this.xmlDef, _ => _.component[0].Attributes) ||
-      null
-    );
+
+  get componentRef() {
+    return <string>idx(this.xmlDef, _ => _.component[0].Attributes.ref);
+  }
+
+  get componentAmount() {
+    return <number>idx(this.xmlDef, _ => _.component[0].Attributes.amount);
+  }
+
+  set componentAmount(v: number) {
+    this.xmlDef.component = [
+      {
+        Attributes: { amount: v, ref: this.componentRef }
+      }
+    ];
   }
 
   set restriction(v: RestrictionAttributes) {

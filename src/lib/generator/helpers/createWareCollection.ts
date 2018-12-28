@@ -17,7 +17,8 @@ export default function createWares(config: GeneratorConfig): WareCollection {
     const wareDef = <WareOrBlueprintEntity>idx(addware, _ => _.blueprint[0]);
     const bpWare = new Ware(wareDef, config.defaultBlueprint);
     bpWare.id = ids.productionBlueprintId;
-    bpWare.component.ref = ids.productionMacro;
+    bpWare.componentRef = ids.productionMacro;
+    bpWare.componentAmount = 1;
     return bpWare;
   });
   return new WareCollection([...wares, ...blueprintWares]);

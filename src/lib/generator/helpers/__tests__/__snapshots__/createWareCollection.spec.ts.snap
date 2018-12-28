@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generator/helpers createWareCollection toJson() 1`] = `"{\\"ware\\":[{\\"Attributes\\":{\\"id\\":\\"pfx_a\\",\\"name\\":\\"a\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_b\\",\\"name\\":\\"b\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_c\\",\\"name\\":\\"c\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_d\\",\\"name\\":\\"d\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_e\\",\\"name\\":\\"e\\",\\"transport\\":\\"container\\",\\"volume\\":1},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":10,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206, 101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":50}}]}],\\"effects\\":[{\\"effect\\":[{\\"Attributes\\":{\\"type\\":\\"efficiency\\",\\"product\\":1}}]}]}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_a_macro_01\\",\\"name\\":\\"a production\\",\\"transport\\":\\"container\\",\\"volume\\":1,\\"tags\\":\\"module\\",\\"description\\":\\"blueprint description\\"},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":791,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206,101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"claytronics\\",\\"amount\\":30}},{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":75}},{\\"Attributes\\":{\\"ware\\":\\"hullparts\\",\\"amount\\":150}}]}]}],\\"restriction\\":[{\\"Attributes\\":{\\"licence\\":\\"station_gen_basic \\"}}],\\"research\\":[{\\"Attributes\\":{\\"time\\":10},\\"research\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"research_module_production\\"}}]}]}],\\"owner\\":[{\\"Attributes\\":{\\"faction\\":\\"antigone\\"}},{\\"Attributes\\":{\\"faction\\":\\"argon\\"}},{\\"Attributes\\":{\\"faction\\":\\"holyorder\\"}},{\\"Attributes\\":{\\"faction\\":\\"paranid\\"}},{\\"Attributes\\":{\\"faction\\":\\"teladi\\"}}],\\"component\\":[{\\"Attributes\\":{\\"amount\\":1,\\"ref\\":\\"pfx_prod_gen_a_macro\\"}}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_b_macro_01\\",\\"name\\":\\"b production\\",\\"transport\\":\\"container\\",\\"volume\\":1,\\"tags\\":\\"module\\",\\"description\\":\\"blueprint description\\"},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":791,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206,101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"claytronics\\",\\"amount\\":30}},{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":75}},{\\"Attributes\\":{\\"ware\\":\\"hullparts\\",\\"amount\\":150}}]}]}],\\"restriction\\":[{\\"Attributes\\":{\\"licence\\":\\"station_gen_basic \\"}}],\\"research\\":[{\\"Attributes\\":{\\"time\\":10},\\"research\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"research_module_production\\"}}]}]}],\\"owner\\":[{\\"Attributes\\":{\\"faction\\":\\"antigone\\"}},{\\"Attributes\\":{\\"faction\\":\\"argon\\"}},{\\"Attributes\\":{\\"faction\\":\\"holyorder\\"}},{\\"Attributes\\":{\\"faction\\":\\"paranid\\"}},{\\"Attributes\\":{\\"faction\\":\\"teladi\\"}}],\\"component\\":[{\\"Attributes\\":{\\"amount\\":1,\\"ref\\":\\"pfx_prod_gen_b_macro\\"}}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_c_macro_01\\",\\"name\\":\\"c production\\",\\"transport\\":\\"container\\",\\"volume\\":1,\\"tags\\":\\"module\\",\\"description\\":\\"blueprint description\\"},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":791,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206,101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"claytronics\\",\\"amount\\":30}},{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":75}},{\\"Attributes\\":{\\"ware\\":\\"hullparts\\",\\"amount\\":150}}]}]}],\\"restriction\\":[{\\"Attributes\\":{\\"licence\\":\\"station_gen_basic \\"}}],\\"research\\":[{\\"Attributes\\":{\\"time\\":10},\\"research\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"research_module_production\\"}}]}]}],\\"owner\\":[{\\"Attributes\\":{\\"faction\\":\\"antigone\\"}},{\\"Attributes\\":{\\"faction\\":\\"argon\\"}},{\\"Attributes\\":{\\"faction\\":\\"holyorder\\"}},{\\"Attributes\\":{\\"faction\\":\\"paranid\\"}},{\\"Attributes\\":{\\"faction\\":\\"teladi\\"}}],\\"component\\":[{\\"Attributes\\":{\\"amount\\":1,\\"ref\\":\\"pfx_prod_gen_c_macro\\"}}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_d_macro_01\\",\\"name\\":\\"d production\\",\\"transport\\":\\"container\\",\\"volume\\":1,\\"tags\\":\\"module\\",\\"description\\":\\"blueprint description\\"},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":791,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206,101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"claytronics\\",\\"amount\\":30}},{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":75}},{\\"Attributes\\":{\\"ware\\":\\"hullparts\\",\\"amount\\":150}}]}]}],\\"restriction\\":[{\\"Attributes\\":{\\"licence\\":\\"station_gen_basic \\"}}],\\"research\\":[{\\"Attributes\\":{\\"time\\":10},\\"research\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"research_module_production\\"}}]}]}],\\"owner\\":[{\\"Attributes\\":{\\"faction\\":\\"antigone\\"}},{\\"Attributes\\":{\\"faction\\":\\"argon\\"}},{\\"Attributes\\":{\\"faction\\":\\"holyorder\\"}},{\\"Attributes\\":{\\"faction\\":\\"paranid\\"}},{\\"Attributes\\":{\\"faction\\":\\"teladi\\"}}],\\"component\\":[{\\"Attributes\\":{\\"amount\\":1,\\"ref\\":\\"pfx_prod_gen_d_macro\\"}}]},{\\"Attributes\\":{\\"id\\":\\"pfx_prod_gen_e_macro_01\\",\\"name\\":\\"e production\\",\\"transport\\":\\"container\\",\\"volume\\":1,\\"tags\\":\\"module\\",\\"description\\":\\"blueprint description\\"},\\"price\\":[{\\"Attributes\\":{\\"min\\":1,\\"average\\":1,\\"max\\":1}}],\\"production\\":[{\\"Attributes\\":{\\"time\\":791,\\"amount\\":1,\\"method\\":\\"default\\",\\"name\\":\\"{20206,101}\\"},\\"primary\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"claytronics\\",\\"amount\\":30}},{\\"Attributes\\":{\\"ware\\":\\"energycells\\",\\"amount\\":75}},{\\"Attributes\\":{\\"ware\\":\\"hullparts\\",\\"amount\\":150}}]}]}],\\"restriction\\":[{\\"Attributes\\":{\\"licence\\":\\"station_gen_basic \\"}}],\\"research\\":[{\\"Attributes\\":{\\"time\\":10},\\"research\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"research_module_production\\"}}]}]}],\\"owner\\":[{\\"Attributes\\":{\\"faction\\":\\"antigone\\"}},{\\"Attributes\\":{\\"faction\\":\\"argon\\"}},{\\"Attributes\\":{\\"faction\\":\\"holyorder\\"}},{\\"Attributes\\":{\\"faction\\":\\"paranid\\"}},{\\"Attributes\\":{\\"faction\\":\\"teladi\\"}}],\\"component\\":[{\\"Attributes\\":{\\"amount\\":1,\\"ref\\":\\"pfx_prod_gen_e_macro\\"}}]}]}"`;
+
+exports[`generator/helpers createWareCollection toXml() 1`] = `
+"<wares>
+  <ware id=\\"pfx_a\\" name=\\"a\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+  </ware>
+  <ware id=\\"pfx_b\\" name=\\"b\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+  </ware>
+  <ware id=\\"pfx_c\\" name=\\"c\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+  </ware>
+  <ware id=\\"pfx_d\\" name=\\"d\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+  </ware>
+  <ware id=\\"pfx_e\\" name=\\"e\\" transport=\\"container\\" volume=\\"1\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"10\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206, 101}\\">
+      <primary>
+        <ware ware=\\"energycells\\" amount=\\"50\\"/>
+      </primary>
+      <effects>
+        <effect type=\\"efficiency\\" product=\\"1\\"/>
+      </effects>
+    </production>
+  </ware>
+  <ware id=\\"pfx_prod_gen_a_macro_01\\" name=\\"a production\\" transport=\\"container\\" volume=\\"1\\" tags=\\"module\\" description=\\"blueprint description\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"791\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"claytronics\\" amount=\\"30\\"/>
+        <ware ware=\\"energycells\\" amount=\\"75\\"/>
+        <ware ware=\\"hullparts\\" amount=\\"150\\"/>
+      </primary>
+    </production>
+    <restriction licence=\\"station_gen_basic \\"/>
+    <research time=\\"10\\">
+      <research>
+        <ware ware=\\"research_module_production\\"/>
+      </research>
+    </research>
+    <owner faction=\\"antigone\\"/>
+    <owner faction=\\"argon\\"/>
+    <owner faction=\\"holyorder\\"/>
+    <owner faction=\\"paranid\\"/>
+    <owner faction=\\"teladi\\"/>
+    <component amount=\\"1\\" ref=\\"pfx_prod_gen_a_macro\\"/>
+  </ware>
+  <ware id=\\"pfx_prod_gen_b_macro_01\\" name=\\"b production\\" transport=\\"container\\" volume=\\"1\\" tags=\\"module\\" description=\\"blueprint description\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"791\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"claytronics\\" amount=\\"30\\"/>
+        <ware ware=\\"energycells\\" amount=\\"75\\"/>
+        <ware ware=\\"hullparts\\" amount=\\"150\\"/>
+      </primary>
+    </production>
+    <restriction licence=\\"station_gen_basic \\"/>
+    <research time=\\"10\\">
+      <research>
+        <ware ware=\\"research_module_production\\"/>
+      </research>
+    </research>
+    <owner faction=\\"antigone\\"/>
+    <owner faction=\\"argon\\"/>
+    <owner faction=\\"holyorder\\"/>
+    <owner faction=\\"paranid\\"/>
+    <owner faction=\\"teladi\\"/>
+    <component amount=\\"1\\" ref=\\"pfx_prod_gen_b_macro\\"/>
+  </ware>
+  <ware id=\\"pfx_prod_gen_c_macro_01\\" name=\\"c production\\" transport=\\"container\\" volume=\\"1\\" tags=\\"module\\" description=\\"blueprint description\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"791\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"claytronics\\" amount=\\"30\\"/>
+        <ware ware=\\"energycells\\" amount=\\"75\\"/>
+        <ware ware=\\"hullparts\\" amount=\\"150\\"/>
+      </primary>
+    </production>
+    <restriction licence=\\"station_gen_basic \\"/>
+    <research time=\\"10\\">
+      <research>
+        <ware ware=\\"research_module_production\\"/>
+      </research>
+    </research>
+    <owner faction=\\"antigone\\"/>
+    <owner faction=\\"argon\\"/>
+    <owner faction=\\"holyorder\\"/>
+    <owner faction=\\"paranid\\"/>
+    <owner faction=\\"teladi\\"/>
+    <component amount=\\"1\\" ref=\\"pfx_prod_gen_c_macro\\"/>
+  </ware>
+  <ware id=\\"pfx_prod_gen_d_macro_01\\" name=\\"d production\\" transport=\\"container\\" volume=\\"1\\" tags=\\"module\\" description=\\"blueprint description\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"791\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"claytronics\\" amount=\\"30\\"/>
+        <ware ware=\\"energycells\\" amount=\\"75\\"/>
+        <ware ware=\\"hullparts\\" amount=\\"150\\"/>
+      </primary>
+    </production>
+    <restriction licence=\\"station_gen_basic \\"/>
+    <research time=\\"10\\">
+      <research>
+        <ware ware=\\"research_module_production\\"/>
+      </research>
+    </research>
+    <owner faction=\\"antigone\\"/>
+    <owner faction=\\"argon\\"/>
+    <owner faction=\\"holyorder\\"/>
+    <owner faction=\\"paranid\\"/>
+    <owner faction=\\"teladi\\"/>
+    <component amount=\\"1\\" ref=\\"pfx_prod_gen_d_macro\\"/>
+  </ware>
+  <ware id=\\"pfx_prod_gen_e_macro_01\\" name=\\"e production\\" transport=\\"container\\" volume=\\"1\\" tags=\\"module\\" description=\\"blueprint description\\">
+    <price min=\\"1\\" average=\\"1\\" max=\\"1\\"/>
+    <production time=\\"791\\" amount=\\"1\\" method=\\"default\\" name=\\"{20206,101}\\">
+      <primary>
+        <ware ware=\\"claytronics\\" amount=\\"30\\"/>
+        <ware ware=\\"energycells\\" amount=\\"75\\"/>
+        <ware ware=\\"hullparts\\" amount=\\"150\\"/>
+      </primary>
+    </production>
+    <restriction licence=\\"station_gen_basic \\"/>
+    <research time=\\"10\\">
+      <research>
+        <ware ware=\\"research_module_production\\"/>
+      </research>
+    </research>
+    <owner faction=\\"antigone\\"/>
+    <owner faction=\\"argon\\"/>
+    <owner faction=\\"holyorder\\"/>
+    <owner faction=\\"paranid\\"/>
+    <owner faction=\\"teladi\\"/>
+    <component amount=\\"1\\" ref=\\"pfx_prod_gen_e_macro\\"/>
+  </ware>
+</wares>"
+`;

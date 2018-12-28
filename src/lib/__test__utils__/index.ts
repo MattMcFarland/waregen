@@ -1,9 +1,11 @@
 import { clone, range } from "@@/utils";
-import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
+import { DefaultWareEntity, DefaultBlueprintEntity } from "@@/entities/Ware";
+import { AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
 import { GeneratorConfig } from "@@/generator";
 
 export const mockGeneratorConfig = (): GeneratorConfig => ({
-  defaultWare: mockDefaults(),
+  defaultWare: defaultWare(),
+  defaultBlueprint: defaultBlueprint(),
   addwaresList: mockAddwares(4),
   gamePath: "/test/Game",
   modPath: "extensions/test",
@@ -11,23 +13,80 @@ export const mockGeneratorConfig = (): GeneratorConfig => ({
   unpackedPath: "unpacked"
 });
 
-export const mockDefaults = (): DefaultsEntity => ({
-  ware: [defaultWare()]
-});
-
 export const mockAddwares = (count: number): AddwareEntity[] => {
+  const char = (code: number) => "abcdefghijklmnopqrstuvwxyz"[code];
+
   return range(count).map(
     (i: number): AddwareEntity => ({
       Attributes: {
-        baskets: `[test_basket_${i}]`,
-        cloneProductionModuleFrom: `prod_cloned_macro_${i}`,
-        id: `ware${i}`
-      }
+        baskets: `[test_basket_${char(i)}]`,
+        cloneProductionModuleFrom: `prod_cloned_macro_${char(i)}`,
+        id: `${char(i)}`
+      },
+      ware: [mockWare(`${char(i)}`)],
+      blueprint: [mockBlueprint(`${char(i)}`)]
     })
   );
 };
 
-const defaultWare = () =>
+export const mockWare = (name: string) => {
+  const ware = defaultWare();
+  ware.Attributes.name = name;
+  return clone(ware);
+};
+export const mockBlueprint = (name: string) => {
+  const bp = defaultBlueprint();
+  bp.Attributes.name = `${name} production`;
+  return clone(bp);
+};
+
+export const defaultBlueprint = (): DefaultBlueprintEntity => {
+  const bp = <DefaultBlueprintEntity>defaultWare();
+  bp.Attributes.tags = "module";
+  bp.Attributes.description = "blueprint description";
+  bp.restriction = [
+    {
+      Attributes: { licence: "station_gen_basic " }
+    }
+  ];
+  bp.research = [
+    {
+      Attributes: { time: 10 },
+      research: [
+        { ware: [{ Attributes: { ware: "research_module_production" } }] }
+      ]
+    }
+  ];
+  bp.owner = [
+    { Attributes: { faction: "antigone" } },
+    { Attributes: { faction: "argon" } },
+    { Attributes: { faction: "holyorder" } },
+    { Attributes: { faction: "paranid" } },
+    { Attributes: { faction: "teladi" } }
+  ];
+  bp.production = [
+    {
+      Attributes: {
+        time: 791,
+        amount: 1,
+        method: "default",
+        name: "{20206,101}"
+      },
+      primary: [
+        {
+          ware: [
+            { Attributes: { ware: "claytronics", amount: 30 } },
+            { Attributes: { ware: "energycells", amount: 75 } },
+            { Attributes: { ware: "hullparts", amount: 150 } }
+          ]
+        }
+      ]
+    }
+  ];
+  return clone(bp);
+};
+
+export const defaultWare = (): DefaultWareEntity =>
   clone({
     Attributes: {
       id: "default",
@@ -67,9 +126,5 @@ const defaultWare = () =>
           }
         ]
       }
-    ],
-    container: [{ Attributes: { ref: "sm_gen_pickup_container_01_macro" } }],
-    icon: [
-      { Attributes: { active: "ware_default", video: "ware_noicon_macro" } }
     ]
   });

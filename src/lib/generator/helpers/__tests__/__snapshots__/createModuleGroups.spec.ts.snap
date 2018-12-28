@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generator/helpers createModuleGroups toJson() 1`] = `"{\\"group\\":[{\\"Attributes\\":{\\"name\\":\\"pfx_prod_gen_a\\"},\\"select\\":[{\\"Attributes\\":{\\"macro\\":\\"pfx_prod_gen_a_macro\\"}}]},{\\"Attributes\\":{\\"name\\":\\"pfx_prod_gen_b\\"},\\"select\\":[{\\"Attributes\\":{\\"macro\\":\\"pfx_prod_gen_b_macro\\"}}]},{\\"Attributes\\":{\\"name\\":\\"pfx_prod_gen_c\\"},\\"select\\":[{\\"Attributes\\":{\\"macro\\":\\"pfx_prod_gen_c_macro\\"}}]},{\\"Attributes\\":{\\"name\\":\\"pfx_prod_gen_d\\"},\\"select\\":[{\\"Attributes\\":{\\"macro\\":\\"pfx_prod_gen_d_macro\\"}}]},{\\"Attributes\\":{\\"name\\":\\"pfx_prod_gen_e\\"},\\"select\\":[{\\"Attributes\\":{\\"macro\\":\\"pfx_prod_gen_e_macro\\"}}]}]}"`;
+
+exports[`generator/helpers createModuleGroups toXml() 1`] = `
+"<groups>
+  <group name=\\"pfx_prod_gen_a\\">
+    <select macro=\\"pfx_prod_gen_a_macro\\"/>
+  </group>
+  <group name=\\"pfx_prod_gen_b\\">
+    <select macro=\\"pfx_prod_gen_b_macro\\"/>
+  </group>
+  <group name=\\"pfx_prod_gen_c\\">
+    <select macro=\\"pfx_prod_gen_c_macro\\"/>
+  </group>
+  <group name=\\"pfx_prod_gen_d\\">
+    <select macro=\\"pfx_prod_gen_d_macro\\"/>
+  </group>
+  <group name=\\"pfx_prod_gen_e\\">
+    <select macro=\\"pfx_prod_gen_e_macro\\"/>
+  </group>
+</groups>"
+`;

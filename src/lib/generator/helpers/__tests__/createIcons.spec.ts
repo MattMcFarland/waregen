@@ -1,16 +1,16 @@
 import { mockGeneratorConfig } from "@@/__test__utils__";
-import createMacroIndex from "../createMacroIndex";
+import createIcons from "../createIcons";
 
 describe("generator/helpers", () => {
-  describe("createMacroIndex", () => {
+  describe("createIcons", () => {
     test("toJson()", () => {
       const mockConfig = mockGeneratorConfig();
-      const macroIndex = createMacroIndex(mockConfig);
+      const macroIndex = createIcons(mockConfig);
       expect(macroIndex.toJson()).toMatchSnapshot();
     });
     test("toXml()", () => {
       const mockConfig = mockGeneratorConfig();
-      const macroIndex = createMacroIndex(mockConfig);
+      const macroIndex = createIcons(mockConfig);
       expect(macroIndex.toXml()).toMatchSnapshot();
     });
   });

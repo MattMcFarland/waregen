@@ -50,7 +50,7 @@ export class PathBuilder {
     return this.append("assets", "structures", "production", "macros");
   }
   dirIcons() {
-    return this.append("assets", "fx", "gui", "textures");
+    return this.append("assets", "fx", "gui", "textures", "stationmodules");
   }
   dirWareMacro() {
     return this.append("assets", "wares", "macros");
@@ -95,6 +95,7 @@ export class PathBuilder {
       "fx",
       "gui",
       "textures",
+      "stationmodules",
       `${this.ids.productionMacro}${maybeExt(ext)}`
     );
   }
@@ -107,6 +108,7 @@ export class PathBuilder {
       "fx",
       "gui",
       "textures",
+      "stationmodules",
       `${this.ids.productionMacro}${maybeExt(ext)}`
     );
   }

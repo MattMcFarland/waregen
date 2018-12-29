@@ -21,7 +21,7 @@ export default function enqueueMacroImports(
         .dirFullGamepath()
         .dirUnpackedPath()
         .dirProductionMacros()
-        .append(sourceMacro + ".xml")
+        .append(sourceMacro + "_macro.xml")
         .resolve();
 
       const parser = new Parser();

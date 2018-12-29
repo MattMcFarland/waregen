@@ -20,7 +20,7 @@ jest.mock(
 );
 
 const pkgIconsPath = (p: string = "") =>
-  Path.resolve("/test/Game/unpacked/assets/fx/gui/textures", p);
+  Path.resolve("/test/Game/unpacked/assets/fx/gui/textures/stationmodules", p);
 
 const pkgMacrosPath = (p: string = "") =>
   Path.resolve("/test/Game/unpacked/assets/structures/production/macros", p);
@@ -38,7 +38,10 @@ const pkgWareMacrosPath = (p: string = "") =>
   Path.resolve("/test/Game/unpacked/assets/wares/macros", p);
 
 const modIconsPath = (p: string = "") =>
-  Path.resolve("/test/Game/extensions/test/assets/fx/gui/textures", p);
+  Path.resolve(
+    "/test/Game/extensions/test/assets/fx/gui/textures/stationmodules",
+    p
+  );
 
 const modMacrosPath = (p: string = "") =>
   Path.resolve(
@@ -93,11 +96,11 @@ describe("processWares", () => {
     mkdirp.sync(pkgLibrariesPath());
     mkdirp.sync(pkgIndexPath());
     mkdirp.sync(pkgWareMacrosPath());
-    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_a.xml"), xml);
-    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_b.xml"), xml);
-    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_c.xml"), xml);
-    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_d.xml"), xml);
-    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_e.xml"), xml);
+    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_a_macro.xml"), xml);
+    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_b_macro.xml"), xml);
+    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_c_macro.xml"), xml);
+    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_d_macro.xml"), xml);
+    fs.writeFileSync(pkgMacrosPath("prod_cloned_macro_e_macro.xml"), xml);
     const mockSource = Path.resolve("/mocksource.txt");
     fs.writeFileSync(mockSource, "hello world");
     const writestreamA = fs.createWriteStream(

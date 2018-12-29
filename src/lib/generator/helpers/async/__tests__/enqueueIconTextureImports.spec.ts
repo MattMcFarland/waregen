@@ -27,9 +27,15 @@ describe("generator/helpers/async/enqueueIconTextureImports", () => {
     EventEmitter.defaultMaxListeners += 5;
   });
   const iconsPath = (p: string = "") =>
-    Path.resolve("/test/Game/unpacked/assets/fx/gui/textures", p);
+    Path.resolve(
+      "/test/Game/unpacked/assets/fx/gui/textures/stationmodules",
+      p
+    );
   const modIconsPath = (p: string = "") =>
-    Path.resolve("/test/Game/extensions/test/assets/fx/gui/textures", p);
+    Path.resolve(
+      "/test/Game/extensions/test/assets/fx/gui/textures/stationmodules",
+      p
+    );
   beforeEach(done => {
     fs.reset();
     mkdirp.sync(iconsPath());

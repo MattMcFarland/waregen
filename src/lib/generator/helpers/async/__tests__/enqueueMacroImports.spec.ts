@@ -58,11 +58,11 @@ describe("helpers/async/enqueueMacroImports", () => {
     mkdirp.sync(macrosPath());
     mkdirp.sync(modMacrosPath());
 
-    fs.writeFileSync(macrosPath("prod_cloned_macro_a.xml"), xml);
-    fs.writeFileSync(macrosPath("prod_cloned_macro_b.xml"), xml);
-    fs.writeFileSync(macrosPath("prod_cloned_macro_c.xml"), xml);
-    fs.writeFileSync(macrosPath("prod_cloned_macro_d.xml"), xml);
-    fs.writeFileSync(macrosPath("prod_cloned_macro_e.xml"), xml);
+    fs.writeFileSync(macrosPath("prod_cloned_macro_a_macro.xml"), xml);
+    fs.writeFileSync(macrosPath("prod_cloned_macro_b_macro.xml"), xml);
+    fs.writeFileSync(macrosPath("prod_cloned_macro_c_macro.xml"), xml);
+    fs.writeFileSync(macrosPath("prod_cloned_macro_d_macro.xml"), xml);
+    fs.writeFileSync(macrosPath("prod_cloned_macro_e_macro.xml"), xml);
   });
   test("creates appropriate AssetWareProdMacro files", async () => {
     const config = mockGeneratorConfig();

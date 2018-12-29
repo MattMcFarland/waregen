@@ -16,7 +16,7 @@ export default function enqueueIconTextureImports(
         .dirFullGamepath()
         .dirUnpackedPath()
         .dirIcons()
-        .append(addware.Attributes.cloneProductionModuleFrom + ".gz")
+        .append(addware.Attributes.cloneProductionModuleFrom + "_macro.gz")
         .resolve();
 
       const destIconDir = pathBuilder(config, addware.Attributes.id)
@@ -32,7 +32,7 @@ export default function enqueueIconTextureImports(
         .resolve();
 
       Mkdirp.sync(destIconDir);
-
+      fs.writeFileSync(destinationPath, "");
       const writestream = fs.createWriteStream(destinationPath);
 
       fs.createReadStream(sourcePath)

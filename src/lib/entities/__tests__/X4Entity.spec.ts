@@ -20,6 +20,53 @@ describe("X4Entity", () => {
         '{"Attributes":{"id":"entity","name":"entity"}}'
       );
     });
+    test("selector", () => {
+      expect(entity.selector).toBe(`*/entity[@id='entity']`);
+    });
+  });
+  describe("patching", () => {
+    test('creates a selector if root has an attributed named "id"', () => {
+      const patchableDef = {
+        Attributes: {
+          id: Math.random()
+            .toString(36)
+            .replace(/[^a-z]+/g, "")
+            .substr(0, 5),
+          name: Math.random()
+            .toString(36)
+            .replace(/[^a-z]+/g, "")
+            .substr(0, 5)
+        },
+        entity: [
+          {
+            Attributes: {
+              id: "01",
+              name: "foo"
+            }
+          },
+          {
+            Attributes: {
+              id: "02",
+              name: "bar"
+            }
+          },
+          {
+            Attributes: {
+              id: "03",
+              name: "baz"
+            }
+          }
+        ]
+      };
+      const patchable = new X4Entity(
+        X4EntityType.BASE_ENTITY,
+        "entities",
+        patchableDef
+      );
+      expect(patchable.selector).toBe(
+        `*/entities[@id='${patchableDef.Attributes.id}']`
+      );
+    });
   });
   describe("using merge", () => {
     const entityA = new X4Entity(X4EntityType.BASE_ENTITY, "entityA", {

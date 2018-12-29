@@ -1,4 +1,6 @@
 import idx from "idx";
+import { Builder, BuilderOptions } from "../utils/xml";
+
 import { X4Entity, X4EntityType } from "./X4Entity";
 import {
   BasketEntity,
@@ -14,10 +16,18 @@ export interface BasketInterface {
   description?: string;
   wares?: string[];
 }
+
 export class Basket extends X4Entity<BasketEntity> {
   private proxy: any;
   private _wares: string[] = [];
   onImport(xmlDef: BasketEntity) {}
+  public get __xmlPatchDef() {
+    const def = this.__xmlDef;
+    return {
+      add: [{ Attributes: {} }]
+    };
+  }
+
   set id(v: string) {
     this.xmlDef.Attributes.id = v;
   }

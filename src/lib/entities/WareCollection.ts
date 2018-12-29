@@ -15,7 +15,7 @@ export class WareCollection extends X4Entity<Wares> {
     this.xmlDef = { ware: [] };
 
     if (Array.isArray(_xmlDef.ware)) {
-      _xmlDef.ware.forEach((wareEntity: WareEntity) => {
+      _xmlDef.ware.forEach((wareEntity: any) => {
         const ware = new Ware(wareEntity);
         this.add(ware);
       });
@@ -50,7 +50,7 @@ export class WareCollection extends X4Entity<Wares> {
   extract = (wareId: string) => {
     return this.waresIndex[wareId];
   };
-  constructor(optionalWaresList?: Ware[]) {
+  constructor(optionalWaresList?: any[]) {
     super(X4EntityType.LIBRARY_WARES, "wares", {
       ware: []
     });

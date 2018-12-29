@@ -1,5 +1,6 @@
 import { BasketCollection } from "../BasketCollection";
 import { Basket } from "../Basket";
+import { XMLPatchTypes } from "../X4Entity";
 
 const basketTest = (id: string, wares: string[] = []) => ({
   id,
@@ -135,5 +136,35 @@ describe("BasketCollection", () => {
       testCollection.remove("baz");
       expect(testCollection.toXml()).toMatchSnapshot();
     });
+  });
+  describe("instance.toXmlPatch()", () => {
+    const someBasketCollection = new BasketCollection([
+      new Basket(basketTest("test_a", ["foo", "bar"])),
+      new Basket(basketTest("test_b", ["foo", "bar"])),
+      new Basket(basketTest("test_c", ["foo", "bar"]))
+    ]);
+    expect(someBasketCollection.toXmlPatch(XMLPatchTypes.ADD))
+      .toMatchInlineSnapshot(`
+"<diff>
+  <add sel=\\"*/basket[@id='test_a']\\">
+    <wares>
+      <ware ware=\\"foo\\"/>
+      <ware ware=\\"bar\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='test_b']\\">
+    <wares>
+      <ware ware=\\"foo\\"/>
+      <ware ware=\\"bar\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='test_c']\\">
+    <wares>
+      <ware ware=\\"foo\\"/>
+      <ware ware=\\"bar\\"/>
+    </wares>
+  </add>
+</diff>"
+`);
   });
 });

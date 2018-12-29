@@ -34,5 +34,8 @@ describe("Basket", () => {
 </basket>"
 `);
     });
+    test("converts to xml patch", () => {
+      const testBasket = new Basket(testBasketOps);
+    });
   });
 });

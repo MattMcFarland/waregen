@@ -1,11 +1,11 @@
-import { X4Entity, X4EntityType } from "./X4Entity";
+import { X4Entity, X4EntityType, XMLPatchTypes } from "./X4Entity";
 import {
   BasketEntity,
   Baskets,
   WareEntity as BasketWareEntity,
   WaresEntityOrWareEntity as BasketEntityWares
 } from "@@/XMLTypes/X4LibraryBaskets";
-
+import { BuilderOptions } from "../utils/xml";
 import { Basket, BasketInterface } from "./Basket";
 
 export type BasketWareEntity = BasketWareEntity;
@@ -62,6 +62,23 @@ export class BasketCollection extends X4Entity<Baskets> {
       );
     }
   };
+  public toXmlPatch(
+    patchType: XMLPatchTypes,
+    selector?: string,
+    pretty: boolean = true,
+    options: BuilderOptions = {}
+  ) {
+    options.rootName = "diff";
+    const obj = {
+      [patchType]: Object.values(this.basketIndex).map(basket => {
+        return {
+          ...basket.__xmlDef,
+          Attributes: { sel: basket.selector }
+        };
+      })
+    };
+    return this.xmlBuild(obj, pretty, options);
+  }
   replace = (basket: Basket) => {
     this.remove(basket.id);
     this.add(basket);

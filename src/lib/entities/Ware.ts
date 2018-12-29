@@ -162,10 +162,7 @@ export class Ware extends X4Entity<WareEntity> {
     return <UseAttributes>idx(this.xmlDef, _ => _.use[0].Attributes) || null;
   }
 
-  constructor(
-    options?: WareOrBlueprintEntity,
-    defaultWare?: DefaultWare | DefaultBlueprint
-  ) {
+  constructor(options?: any, defaultWare?: DefaultWare | DefaultBlueprint) {
     super(
       X4EntityType.LIBRARY_WARE,
       "ware",

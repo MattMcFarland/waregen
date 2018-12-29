@@ -89,24 +89,40 @@ class Config implements GeneratorConfig {
       throw new TypeError("<prefix> node missing!");
     }
 
-    this._modPrefix = configuration[0].prefix[0].Attributes.value;
+    this._modPrefix = transformEnvVars(
+      configuration[0].prefix[0].Attributes.value
+    );
 
     if (!configuration[0].gamepath) {
       throw new TypeError("<gamepath> node missing!");
     }
 
-    this._gamePath = configuration[0].gamepath[0].Attributes.value;
+    this._gamePath = transformEnvVars(
+      configuration[0].gamepath[0].Attributes.value
+    );
 
     if (!configuration[0].modpath) {
       throw new TypeError("<modpath> node missing!");
     }
 
-    this._modPath = configuration[0].modpath[0].Attributes.value;
+    this._modPath = transformEnvVars(
+      configuration[0].modpath[0].Attributes.value
+    );
 
     if (!configuration[0].unpackedpath) {
       throw new TypeError("<unpackedpath> node missing!");
     }
 
-    this._unpackedPath = configuration[0].unpackedpath[0].Attributes.value;
+    this._unpackedPath = transformEnvVars(
+      configuration[0].unpackedpath[0].Attributes.value
+    );
   }
+}
+
+function transformEnvVars(str: string) {
+  return <string>(
+    str.replace(/%(.*)%/gm, (match: string, p1: string) =>
+      match.replace(match, <string>process.env[p1])
+    )
+  );
 }

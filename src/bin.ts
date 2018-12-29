@@ -1,5 +1,6 @@
 import Yargs from "yargs";
-import Generator from "./lib/generator";
+import { log } from "./lib/utils";
+import { generate } from "./lib/generator";
 
 const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   yargs.positional("configXmlPath", {
@@ -16,6 +17,11 @@ const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   .help().argv;
 
 if (args.configXmlPath && typeof args.configXmlPath === "string") {
-  const generator = new Generator();
-  generator.initialize(args);
+  generate(args)
+    .then(() => {
+      log.complete("generation complete");
+    })
+    .catch(e => {
+      log.fatal(e);
+    });
 }

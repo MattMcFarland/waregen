@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import Yargs from "yargs";
-
+import Generator from "./lib/generator";
 const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   yargs.positional("configXmlPath", {
     describe: "path to config file",
@@ -15,5 +15,7 @@ const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   .alias("h", "help")
   .help().argv;
 
-if (args.configXmlPath) {
+if (args.configXmlPath && typeof args.configXmlPath === "string") {
+  const generator = new Generator();
+  generator.initialize(args);
 }

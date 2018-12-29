@@ -3,7 +3,7 @@
   <configuration>
     <prefix value="example"/>
     <gamepath value="%PROGRAMFILES(X86)%\Steam\steamapps\common\X4 Foundations"/>
-    <modpath value="extensions\XCG2"/>
+    <modpath value="extensions\example"/>
     <unpackedpath value="unpacked-150"/>
     <defaults>
       <ware transport="container" volume="" tags="container economy">

@@ -15,7 +15,7 @@ export default class Generator {
     if (!asyncProps.resolved.options) return missing("options");
     return asyncProps.resolved.options;
   }
-  async initialize(options: GeneratorOptions): Promise<this> {
+  async initialize(options: any): Promise<this> {
     asyncProps.resolved = await bootstrap(options);
     return this;
   }

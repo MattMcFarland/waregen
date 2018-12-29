@@ -4,7 +4,7 @@ import {
   BlueprintEntity
 } from "@@/XMLTypes/X4WareGenXML";
 
-export { default as Generator } from "./Generator";
+export { default } from "./Generator";
 export { Config, getConfig } from "./Config";
 
 export interface GeneratorConfig {

@@ -1,6 +1,6 @@
 import { GeneratorConfig } from "..";
-import { Basket, BasketCollection } from "@@/entities";
-import { IdRoster } from "@@/utils/IdRoster";
+import { Basket, BasketCollection } from "../../entities";
+import { IdRoster } from "../../utils/IdRoster";
 
 interface BasketHash {
   [key: string]: string[];

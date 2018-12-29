@@ -1,8 +1,8 @@
-import { GeneratorConfig, GeneratorOptions } from "@@/generator";
-import { AssetWareMacro } from "@@/entities";
-import pathBuilder from "@@/utils/PathBuilder";
+import { GeneratorConfig, GeneratorOptions } from "../../../generator";
+import { AssetWareMacro } from "../../../entities";
+import pathBuilder from "../../../utils/PathBuilder";
 
-import { IdRoster } from "@@/utils/IdRoster";
+import { IdRoster } from "../../../utils/IdRoster";
 import Mkdirp from "mkdirp";
 import FS from "fs";
 

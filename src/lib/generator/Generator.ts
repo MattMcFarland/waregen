@@ -1,6 +1,6 @@
 import { resolve as resolvePath } from "path";
-import { Config, getConfig } from "@@/generator/Config";
-import { end } from "@@/utils/System";
+import { Config, getConfig } from "../generator/Config";
+import { end } from "../utils/System";
 import { GeneratorOptions } from "./";
 import processWares from "./helpers/async/processWares";
 

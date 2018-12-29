@@ -1,8 +1,8 @@
-import { WareCollection, Ware } from "@@/entities";
-import { GeneratorConfig } from "@@/generator";
-import { IdRoster } from "@@/utils/IdRoster";
+import { WareCollection, Ware } from "../../entities";
+import { GeneratorConfig } from "../../generator";
+import { IdRoster } from "../../utils/IdRoster";
 import idx from "idx";
-import { WareOrBlueprintEntity } from "@@/entities/Ware";
+import { WareOrBlueprintEntity } from "../../entities/Ware";
 
 export default function createWares(config: GeneratorConfig): WareCollection {
   const wares = config.addwaresList.map(addware => {

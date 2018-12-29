@@ -1,7 +1,7 @@
-import { clone, range } from "@@/utils";
-import { DefaultWareEntity, DefaultBlueprintEntity } from "@@/entities/Ware";
-import { AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
-import { GeneratorConfig } from "@@/generator";
+import { clone, range } from "../utils";
+import { DefaultWareEntity, DefaultBlueprintEntity } from "../entities/Ware";
+import { AddwareEntity } from "../XMLTypes/X4WareGenXML";
+import { GeneratorConfig } from "../generator";
 
 export const mockGeneratorConfig = (): GeneratorConfig => ({
   defaultWare: defaultWare(),

@@ -1,6 +1,6 @@
 import { GeneratorConfig } from "..";
-import { ModuleGroupsCollection, ModuleGroup } from "@@/entities";
-import { IdRoster } from "@@/utils/IdRoster";
+import { ModuleGroupsCollection, ModuleGroup } from "../../entities";
+import { IdRoster } from "../../utils/IdRoster";
 
 export default function createModuleGroups(
   config: GeneratorConfig

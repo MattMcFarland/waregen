@@ -3,7 +3,7 @@ import {
   GroupEntity as ModuleGroupEntity,
   Groups as ModuleGroups,
   Attributes as ModuleGroupAttributes
-} from "@@/XMLTypes/X4LibraryModuleGroups";
+} from "../XMLTypes/X4LibraryModuleGroups";
 
 import { ModuleGroup } from "./ModuleGroup";
 

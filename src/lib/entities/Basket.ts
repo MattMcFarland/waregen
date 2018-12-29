@@ -5,8 +5,8 @@ import { X4Entity, X4EntityType } from "./X4Entity";
 import {
   BasketEntity,
   WareEntity as BasketWareEntity
-} from "@@/XMLTypes/X4LibraryBaskets";
-import { clone } from "@@/utils/object";
+} from "..//XMLTypes/X4LibraryBaskets";
+import { clone } from "..//utils/object";
 export type BasketWareEntity = BasketWareEntity;
 export type BasketWareEntities = BasketWareEntity[];
 

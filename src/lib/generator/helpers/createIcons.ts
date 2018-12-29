@@ -1,7 +1,7 @@
-import { IconCollection, Icon } from "@@/entities";
-import pathBuilder from "@@/utils/PathBuilder";
-import { GeneratorConfig } from "@@/generator";
-import { IdRoster } from "@@/utils/IdRoster";
+import { IconCollection, Icon } from "../../entities";
+import pathBuilder from "../../utils/PathBuilder";
+import { GeneratorConfig } from "../../generator";
+import { IdRoster } from "../../utils/IdRoster";
 
 export default function createIcons(config: GeneratorConfig): IconCollection {
   const icons = config.addwaresList.map(ware => {

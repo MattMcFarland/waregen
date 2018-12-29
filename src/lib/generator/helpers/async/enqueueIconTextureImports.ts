@@ -1,8 +1,7 @@
 import zlib from "zlib";
 import fs from "fs";
-import pathBuilder from "@@/utils/PathBuilder";
-import { IdRoster } from "@@/utils/IdRoster";
-import { GeneratorConfig, GeneratorOptions } from "@@/generator";
+import pathBuilder from "../../../utils/PathBuilder";
+import { GeneratorConfig, GeneratorOptions } from "../../../generator";
 import Mkdirp from "mkdirp";
 
 export default function enqueueIconTextureImports(

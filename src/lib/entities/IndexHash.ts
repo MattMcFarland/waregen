@@ -1,8 +1,8 @@
-import { Index as IndexHashItems, EntryEntity } from "@@/XMLTypes/X4Index";
+import { Index as IndexHashItems, EntryEntity } from "../XMLTypes/X4Index";
 
 import { isIndexEntry } from "./indexValidators";
 import { X4Entity, X4EntityType } from "./X4Entity";
-import { clone } from "@@/utils/object";
+import { clone } from "../utils";
 
 export interface IndexHashInterface {
   [key: string]: string | number | boolean;

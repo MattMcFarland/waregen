@@ -1,6 +1,6 @@
 import { GeneratorConfig } from "..";
-import { X4ModuleCollection, X4Module } from "@@/entities";
-import { IdRoster } from "@@/utils/IdRoster";
+import { X4ModuleCollection, X4Module } from "../../entities";
+import { IdRoster } from "../../utils/IdRoster";
 
 export default function createModules(
   config: GeneratorConfig

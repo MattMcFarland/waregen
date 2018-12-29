@@ -1,6 +1,6 @@
-#!/usr/bin/env node
 import Yargs from "yargs";
 import Generator from "./lib/generator";
+
 const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   yargs.positional("configXmlPath", {
     describe: "path to config file",

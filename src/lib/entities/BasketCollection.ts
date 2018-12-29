@@ -4,7 +4,7 @@ import {
   Baskets,
   WareEntity as BasketWareEntity,
   WaresEntityOrWareEntity as BasketEntityWares
-} from "@@/XMLTypes/X4LibraryBaskets";
+} from "..//XMLTypes/X4LibraryBaskets";
 import { BuilderOptions } from "../utils/xml";
 import { Basket, BasketInterface } from "./Basket";
 

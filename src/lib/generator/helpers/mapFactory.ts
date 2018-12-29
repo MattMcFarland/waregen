@@ -1,6 +1,6 @@
-import { GeneratorConfig } from "@@/generator";
-import { AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
-import { IdRoster } from "@@/utils/IdRoster";
+import { GeneratorConfig } from "../../generator";
+import { AddwareEntity } from "../../XMLTypes/X4WareGenXML";
+import { IdRoster } from "../../utils/IdRoster";
 
 interface MapItemInstance {
   addware: AddwareEntity;

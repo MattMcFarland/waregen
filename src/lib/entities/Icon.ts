@@ -4,7 +4,7 @@ import { clone } from "../utils/object";
 import {
   IconEntity,
   Attributes as IconAttributes
-} from "@@/XMLTypes/X4LibraryIcons";
+} from "../XMLTypes/X4LibraryIcons";
 
 export type IconEntity = IconEntity;
 export type IconAttributes = IconAttributes;

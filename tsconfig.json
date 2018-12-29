@@ -3,16 +3,13 @@
     "target": "esnext",
     "module": "commonjs",
     "outDir": "./dist",
+    "inlineSourceMap": true,
     "declaration": true,
     "noUnusedLocals": false,
     "noFallthroughCasesInSwitch": true,
     "strict": true,
     "esModuleInterop": true,
-    "strictNullChecks": true,
-    "baseUrl": "./",
-    "paths": {
-      "@@/*": ["src/lib/*"]
-    }
+    "strictNullChecks": true
   },
   "compileOnSave": true,
   "include": ["src/**/*.ts"]

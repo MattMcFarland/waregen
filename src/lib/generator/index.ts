@@ -2,7 +2,7 @@ import {
   AddwareEntity,
   WareEntity,
   BlueprintEntity
-} from "@@/XMLTypes/X4WareGenXML";
+} from "../XMLTypes/X4WareGenXML";
 
 export { default } from "./Generator";
 export { Config, getConfig } from "./Config";

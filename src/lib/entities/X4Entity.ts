@@ -1,7 +1,7 @@
 import { Parser, Builder, BuilderOptions } from "../utils/xml";
 import { cloneDeep, merge, dig } from "../utils/object";
 import idx from "idx";
-import { IndexByString } from "@@/utils/object/types";
+import { IndexByString } from "../utils/object/types";
 
 export enum X4EntityType {
   BASE_ENTITY = "BASE_ENTITY" /* x */,

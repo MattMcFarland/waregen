@@ -4,7 +4,7 @@ import {
   GroupEntity as ModuleGroupEntity,
   SelectEntity,
   GroupEntity
-} from "@@/XMLTypes/X4LibraryModuleGroups";
+} from "../XMLTypes/X4LibraryModuleGroups";
 
 export type ModuleGroupEntity = ModuleGroupEntity;
 export type ModuleGroupSelectEntity = SelectEntity;

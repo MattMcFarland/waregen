@@ -14,7 +14,7 @@ import {
   enqueueMacroWareImports
 } from ".";
 
-import { GeneratorConfig, GeneratorOptions } from "@@/generator";
+import { GeneratorConfig, GeneratorOptions } from "../../../generator";
 
 export default async function processWares(
   config: GeneratorConfig,

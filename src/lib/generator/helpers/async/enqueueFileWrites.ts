@@ -1,7 +1,7 @@
-import { X4Entity } from "@@/entities";
-import { GeneratorConfig, GeneratorOptions } from "@@/generator";
-import { X4EntityType, XMLPatchTypes } from "@@/entities/X4Entity";
-import { PathBuilder } from "@@/utils/PathBuilder";
+import { X4Entity } from "../../../entities";
+import { GeneratorConfig, GeneratorOptions } from "../../../generator";
+import { X4EntityType, XMLPatchTypes } from "../../../entities/X4Entity";
+import { PathBuilder } from "../../../utils/PathBuilder";
 import FS from "fs";
 import Mkdirp from "mkdirp";
 

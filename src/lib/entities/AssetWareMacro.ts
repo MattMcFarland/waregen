@@ -1,5 +1,5 @@
 import { X4Entity, X4EntityType } from "./X4Entity";
-import { Macros } from "@@/XMLTypes/X4WareMacro";
+import { Macros } from "..//XMLTypes/X4WareMacro";
 import idx from "idx";
 
 export class AssetWareMacro extends X4Entity<Macros> {

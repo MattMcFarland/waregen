@@ -1,4 +1,4 @@
-import { Attributes as IndexEntryAttributes } from "@@/XMLTypes/X4Index";
+import { Attributes as IndexEntryAttributes } from "../XMLTypes/X4Index";
 import { IndexHashInterface } from "./IndexHash";
 
 export type IndexEntryAttribute = "name" | "value";

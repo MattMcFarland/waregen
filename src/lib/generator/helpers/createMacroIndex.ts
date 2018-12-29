@@ -1,8 +1,8 @@
-import { IndexHash } from "@@/entities";
-import { IndexByString } from "@@/utils/object/types";
-import { PathBuilder } from "@@/utils/PathBuilder";
-import { GeneratorConfig } from "@@/generator";
-import { IdRoster } from "@@/utils/IdRoster";
+import { IndexHash } from "../../entities";
+import { IndexByString } from "../../utils/object/types";
+import { PathBuilder } from "../../utils/PathBuilder";
+import { GeneratorConfig } from "../../generator";
+import { IdRoster } from "../../utils/IdRoster";
 
 export default function createMacroIndex(config: GeneratorConfig): IndexHash {
   const hash: IndexByString = config.addwaresList.reduce(

@@ -3,7 +3,7 @@ import { X4Entity, X4EntityType } from "./X4Entity";
 import {
   ModuleEntity,
   Modules as ModuleEntities
-} from "@@/XMLTypes/X4LibraryModules";
+} from "../XMLTypes/X4LibraryModules";
 import { X4Module } from "./X4Module";
 export interface ModulesIndex {
   [key: string]: X4Module;

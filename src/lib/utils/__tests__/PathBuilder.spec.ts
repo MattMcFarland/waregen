@@ -1,4 +1,4 @@
-import { mockGeneratorConfig } from "@@/__test__utils__";
+import { mockGeneratorConfig } from "../../__test__utils__";
 import pathBuilder, { PathBuilder } from "../PathBuilder";
 import Path from "path";
 

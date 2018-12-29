@@ -7,13 +7,13 @@ import {
   X4WareGenXML,
   AddwareEntity,
   WareEntity
-} from "@@/XMLTypes/X4WareGenXML";
+} from "..//XMLTypes/X4WareGenXML";
 import {
   DefaultWareEntity,
   BlueprintWareEntity,
   WareOrBlueprintEntity,
   DefaultBlueprintEntity
-} from "@@/entities/Ware";
+} from "../entities/Ware";
 import { GeneratorConfig, ConfigSelector } from ".";
 
 const setupConfig = async (

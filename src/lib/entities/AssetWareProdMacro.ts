@@ -1,7 +1,7 @@
 import { X4Entity, X4EntityType } from "./X4Entity";
-import { Macros } from "@@/XMLTypes/X4WareProductionMacro";
+import { Macros } from "..//XMLTypes/X4WareProductionMacro";
 import idx from "idx";
-import { clone } from "@@/utils";
+import { clone } from "..//utils";
 
 export class AssetWareProdMacro extends X4Entity<Macros> {
   get id() {

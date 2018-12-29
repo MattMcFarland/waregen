@@ -1,7 +1,7 @@
 import Path from "path";
 import { IdRoster } from "./IdRoster";
-import { GeneratorConfig } from "@@/generator";
-import { log } from "@@/utils";
+import { GeneratorConfig } from "../generator";
+import { log } from "../utils";
 
 const maybeExt = (ext?: string) => (ext ? `.${ext}` : "");
 

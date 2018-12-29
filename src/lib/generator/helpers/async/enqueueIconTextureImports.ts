@@ -33,6 +33,8 @@ export default function enqueueIconTextureImports(
         .fileIconDDS("dds")
         .resolve();
 
+      Mkdirp.sync(destIconDir);
+
       if (Jetpack.exists(destinationPath)) {
         if (!options.force) {
           log.skip(destinationPath, "use --force to overwrite");
@@ -41,7 +43,7 @@ export default function enqueueIconTextureImports(
         log.warn("replaced", destinationPath);
       } else {
         log.write(destinationPath);
-        Mkdirp.sync(destIconDir);
+
         fs.writeFileSync(destinationPath, "");
       }
 

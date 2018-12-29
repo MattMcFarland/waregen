@@ -43,19 +43,19 @@ describe("generator/helpers/async/enqueueIconTextureImports", () => {
     const mockSource = Path.resolve("/mocksource.txt");
     fs.writeFileSync(mockSource, "hello world");
     const writestreamA = fs.createWriteStream(
-      iconsPath("prod_cloned_macro_a.gz")
+      iconsPath("prod_cloned_macro_a_macro.gz")
     );
     const writestreamB = fs.createWriteStream(
-      iconsPath("prod_cloned_macro_b.gz")
+      iconsPath("prod_cloned_macro_b_macro.gz")
     );
     const writestreamC = fs.createWriteStream(
-      iconsPath("prod_cloned_macro_c.gz")
+      iconsPath("prod_cloned_macro_c_macro.gz")
     );
     const writestreamD = fs.createWriteStream(
-      iconsPath("prod_cloned_macro_d.gz")
+      iconsPath("prod_cloned_macro_d_macro.gz")
     );
     const writestreamE = fs.createWriteStream(
-      iconsPath("prod_cloned_macro_e.gz")
+      iconsPath("prod_cloned_macro_e_macro.gz")
     );
     const tee = require("tee");
 

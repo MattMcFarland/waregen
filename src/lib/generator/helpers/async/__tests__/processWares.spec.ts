@@ -104,19 +104,19 @@ describe("processWares", () => {
     const mockSource = Path.resolve("/mocksource.txt");
     fs.writeFileSync(mockSource, "hello world");
     const writestreamA = fs.createWriteStream(
-      pkgIconsPath("prod_cloned_macro_a.gz")
+      pkgIconsPath("prod_cloned_macro_a_macro.gz")
     );
     const writestreamB = fs.createWriteStream(
-      pkgIconsPath("prod_cloned_macro_b.gz")
+      pkgIconsPath("prod_cloned_macro_b_macro.gz")
     );
     const writestreamC = fs.createWriteStream(
-      pkgIconsPath("prod_cloned_macro_c.gz")
+      pkgIconsPath("prod_cloned_macro_c_macro.gz")
     );
     const writestreamD = fs.createWriteStream(
-      pkgIconsPath("prod_cloned_macro_d.gz")
+      pkgIconsPath("prod_cloned_macro_d_macro.gz")
     );
     const writestreamE = fs.createWriteStream(
-      pkgIconsPath("prod_cloned_macro_e.gz")
+      pkgIconsPath("prod_cloned_macro_e_macro.gz")
     );
     const tee = require("tee");
 
@@ -131,21 +131,41 @@ describe("processWares", () => {
           writestreamE
         )
       );
+    let i = 0;
     writestreamA.on("close", () => {
       writestreamA.removeAllListeners();
+      i++;
+      if (i > 4) {
+        done();
+      }
     });
     writestreamB.on("close", () => {
       writestreamB.removeAllListeners();
+      i++;
+      if (i > 4) {
+        done();
+      }
     });
     writestreamC.on("close", () => {
       writestreamC.removeAllListeners();
+      i++;
+      if (i > 4) {
+        done();
+      }
     });
     writestreamD.on("close", () => {
       writestreamD.removeAllListeners();
+      i++;
+      if (i > 4) {
+        done();
+      }
     });
     writestreamE.on("close", () => {
       writestreamE.removeAllListeners();
-      done();
+      i++;
+      if (i > 4) {
+        done();
+      }
     });
   });
   test("creates directory and files for {mod}/libraries", async () => {
@@ -171,7 +191,7 @@ describe("processWares", () => {
     const indexDir = fs.readdirSync(modIndexPath());
     expect(indexDir).toContain("macros.xml");
   });
-  test("creates directory and files for {mod}/assets/fx/gui/textures", async () => {
+  test("creates directory and files for {mod}/assets/fx/gui/textures/stationmodules", async () => {
     const config = mockGeneratorConfig();
     await processWares(config, {
       force: false,

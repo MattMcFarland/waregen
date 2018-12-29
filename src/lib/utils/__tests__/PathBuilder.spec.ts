@@ -58,7 +58,7 @@ describe("PathBuilder", () => {
         .toArray()
         .join("/");
       expect(result).toBe(
-        "extensions/test/assets/fx/gui/textures/pfx_prod_gen_fooware_macro.dds"
+        "extensions/test/assets/fx/gui/textures/stationmodules/pfx_prod_gen_fooware_macro.dds"
       );
     });
   });
@@ -97,7 +97,7 @@ describe("PathBuilder", () => {
         .toArray()
         .join("/");
       expect(result).toBe(
-        "unpacked/assets/fx/gui/textures/pfx_prod_gen_fooware_macro.gz"
+        "unpacked/assets/fx/gui/textures/stationmodules/pfx_prod_gen_fooware_macro.gz"
       );
     });
   });

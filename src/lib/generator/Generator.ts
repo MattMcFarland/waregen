@@ -2,6 +2,7 @@ import { resolve as resolvePath } from "path";
 import { Config, getConfig } from "@@/generator/Config";
 import { end } from "@@/utils/System";
 import { GeneratorOptions } from "./";
+import processWares from "./helpers/async/processWares";
 
 const asyncProps: { resolved: Bootstrap } = { resolved: {} };
 
@@ -18,7 +19,9 @@ export default class Generator {
     asyncProps.resolved = await bootstrap(options);
     return this;
   }
-  async processWares() {}
+  async processWares() {
+    return await processWares(this.config, this.options);
+  }
 }
 
 function missing(prop: string): never {

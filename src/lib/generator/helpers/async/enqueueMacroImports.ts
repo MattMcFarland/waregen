@@ -4,7 +4,7 @@ import pathBuilder from "../../../utils/PathBuilder";
 import { Parser } from "../../../utils/xml";
 import { IdRoster } from "../../../utils/IdRoster";
 import Mkdirp from "mkdirp";
-import FS from "fs";
+import { safeWrite } from "../../../utils/fs";
 
 export default function enqueueMacroImports(
   config: GeneratorConfig,
@@ -47,10 +47,7 @@ export default function enqueueMacroImports(
 
       Mkdirp.sync(destMacroPathDir);
 
-      FS.writeFile(destMacroFile, cloneMacro.toXml(), err => {
-        if (err) return reject(err);
-        return resolve(destMacroFile);
-      });
+      return resolve(safeWrite(destMacroFile, cloneMacro.toXml(), options));
     });
   });
 

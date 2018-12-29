@@ -75,7 +75,7 @@ export default async function processWares(
     options
   );
 
-  /* return the promises to be resolved */
+  // /* return the promises to be resolved */
   return Promise.all([
     ...fileWrites,
     ...importWareAssets,

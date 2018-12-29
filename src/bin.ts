@@ -17,6 +17,9 @@ const args = Yargs.command("$0 [configXML] [options]", "build things", yargs =>
   .help().argv;
 
 if (args.configXmlPath && typeof args.configXmlPath === "string") {
+  if (args.force) {
+    log.warn("Using force, I sure hope you know what you are doing!");
+  }
   generate(args)
     .then(() => {
       log.complete("generation complete");

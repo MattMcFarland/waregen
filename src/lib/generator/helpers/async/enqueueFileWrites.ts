@@ -2,7 +2,7 @@ import { X4Entity } from "../../../entities";
 import { GeneratorConfig, GeneratorOptions } from "../../../generator";
 import { X4EntityType, XMLPatchTypes } from "../../../entities/X4Entity";
 import { PathBuilder } from "../../../utils/PathBuilder";
-import FS from "fs";
+import { safeWrite } from "../../../utils/fs";
 import Mkdirp from "mkdirp";
 
 export default function enqueueFileWrites(
@@ -30,19 +30,11 @@ export default function enqueueFileWrites(
       new Promise((resolve, reject) => {
         const target = getTargetPath(entity);
         if (entity.__entityType === X4EntityType.LIBRARY_BASKETS) {
-          return FS.writeFile(
-            target,
-            entity.toXmlPatch(XMLPatchTypes.ADD),
-            err => {
-              if (err) return reject(err);
-              return resolve(target);
-            }
+          return resolve(
+            safeWrite(target, entity.toXmlPatch(XMLPatchTypes.ADD), options)
           );
         }
-        FS.writeFile(target, entity.toXml(), err => {
-          if (err) return reject(err);
-          return resolve(err);
-        });
+        return resolve(safeWrite(target, entity.toXml(), options));
       })
   );
 

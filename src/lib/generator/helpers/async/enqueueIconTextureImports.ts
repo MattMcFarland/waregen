@@ -4,6 +4,8 @@ import pathBuilder from "../../../utils/PathBuilder";
 import { GeneratorConfig, GeneratorOptions } from "../../../generator";
 import Mkdirp from "mkdirp";
 import { EventEmitter } from "events";
+import Jetpack from "fs-jetpack";
+import { log } from "../../../utils/System";
 
 export default function enqueueIconTextureImports(
   config: GeneratorConfig,
@@ -31,8 +33,18 @@ export default function enqueueIconTextureImports(
         .fileIconDDS("dds")
         .resolve();
 
-      Mkdirp.sync(destIconDir);
-      fs.writeFileSync(destinationPath, "");
+      if (Jetpack.exists(destinationPath)) {
+        if (!options.force) {
+          log.skip(destinationPath, "use --force to overwrite");
+          return resolve(destinationPath);
+        }
+        log.warn("replaced", destinationPath);
+      } else {
+        log.write(destinationPath);
+        Mkdirp.sync(destIconDir);
+        fs.writeFileSync(destinationPath, "");
+      }
+
       const writestream = fs.createWriteStream(destinationPath);
 
       fs.createReadStream(sourcePath)
@@ -42,7 +54,7 @@ export default function enqueueIconTextureImports(
       writestream.on("close", () => {
         EventEmitter.defaultMaxListeners -= 1;
         writestream.removeAllListeners();
-        resolve(destinationPath);
+        return resolve(destinationPath);
       });
     });
   });

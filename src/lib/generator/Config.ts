@@ -1,91 +1,112 @@
-import { Parser } from "../utils/xml";
-
+import { log } from "../utils/System";
+import { GeneratorConfig } from ".";
+import Path from "path";
 import idx from "idx";
-import { log, die, exhaustiveFail } from "../utils/System";
-import Jetpack from "fs-jetpack";
+import Parser from "../utils/xml/Parser";
 import {
   X4WareGenXML,
   AddwareEntity,
-  WareEntity
-} from "..//XMLTypes/X4WareGenXML";
-import {
-  DefaultWareEntity,
-  BlueprintWareEntity,
-  WareOrBlueprintEntity,
-  DefaultBlueprintEntity
-} from "../entities/Ware";
-import { GeneratorConfig, ConfigSelector } from ".";
-
-const setupConfig = async (
-  configPath: string
-): Promise<(selector: ConfigSelector) => string> => {
-  const configData = await new Parser<X4WareGenXML>().parseFile(configPath);
-  return (selector: ConfigSelector) => {
-    const result = <string>(
-      (<unknown>idx(configData, _ => _.addwares.configuration[0][selector]))
-    );
-    if (typeof result !== "string") {
-      exhaustiveFail(`<${selector}/> missing in configuration xml`);
-    }
-    return <string>(
-      result.replace(/%(.*)%/gm, (match: string, p1: string) =>
-        match.replace(match, <string>process.env[p1])
-      )
-    );
-  };
+  WareEntity,
+  BlueprintEntity
+} from "../XMLTypes/X4WareGenXML";
+export const getConfig = async (path: string): Promise<GeneratorConfig> => {
+  log.start(`Using ${path}`);
+  const absPath = Path.resolve(path);
+  const configData = await new Parser().parseFile(absPath);
+  return new Config(configData);
 };
 
-export class Config implements GeneratorConfig {
-  private select: (selector: ConfigSelector) => string;
-  private configPath: string;
-  private configData: X4WareGenXML | undefined;
-  constructor(configPath: string) {
-    this.configPath = configPath;
-    this.select = () => "You must call async init function first";
-  }
-  async init() {
-    this.select = await setupConfig(this.configPath);
-    return this;
-  }
+class Config implements GeneratorConfig {
+  private _addwaresList: AddwareEntity[];
+  private _defaultWare: WareEntity;
+  private _defaultBlueprint: BlueprintEntity;
+  private _modPrefix: string;
+  private _gamePath: string;
+  private _modPath: string;
+  private _unpackedPath: string;
+
   get addwaresList() {
-    return <AddwareEntity[]>(
-      idx(this.configData, _ => _.addwares.generation[0].addware)
-    );
+    return this._addwaresList;
   }
   get defaultWare() {
-    return <DefaultWareEntity>(
-      idx(this.configData, _ => _.addwares.configuration[0].defaults[0].ware[0])
-    );
+    return this._defaultWare;
   }
   get defaultBlueprint() {
-    return <DefaultBlueprintEntity>(
-      idx(
-        this.configData,
-        _ => _.addwares.configuration[0].defaults[0].blueprint[0]
-      )
-    );
+    return this._defaultBlueprint;
   }
   get modPrefix() {
-    return this.select(ConfigSelector.PREFIX);
+    return this._modPrefix;
   }
   get gamePath() {
-    return this.select(ConfigSelector.GAMEPATH);
+    return this._gamePath;
   }
   get modPath() {
-    return this.select(ConfigSelector.MODPATH);
+    return this._modPath;
   }
   get unpackedPath() {
-    return this.select(ConfigSelector.UNPACKEDPATH);
+    return this._unpackedPath;
   }
-}
+  constructor(cfg: X4WareGenXML) {
+    this._addwaresList = <AddwareEntity[]>(
+      idx(cfg, _ => _.addwares.generation[0].addware)
+    );
+    const configuration = cfg.addwares.configuration;
+    if (!configuration) {
+      throw new TypeError("<configuration> Node missing from xml file");
+    }
+    if (!configuration[0]) {
+      throw new TypeError("<configuration> Node empty!");
+    }
 
-export async function getConfig(configPath: string) {
-  const configXmlExists = Jetpack.exists(configPath);
+    const defaults = configuration[0].defaults;
 
-  if (!configXmlExists) die(`${configPath} not found!`);
+    if (!defaults) {
+      throw new TypeError("<defaults> Node missing!");
+    }
+    if (!defaults[0]) {
+      throw new TypeError("<defaults> Node empty!!");
+    }
+    if (!defaults[0].ware) {
+      throw new TypeError("default <ware> Node missing!");
+    }
+    if (!defaults[0].ware[0]) {
+      throw new TypeError("default <ware> Node empty!");
+    }
 
-  log.start(`Using ${configPath}`);
+    this._defaultWare = defaults[0].ware[0];
 
-  const config = await new Config(configPath).init();
-  return config;
+    if (!defaults[0].blueprint) {
+      throw new TypeError("default <blueprint> Node missing!");
+    }
+
+    if (!defaults[0].blueprint[0]) {
+      throw new TypeError("default <blueprint> Node empty!");
+    }
+
+    this._defaultBlueprint = defaults[0].blueprint[0];
+
+    if (!configuration[0].prefix) {
+      throw new TypeError("<prefix> node missing!");
+    }
+
+    this._modPrefix = configuration[0].prefix[0].Attributes.value;
+
+    if (!configuration[0].gamepath) {
+      throw new TypeError("<gamepath> node missing!");
+    }
+
+    this._gamePath = configuration[0].gamepath[0].Attributes.value;
+
+    if (!configuration[0].modpath) {
+      throw new TypeError("<modpath> node missing!");
+    }
+
+    this._modPath = configuration[0].modpath[0].Attributes.value;
+
+    if (!configuration[0].unpackedpath) {
+      throw new TypeError("<unpackedpath> node missing!");
+    }
+
+    this._unpackedPath = configuration[0].unpackedpath[0].Attributes.value;
+  }
 }

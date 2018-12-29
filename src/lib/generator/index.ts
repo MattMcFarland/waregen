@@ -5,7 +5,7 @@ import {
 } from "../XMLTypes/X4WareGenXML";
 
 export { default } from "./Generator";
-export { Config, getConfig } from "./Config";
+export { getConfig } from "./Config";
 
 export interface GeneratorConfig {
   readonly addwaresList: AddwareEntity[];

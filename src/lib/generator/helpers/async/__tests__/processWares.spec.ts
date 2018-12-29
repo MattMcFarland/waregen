@@ -4,6 +4,7 @@ import Path from "path";
 import fs from "fs";
 import mkdirp from "mkdirp";
 import zlib from "zlib";
+import { EventEmitter } from "events";
 
 declare module "fs" {
   export function reset(): void;
@@ -80,7 +81,11 @@ const xml = `<?xml version="1.0" encoding="utf-8"?>
 `;
 
 describe("processWares", () => {
+  afterEach(() => {
+    EventEmitter.defaultMaxListeners -= 5;
+  });
   beforeEach(async done => {
+    EventEmitter.defaultMaxListeners += 5;
     fs.reset();
     mkdirp.sync(pkgMacrosPath());
     mkdirp.sync(pkgIconsPath());
@@ -123,8 +128,20 @@ describe("processWares", () => {
           writestreamE
         )
       );
-
+    writestreamA.on("close", () => {
+      writestreamA.removeAllListeners();
+    });
+    writestreamB.on("close", () => {
+      writestreamB.removeAllListeners();
+    });
+    writestreamC.on("close", () => {
+      writestreamC.removeAllListeners();
+    });
+    writestreamD.on("close", () => {
+      writestreamD.removeAllListeners();
+    });
     writestreamE.on("close", () => {
+      writestreamE.removeAllListeners();
       done();
     });
   });

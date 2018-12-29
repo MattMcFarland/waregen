@@ -4,6 +4,7 @@ import fs from "fs";
 import mkdirp from "mkdirp";
 import zlib from "zlib";
 import enqueueIconTextureImports from "../enqueueIconTextureImports";
+import { EventEmitter } from "events";
 
 declare module "fs" {
   export function reset(): void;
@@ -19,6 +20,12 @@ jest.mock(
 );
 
 describe("generator/helpers/async/enqueueIconTextureImports", () => {
+  afterEach(() => {
+    EventEmitter.defaultMaxListeners -= 5;
+  });
+  beforeEach(() => {
+    EventEmitter.defaultMaxListeners += 5;
+  });
   const iconsPath = (p: string = "") =>
     Path.resolve("/test/Game/unpacked/assets/fx/gui/textures", p);
   const modIconsPath = (p: string = "") =>
@@ -57,8 +64,20 @@ describe("generator/helpers/async/enqueueIconTextureImports", () => {
           writestreamE
         )
       );
-
+    writestreamA.on("close", () => {
+      writestreamA.removeAllListeners();
+    });
+    writestreamB.on("close", () => {
+      writestreamB.removeAllListeners();
+    });
+    writestreamC.on("close", () => {
+      writestreamC.removeAllListeners();
+    });
+    writestreamD.on("close", () => {
+      writestreamD.removeAllListeners();
+    });
     writestreamE.on("close", () => {
+      writestreamE.removeAllListeners();
       done();
     });
   });

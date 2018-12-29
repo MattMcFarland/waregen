@@ -1,13 +1,13 @@
 import { resolve as resolvePath } from "path";
-import { Config, getConfig } from "../generator/Config";
+import { getConfig } from "../generator/Config";
 import { end } from "../utils/System";
-import { GeneratorOptions } from "./";
+import { GeneratorOptions, GeneratorConfig } from "./";
 import processWares from "./helpers/async/processWares";
 
 const asyncProps: { resolved: Bootstrap } = { resolved: {} };
 
 export default class Generator {
-  get config(): Config {
+  get config(): GeneratorConfig {
     if (!asyncProps.resolved.config) return missing("config");
     return asyncProps.resolved.config;
   }
@@ -31,6 +31,7 @@ function missing(prop: string): never {
 const bootstrap = async (options: GeneratorOptions): Promise<Bootstrap> => {
   const configXmlFullPath = resolvePath(process.cwd(), options.configXmlPath);
   const config = await getConfig(configXmlFullPath);
+
   if (!config.addwaresList) {
     end("No wares to generate!");
   }
@@ -38,6 +39,6 @@ const bootstrap = async (options: GeneratorOptions): Promise<Bootstrap> => {
 };
 
 interface Bootstrap {
-  config?: Config;
+  config?: GeneratorConfig;
   options?: GeneratorOptions;
 }

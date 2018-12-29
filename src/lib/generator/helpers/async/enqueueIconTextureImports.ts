@@ -3,12 +3,14 @@ import fs from "fs";
 import pathBuilder from "../../../utils/PathBuilder";
 import { GeneratorConfig, GeneratorOptions } from "../../../generator";
 import Mkdirp from "mkdirp";
+import { EventEmitter } from "events";
 
 export default function enqueueIconTextureImports(
   config: GeneratorConfig,
   options: GeneratorOptions
 ): Promise<string>[] {
   return config.addwaresList.map(addware => {
+    EventEmitter.defaultMaxListeners += 1;
     return new Promise(resolve => {
       const sourcePath = pathBuilder(config, addware.Attributes.id)
         .dirFullGamepath()
@@ -38,6 +40,8 @@ export default function enqueueIconTextureImports(
         .pipe(writestream);
 
       writestream.on("close", () => {
+        EventEmitter.defaultMaxListeners -= 1;
+        writestream.removeAllListeners();
         resolve(destinationPath);
       });
     });

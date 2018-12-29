@@ -5,4 +5,4 @@ export { default as createMacroIndex } from "./createMacroIndex";
 export { default as createModuleGroups } from "./createModuleGroups";
 export { default as createModules } from "./createModules";
 export { default as mapFactory } from "./mapFactory";
-export { default as processWares } from "./processWares";
+export { default as processWares } from "./async/processWares";

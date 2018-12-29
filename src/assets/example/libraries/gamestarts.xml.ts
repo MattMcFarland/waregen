@@ -1,8 +1,7 @@
-export default `
-<?xml version="1.0" encoding="utf-8"?>
+export default `<?xml version="1.0" encoding="utf-8"?>
 <gamestarts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="gamestarts.xsd">
 
-  <gamestart id="example_test_gamestart" name="XCG Test" description="Test XCG" image="gamestart_5" group="2">
+  <gamestart id="waregen_example_start" name="WareGen Example" description="WareGen Example" image="gamestart_5" group="2">
     <info>
       <item name="Location" value="Nathan's Legacy, Argon Prime" />
       <item name="Starting Ship" value="Hercher" />

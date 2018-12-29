@@ -1,10 +1,9 @@
-﻿export default `
-<?xml version="1.0" encoding="utf-8"?>
+﻿export default `<?xml version="1.0" encoding="utf-8"?>
 <mdscript name="XCG_Setup_Gamestarts" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
   <cues>
 
-    <cue name="EXAMPLE_Test_Gamestart" module="example_test_gamestart">
+    <cue name="WAREGEN_example_start" module="waregen_example_start">
       <conditions>
         <event_cue_signalled cue="md.Setup.GameStart" />
       </conditions>

@@ -4,3 +4,4 @@ export {
 } from "./enqueueIconTextureImports";
 export { default as enqueueMacroImports } from "./enqueueMacroImports";
 export { default as enqueueMacroWareImports } from "./enqueueMacroWareImports";
+export { default as createExample } from "./createExample";

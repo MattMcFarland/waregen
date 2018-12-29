@@ -11,7 +11,8 @@ import {
   enqueueMacroImports,
   enqueueIconTextureImports,
   enqueueFileWrites,
-  enqueueMacroWareImports
+  enqueueMacroWareImports,
+  createExample
 } from ".";
 
 import { GeneratorConfig, GeneratorOptions } from "../../../generator";
@@ -74,7 +75,7 @@ export default async function processWares(
     config,
     options
   );
-
+  createExample(config, options);
   // /* return the promises to be resolved */
   return Promise.all([
     ...fileWrites,

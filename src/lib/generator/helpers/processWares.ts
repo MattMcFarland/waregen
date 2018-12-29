@@ -1,10 +1,18 @@
 import { DefaultsEntity, AddwareEntity } from "@@/XMLTypes/X4WareGenXML";
-import createMacroIndex from "./createMacroIndex";
-import createIcons from "./createIcons";
-import createWareCollection from "./createWareCollection";
-import createModuleGroups from "./createModuleGroups";
-import createModules from "./createModules";
-import createBasketCollection from "./createBasketCollection";
+import {
+  createBasketCollection,
+  createIcons,
+  createMacroIndex,
+  createModuleGroups,
+  createModules,
+  createWareCollection
+} from "./";
+
+import {
+  enqueueMacroImports,
+  enqueueIconTextureImports,
+  enqueueFileWrites
+} from "./async";
 
 import {
   WareCollection,
@@ -47,12 +55,12 @@ export default async function processWares(
   const moduleGroupsCollection = createModuleGroups(config);
   /* Create Modules Collection */
   const modulesCollection = createModules(config);
-
   /* Create the Basket Collection */
   const basketCollection = createBasketCollection(config);
 
   /* Create Array of Promises to import Asset Ware Macros and asset Production Macros */
-  // todo const importWareAssets = enqueueMacroImports(config, options)
+  const importWareAssets = enqueueMacroImports(config, options);
+
   /* Arry of Promises for gunzipping icons from unpacked to their destination*/
   // todo const importIconTextures = enqueueIconTextureImports(config, options)
   /* Array of Promises for writing the files */

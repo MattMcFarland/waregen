@@ -34,7 +34,6 @@ export interface IdentificationEntity {
 export interface Attributes2 {
   name: string;
   shortname: string;
-  makerrace: string;
   description: string;
 }
 export interface BuildEntity {
@@ -73,5 +72,4 @@ export interface QueueEntity {
 }
 export interface Attributes7 {
   ware: string;
-  method: string;
 }

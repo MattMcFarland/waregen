@@ -5,7 +5,7 @@ import * as System from "../System";
 export default (absolutePath: string): Promise<string> => {
   return new Promise(async (resolve, reject) => {
     System.log.read(absolutePath);
-    readFile(absolutePath, (err, result) => {
+    readFile(absolutePath, "utf8", (err, result) => {
       if (err) {
         if (err.code === "ENOENT") {
           return System.die(`File not found: ${absolutePath}`);

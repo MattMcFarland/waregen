@@ -27,14 +27,64 @@ describe("AssetWareProdMacro", () => {
       </macro>
     </macros>    
     `;
+    test("has correct id", async () => {
+      const macro = await new AssetWareProdMacro().import(xmlString);
+      expect(macro.id).toBe("prod_arg_foodrations_macro");
+    });
+    test("can change id", async () => {
+      const macro = await new AssetWareProdMacro().import(xmlString);
+      macro.id = "foo";
+      expect(macro.__xmlDef.macro[0].Attributes.name).toBe("foo");
+    });
     test("has correct name", async () => {
       const macro = await new AssetWareProdMacro().import(xmlString);
-      expect(macro.name).toBe("prod_arg_foodrations_macro");
+      expect(macro.name).toBe("{20104,13401}");
     });
     test("can change name", async () => {
       const macro = await new AssetWareProdMacro().import(xmlString);
       macro.name = "foo";
-      expect(macro.__xmlDef.macro[0].Attributes.name).toBe("foo");
+      expect(
+        macro.__xmlDef.macro[0].properties[0].identification[0].Attributes.name
+      ).toBe("foo");
+    });
+    test("has correct shortname", async () => {
+      const macro = await new AssetWareProdMacro().import(xmlString);
+      expect(macro.shortname).toBe("{20104,13403}");
+    });
+    test("can change shortname", async () => {
+      const macro = await new AssetWareProdMacro().import(xmlString);
+      macro.shortname = "foo";
+      expect(
+        macro.__xmlDef.macro[0].properties[0].identification[0].Attributes
+          .shortname
+      ).toBe("foo");
+    });
+    test("has correct description", async () => {
+      const macro = await new AssetWareProdMacro().import(xmlString);
+      expect(macro.description).toBe("{20104,13402}");
+    });
+    test("can change description", async () => {
+      const macro = await new AssetWareProdMacro().import(xmlString);
+      macro.description = "foo";
+      expect(
+        macro.__xmlDef.macro[0].properties[0].identification[0].Attributes
+          .description
+      ).toBe("foo");
+    });
+    test("has correct production", async () => {
+      const macro = await new AssetWareProdMacro().import(xmlString);
+      expect(macro.production).toBe("foodrations");
+    });
+    test("can change production", async () => {
+      const macro = await new AssetWareProdMacro().import(xmlString);
+      macro.production = "foo";
+      expect(
+        macro.__xmlDef.macro[0].properties[0].production[0].Attributes.wares
+      ).toBe("foo");
+      expect(
+        macro.__xmlDef.macro[0].properties[0].production[0].queue[0].Attributes
+          .ware
+      ).toBe("foo");
     });
     test("toXml()", async () => {
       const macro = await new AssetWareProdMacro().import(xmlString);

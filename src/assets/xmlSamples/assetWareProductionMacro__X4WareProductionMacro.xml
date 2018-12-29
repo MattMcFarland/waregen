@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Exported by: Florian (192.168.3.134) at 23.11.2018_17-23-25-->
+<!--Exported by: Florian (192.168.3.134) at 23.11.2018_17-23-39-->
 <macros>
-  <macro name="prod_arg_foodrations_macro" class="production">
-    <component ref="prod_arg_foodrations" />
+  <macro name="prod_gen_refinedmetals_macro" class="production">
+    <component ref="prod_gen_refinedmetals" />
     <properties>
-      <identification name="{20104,13401}" shortname="{20104,13403}" makerrace="argon" description="{20104,13402}" />
+      <identification name="{20104,12301}" shortname="{20104,12303}" description="{20104,12302}" />
       <build>
         <sets>
           <set ref="factory" />
@@ -12,12 +12,12 @@
         </sets>
       </build>
       <explosiondamage value="10000" />
-      <hull max="133000" />
+      <hull max="210000" />
       <secrecy level="2" />
-      <production wares="foodrations">
-        <queue ware="foodrations" method="argon" />
+      <production wares="refinedmetals">
+        <queue ware="refinedmetals" />
       </production>
-      <workforce max="90" />
+      <workforce max="150" />
     </properties>
   </macro>
 </macros>

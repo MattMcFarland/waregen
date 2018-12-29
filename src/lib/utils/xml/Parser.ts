@@ -15,6 +15,9 @@ export default class Parser<T = any> {
     this.parser = new XParser(this._settings);
     this.parseString = (xmlString: string) =>
       new Promise((resolve, reject) => {
+        if (typeof xmlString !== "string") {
+          throw new TypeError(`expecting string, received ${xmlString}`);
+        }
         this.parser.parseString(xmlString, (err: Error, res: T) => {
           if (err) return reject(err);
           if (!res) return reject(`invalid "Falsey" result: ${res}`);

@@ -30,6 +30,12 @@ export class PathBuilder {
   dirUnpackedPath() {
     return this.append(this.unpackedPath);
   }
+  dirProductionMacros() {
+    return this.append("assets", "structures", "production", "macros");
+  }
+  dirIcons() {
+    return this.append("assets", "fx", "gui", "textures");
+  }
   fileLibrary(baseName: string, ext?: string) {
     return this.append("libraries", `${baseName}${maybeExt(ext)}`);
   }

@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generator/helpers createBasketCollection toJson() 1`] = `"{\\"basket\\":[{\\"Attributes\\":{\\"id\\":\\"test_basket_a\\"},\\"wares\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_a\\"}}]}]},{\\"Attributes\\":{\\"id\\":\\"pirate_container\\"},\\"wares\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_a\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_b\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_c\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_d\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_e\\"}}]}]},{\\"Attributes\\":{\\"id\\":\\"all_container\\"},\\"wares\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_a\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_b\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_c\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_d\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_e\\"}}]}]},{\\"Attributes\\":{\\"id\\":\\"all\\"},\\"wares\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_a\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_b\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_c\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_d\\"}},{\\"Attributes\\":{\\"ware\\":\\"pfx_e\\"}}]}]},{\\"Attributes\\":{\\"id\\":\\"test_basket_b\\"},\\"wares\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_b\\"}}]}]},{\\"Attributes\\":{\\"id\\":\\"test_basket_c\\"},\\"wares\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_c\\"}}]}]},{\\"Attributes\\":{\\"id\\":\\"test_basket_d\\"},\\"wares\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_d\\"}}]}]},{\\"Attributes\\":{\\"id\\":\\"test_basket_e\\"},\\"wares\\":[{\\"ware\\":[{\\"Attributes\\":{\\"ware\\":\\"pfx_e\\"}}]}]}]}"`;
+
+exports[`generator/helpers createBasketCollection toXml() 1`] = `
+"<baskets>
+  <basket id=\\"test_basket_a\\">
+    <wares>
+      <ware ware=\\"pfx_a\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"pirate_container\\">
+    <wares>
+      <ware ware=\\"pfx_a\\"/>
+      <ware ware=\\"pfx_b\\"/>
+      <ware ware=\\"pfx_c\\"/>
+      <ware ware=\\"pfx_d\\"/>
+      <ware ware=\\"pfx_e\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"all_container\\">
+    <wares>
+      <ware ware=\\"pfx_a\\"/>
+      <ware ware=\\"pfx_b\\"/>
+      <ware ware=\\"pfx_c\\"/>
+      <ware ware=\\"pfx_d\\"/>
+      <ware ware=\\"pfx_e\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"all\\">
+    <wares>
+      <ware ware=\\"pfx_a\\"/>
+      <ware ware=\\"pfx_b\\"/>
+      <ware ware=\\"pfx_c\\"/>
+      <ware ware=\\"pfx_d\\"/>
+      <ware ware=\\"pfx_e\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"test_basket_b\\">
+    <wares>
+      <ware ware=\\"pfx_b\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"test_basket_c\\">
+    <wares>
+      <ware ware=\\"pfx_c\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"test_basket_d\\">
+    <wares>
+      <ware ware=\\"pfx_d\\"/>
+    </wares>
+  </basket>
+  <basket id=\\"test_basket_e\\">
+    <wares>
+      <ware ware=\\"pfx_e\\"/>
+    </wares>
+  </basket>
+</baskets>"
+`;
+
+exports[`generator/helpers createBasketCollection toXmlPatch() 1`] = `
+"<diff>
+  <add sel=\\"*/basket[@id='test_basket_a']\\">
+    <wares>
+      <ware ware=\\"pfx_a\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='pirate_container']\\">
+    <wares>
+      <ware ware=\\"pfx_a\\"/>
+      <ware ware=\\"pfx_b\\"/>
+      <ware ware=\\"pfx_c\\"/>
+      <ware ware=\\"pfx_d\\"/>
+      <ware ware=\\"pfx_e\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='all_container']\\">
+    <wares>
+      <ware ware=\\"pfx_a\\"/>
+      <ware ware=\\"pfx_b\\"/>
+      <ware ware=\\"pfx_c\\"/>
+      <ware ware=\\"pfx_d\\"/>
+      <ware ware=\\"pfx_e\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='all']\\">
+    <wares>
+      <ware ware=\\"pfx_a\\"/>
+      <ware ware=\\"pfx_b\\"/>
+      <ware ware=\\"pfx_c\\"/>
+      <ware ware=\\"pfx_d\\"/>
+      <ware ware=\\"pfx_e\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='test_basket_b']\\">
+    <wares>
+      <ware ware=\\"pfx_b\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='test_basket_c']\\">
+    <wares>
+      <ware ware=\\"pfx_c\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='test_basket_d']\\">
+    <wares>
+      <ware ware=\\"pfx_d\\"/>
+    </wares>
+  </add>
+  <add sel=\\"*/basket[@id='test_basket_e']\\">
+    <wares>
+      <ware ware=\\"pfx_e\\"/>
+    </wares>
+  </add>
+</diff>"
+`;

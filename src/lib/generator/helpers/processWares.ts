@@ -4,6 +4,8 @@ import createIcons from "./createIcons";
 import createWareCollection from "./createWareCollection";
 import createModuleGroups from "./createModuleGroups";
 import createModules from "./createModules";
+import createBasketCollection from "./createBasketCollection";
+
 import {
   WareCollection,
   IndexHash,
@@ -47,7 +49,7 @@ export default async function processWares(
   const modulesCollection = createModules(config);
 
   /* Create the Basket Collection */
-  // todo const basketCollection = createBasketCollection(config, options)
+  const basketCollection = createBasketCollection(config);
 
   /* Create Array of Promises to import Asset Ware Macros and asset Production Macros */
   // todo const importWareAssets = enqueueMacroImports(config, options)

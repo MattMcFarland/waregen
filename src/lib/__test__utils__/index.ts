@@ -19,7 +19,9 @@ export const mockAddwares = (count: number): AddwareEntity[] => {
   return range(count).map(
     (i: number): AddwareEntity => ({
       Attributes: {
-        baskets: `[test_basket_${char(i)}]`,
+        baskets: `[test_basket_${char(
+          i
+        )}, pirate_container, all_container, all]`,
         cloneProductionModuleFrom: `prod_cloned_macro_${char(i)}`,
         id: `${char(i)}`
       },

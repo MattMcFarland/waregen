@@ -10,8 +10,24 @@ export class PathBuilder {
   private modPath: string;
   private unpackedPath: string;
   private build: string;
-  private ids: IdRoster;
+  private modPrefix: string;
+  private ids: IdRoster | undefined;
   private freeze: boolean = false;
+  private _baseId: string | undefined;
+
+  get baseId() {
+    return this._baseId;
+  }
+  set baseId(v: string | undefined) {
+    this._baseId = v;
+    if (!this._baseId) {
+      this._baseId = undefined;
+      this.ids = undefined;
+    }
+    if (undefined !== this._baseId) {
+      this.ids = new IdRoster(this._baseId, this.modPrefix);
+    }
+  }
   public append(...parts: string[]) {
     if (this.freeze) {
       throw new Error(
@@ -36,6 +52,9 @@ export class PathBuilder {
   dirIcons() {
     return this.append("assets", "fx", "gui", "textures");
   }
+  dirWareMacro() {
+    return this.append("assets", "wares", "macros");
+  }
   fileLibrary(baseName: string, ext?: string) {
     return this.append("libraries", `${baseName}${maybeExt(ext)}`);
   }
@@ -43,6 +62,11 @@ export class PathBuilder {
     return this.append("index", `${baseName}${maybeExt(ext)}`);
   }
   fileProductionMacroXML(ext?: string) {
+    if (!this.ids) {
+      throw new Error(
+        "cannot call fileProductionMacroXML without baseId being set"
+      );
+    }
     return this.append(
       "assets",
       "structures",
@@ -52,6 +76,9 @@ export class PathBuilder {
     );
   }
   fileWareMacroXML(ext?: string) {
+    if (!this.ids) {
+      throw new Error("cannot call fileWareMacroXML without baseId being set");
+    }
     return this.append(
       "assets",
       "wares",
@@ -60,6 +87,9 @@ export class PathBuilder {
     );
   }
   fileIconGZ(ext: string = "gz") {
+    if (!this.ids) {
+      throw new Error("cannot call fileIconGZ without baseId being set");
+    }
     return this.append(
       "assets",
       "fx",
@@ -69,6 +99,9 @@ export class PathBuilder {
     );
   }
   fileIconDDS(ext: string = "dds") {
+    if (!this.ids) {
+      throw new Error("cannot call fileIconDDS without baseId being set");
+    }
     return this.append(
       "assets",
       "fx",
@@ -114,8 +147,10 @@ export class PathBuilder {
     this.freeze = true;
     return Path.normalize(this.build).split(Path.sep);
   }
-  constructor(config: GeneratorConfig, baseId: string) {
-    this.ids = new IdRoster(baseId, config.modPrefix);
+  constructor(config: GeneratorConfig, baseId?: string) {
+    this._baseId = baseId || undefined;
+    this.modPrefix = config.modPrefix;
+    this.ids = (baseId && new IdRoster(baseId, config.modPrefix)) || undefined;
     this.gamepath = config.gamePath;
     this.modPath = config.modPath;
     this.unpackedPath = config.unpackedPath;

@@ -24,8 +24,9 @@ export class IdRoster {
    *  - `<entry>` - *macros.xml*
    */
   get wareMacro() {
-    return `${this.prefix}_ware_${this.rootId}_macro`;
+    return `ware_${this.prefix}_${this.rootId}_macro`;
   }
+
   /**
    * (**ID**)Occurances:
    *

@@ -1,6 +1,6 @@
 {
   "name": "waregen",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "dist/lib/generator/index.js",
   "bin": {
     "waregen": "dist/bin.js"

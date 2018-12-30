@@ -1,28 +1,25 @@
 # waregen
 
-This command-line utility will generate all of the necessary `.xml` files needed to add new ares to X4: Foundations.
+This tool automates the creation of the necessary `.xml` files needed (as outlined [here](https://gist.github.com/MattMcFarland/1282329f83f88f1b98520c5e2ec491a2)) to add new wares to [X4: Foundations](https://www.egosoft.com/games/x4/info_en.php).
 
-Instead of having to comb over a dozen xml files making sure all of your `ids` and `references` are properly configured, this tool will wire all of that up for you.
+Instead of having to comb over a dozen xml files making sure all of your `ids` and `references` are properly configured, this tool will wire all of that up for you. 
 
 ## Prerequisites
 
 - You will need an **unpacked** folder - see [this forum post](https://forum.egosoft.com/viewtopic.php?t=402452) for more information
-- Comfort with XML, and running CLI(command line interface) programs
+- Comfort with XML, and running programs using a windows [CLI](https://en.wikipedia.org/wiki/Command-line_interface)
 - You backup your mod ! Especially if you use this tool with it!!! (but really, you should be doing that anyway)
 
 ## Installation
 
-- Unzip the latest release(it does not matter where), you will see the following contents:
-  - waregen.exe
-  - README.md (this file)
-  - LICENSE (MIT license, you may review if needed)
-  - example.xml (an example that you can run to create an example mod with plastic and glass added to the game)
+- Download [latest release](https://github.com/MattMcFarland/waregen/releases)
+- You can unpack the .zip (or skip this if you downloaded the .exe file) into any directory, I personally use the X4 Foundations game path, but it ultimately doesn't matter where you put it as long as you can access it using the command line.
 
 ## CLI Usage:
 
-Providing you are running CMD.exe or PowerShell, you can run `waregen.exe` - if you are in the same directroy as the `waregen.exe` file.
+Providing you are running [CMD.exe](https://www.howtogeek.com/235101/10-ways-to-open-the-command-prompt-in-windows-10/) or [PowerShell](https://www.digitalcitizen.life/simple-questions-what-powershell-what-can-you-do-it), you can run `waregen.exe` - if you are in the same directroy as the `waregen.exe` file.
 
-```
+```bash
 waregen [configXmlPath] [options]
 
 Positionals:
@@ -34,11 +31,13 @@ Options:
   --help       Show help                                               [boolean]
 ```
 
-Providing you set the config vars, the included `example.xml` file will create a new mod called `example`, and place _glass_ and _plastic_ wares into the game.
+If you downloaded the .zip release, the included `example.xml` file will create a new mod called `example`, and place _glass_ and _plastic_ wares into the game.
 
-## Configuration
+> **Special Note**: If you use the example.xml, it will also automatically create a new game mode to playtest the example.xml stuff.  This is just to show you how this is wired up to a game start, with the player having the new wares researched already.  It doesn't automatically update either if you change the example wares.
 
-All of the wares you wish to add to the game are within an `xml` file that follow the same schema as the `example.xml` file.
+## Setup
+
+All of the wares you wish to add to the game described inside an `xml` file that follows the same schema as the `example.xml` file.
 
 Here is basically what you will see:
 
@@ -77,6 +76,8 @@ Here is basically what you will see:
 
 ```
 
+## XML API
+
 ### `<configuration>`
 
 This contains the following five nodes:
@@ -103,7 +104,7 @@ Set `value` to equal the full path to where you have X4 Foundations installed.
 <gamepath value="%PROGRAMFILES(X86)%\Steam\steamapps\common\X4 Foundations"/>
 ```
 
-Environment variables will be reference by text inbetween `%` characters, regardless of your operating system.
+> **Environment variables** will be reference by text inbetween `%` characters, regardless of your operating system.
 
 #### `<modpath>`
 
@@ -124,14 +125,12 @@ Just like modpath, set value to be the **relative** path of your unpacked instal
 
 ```xml
 <gamepath value="\Gamez\X4"/>
-<modpath value="unpacked"/>
+<unpackedpath value="unpacked"/>
 ```
 
 would translate to `C:\Gamez\X4\unpacked` - Where the Drive letter would depend on which drive you ran `waregen.exe` ..
 
-#### About the relative paths
-
-You have some advanced techniques available. If you know how pathing works, you can use allt he usual references such as `../` or `..\` (POSIX paths will be translated to win32 paths automatically, so it doesnt really matter what type of slash you use here) - You can also set the Drive letter for `gamepath`, but not for `modpath` or `extensions` - support for that seems like an edgecase which may or may not be added in the future, depending on demand.
+> **Speaking of relative paths**: If you know how pathing works, you can use all the usual references such as `../` or `..\` (POSIX paths will be translated to win32 paths automatically, so it doesnt really matter what type of slash you use here) - You can also set the Drive letter for `gamepath`, but not for `modpath` or `extensions`
 
 #### `<defaults>`
 

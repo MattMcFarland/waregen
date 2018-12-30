@@ -4,7 +4,13 @@ const Path = require("path");
 const archiver = require("archiver");
 const version = require("../package.json").version;
 
-const source = Path.resolve(__dirname, "../build/waregen.exe");
+const paths = [
+  ["waregen.exe", Path.resolve(__dirname, "../build/waregen.exe")],
+  ["readme.html", Path.resolve(__dirname, "../build/readme.html")],
+  ["example.xml", Path.resolve(__dirname, "../example.xml")],
+  ["LICENSE.txt", Path.resolve(__dirname, "../LICENSE")]
+];
+
 const target = `build/waregen-${version}.zip`;
 
 // create a file to stream archive data to.
@@ -41,8 +47,8 @@ archive.on("warning", function(err) {
 
 archive.pipe(output);
 
-archive.append(fs.createReadStream(source), { name: "waregen.exe" });
-archive.append(fs.createReadStream(".\\README.md"), { name: "README.md" });
-archive.append(fs.createReadStream(".\\LICENSE"), { name: "LICENSE.txt" });
-archive.append(fs.createReadStream(".\\example.xml"), { name: "example.xml" });
+paths.forEach(([name, source]) =>
+  archive.append(fs.createReadStream(source), { name })
+);
+
 archive.finalize();
